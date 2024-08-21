@@ -1,0 +1,60 @@
+{{ promotion }}
+<fieldset>
+  <legend>{{ heading_title }}</legend>
+  <div class="table-responsive">
+    <table class="table table-bordered table-hover">
+      <thead>
+        <tr>
+          <td class="text-start">{{ column_name }}</td>
+          <td class="text-start">{{ column_status }}</td>
+          <td class="text-end">{{ column_action }}</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="text-start">{{ heading_title }}</td>
+         <td class="text-start">
+            <div class="form-group">
+              <select name="status" id="input-status" class="form-control">
+                <option value="1" {{ status == '1' ? 'selected' : '' }}>Enabled</option>
+                <option value="0" {{ status == '0' ? 'selected' : '' }}>Disabled</option>
+              </select>
+            </div>
+          </td>
+          <td class="text-end text-nowrap">
+          <button type="button" id="save-status" class="btn btn-primary">{{ button_save }}</button>
+            {% if status == 1 %}
+              <a href="{{ uninstall }}" data-bs-toggle="tooltip" title="{{ button_uninstall }}" class="btn btn-danger"><i class="fa-solid fa-minus-circle"></i></a>
+            {% else %}
+              <a href="{{ install }}" data-bs-toggle="tooltip" title="{{ button_install }}" class="btn btn-success"><i class="fa-solid fa-plus-circle"></i></a>
+            {% endif %}
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</fieldset>
+<script>
+document.getElementById('save-status').addEventListener('click', function() {
+  var status = document.getElementById('input-status').value;
+  var token = '{{ user_token }}';
+
+  fetch('{{ ajax_save_status }}', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'X-Requested-With': 'XMLHttpRequest'
+    },
+    body: JSON.stringify({ status: status, user_token: token })
+  })
+  .then(response => response.json())
+  .then(data => {
+    if (data.success) {
+      alert('{{ text_success }}');
+    } else {
+      alert('{{ text_error }}');
+    }
+  })
+  .catch(error => console.error('Error:', error));
+});
+</script>

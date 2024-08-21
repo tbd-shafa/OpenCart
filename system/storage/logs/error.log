@@ -1,0 +1,3236 @@
+2024-08-20 06:26:04 - PHP Warning:  mkdir(): Permission denied in /opt/lampp/htdocs/opencart3/catalog/model/tool/image.php on line 47
+2024-08-20 06:26:04 - PHP Warning:  mkdir(): No such file or directory in /opt/lampp/htdocs/opencart3/catalog/model/tool/image.php on line 47
+2024-08-20 06:26:04 - PHP Warning:  mkdir(): No such file or directory in /opt/lampp/htdocs/opencart3/catalog/model/tool/image.php on line 47
+2024-08-20 06:26:04 - PHP Warning:  copy(/opt/lampp/htdocs/opencart3/image/cache/catalog/demo/banners/iPhone6-1140x380.jpg): Failed to open stream: No such file or directory in /opt/lampp/htdocs/opencart3/catalog/model/tool/image.php on line 56
+2024-08-20 06:26:04 - PHP Warning:  mkdir(): Permission denied in /opt/lampp/htdocs/opencart3/catalog/model/tool/image.php on line 47
+2024-08-20 06:26:04 - PHP Warning:  mkdir(): No such file or directory in /opt/lampp/htdocs/opencart3/catalog/model/tool/image.php on line 47
+2024-08-20 06:26:04 - PHP Warning:  mkdir(): No such file or directory in /opt/lampp/htdocs/opencart3/catalog/model/tool/image.php on line 47
+2024-08-20 06:26:04 - PHP Warning:  copy(/opt/lampp/htdocs/opencart3/image/cache/catalog/demo/banners/MacBookAir-1140x380.jpg): Failed to open stream: No such file or directory in /opt/lampp/htdocs/opencart3/catalog/model/tool/image.php on line 56
+2024-08-20 06:26:04 - PHP Warning:  mkdir(): Permission denied in /opt/lampp/htdocs/opencart3/catalog/model/tool/image.php on line 47
+2024-08-20 06:26:04 - PHP Warning:  mkdir(): No such file or directory in /opt/lampp/htdocs/opencart3/catalog/model/tool/image.php on line 47
+2024-08-20 06:26:04 - PHP Warning:  imagejpeg(/opt/lampp/htdocs/opencart3/image/cache/catalog/demo/macbook_1-200x200.jpg): Failed to open stream: No such file or directory in /opt/lampp/htdocs/opencart3/system/library/image.php on line 145
+2024-08-20 06:26:04 - PHP Warning:  mkdir(): Permission denied in /opt/lampp/htdocs/opencart3/catalog/model/tool/image.php on line 47
+2024-08-20 06:26:04 - PHP Warning:  mkdir(): No such file or directory in /opt/lampp/htdocs/opencart3/catalog/model/tool/image.php on line 47
+2024-08-20 06:26:04 - PHP Warning:  imagejpeg(/opt/lampp/htdocs/opencart3/image/cache/catalog/demo/iphone_1-200x200.jpg): Failed to open stream: No such file or directory in /opt/lampp/htdocs/opencart3/system/library/image.php on line 145
+2024-08-20 06:26:04 - PHP Warning:  mkdir(): Permission denied in /opt/lampp/htdocs/opencart3/catalog/model/tool/image.php on line 47
+2024-08-20 06:26:04 - PHP Warning:  mkdir(): No such file or directory in /opt/lampp/htdocs/opencart3/catalog/model/tool/image.php on line 47
+2024-08-20 06:26:04 - PHP Warning:  imagejpeg(/opt/lampp/htdocs/opencart3/image/cache/catalog/demo/apple_cinema_30-200x200.jpg): Failed to open stream: No such file or directory in /opt/lampp/htdocs/opencart3/system/library/image.php on line 145
+2024-08-20 06:26:04 - PHP Warning:  mkdir(): Permission denied in /opt/lampp/htdocs/opencart3/catalog/model/tool/image.php on line 47
+2024-08-20 06:26:04 - PHP Warning:  mkdir(): No such file or directory in /opt/lampp/htdocs/opencart3/catalog/model/tool/image.php on line 47
+2024-08-20 06:26:04 - PHP Warning:  imagejpeg(/opt/lampp/htdocs/opencart3/image/cache/catalog/demo/canon_eos_5d_1-200x200.jpg): Failed to open stream: No such file or directory in /opt/lampp/htdocs/opencart3/system/library/image.php on line 145
+2024-08-20 06:26:04 - PHP Warning:  mkdir(): Permission denied in /opt/lampp/htdocs/opencart3/catalog/model/tool/image.php on line 47
+2024-08-20 06:26:04 - PHP Warning:  mkdir(): No such file or directory in /opt/lampp/htdocs/opencart3/catalog/model/tool/image.php on line 47
+2024-08-20 06:26:04 - PHP Warning:  mkdir(): No such file or directory in /opt/lampp/htdocs/opencart3/catalog/model/tool/image.php on line 47
+2024-08-20 06:26:04 - PHP Warning:  copy(/opt/lampp/htdocs/opencart3/image/cache/catalog/demo/manufacturer/harley-130x100.png): Failed to open stream: No such file or directory in /opt/lampp/htdocs/opencart3/catalog/model/tool/image.php on line 56
+2024-08-20 06:26:04 - PHP Warning:  mkdir(): Permission denied in /opt/lampp/htdocs/opencart3/catalog/model/tool/image.php on line 47
+2024-08-20 06:26:04 - PHP Warning:  mkdir(): No such file or directory in /opt/lampp/htdocs/opencart3/catalog/model/tool/image.php on line 47
+2024-08-20 06:26:04 - PHP Warning:  mkdir(): No such file or directory in /opt/lampp/htdocs/opencart3/catalog/model/tool/image.php on line 47
+2024-08-20 06:26:04 - PHP Warning:  copy(/opt/lampp/htdocs/opencart3/image/cache/catalog/demo/manufacturer/dell-130x100.png): Failed to open stream: No such file or directory in /opt/lampp/htdocs/opencart3/catalog/model/tool/image.php on line 56
+2024-08-20 06:26:04 - PHP Warning:  mkdir(): Permission denied in /opt/lampp/htdocs/opencart3/catalog/model/tool/image.php on line 47
+2024-08-20 06:26:04 - PHP Warning:  mkdir(): No such file or directory in /opt/lampp/htdocs/opencart3/catalog/model/tool/image.php on line 47
+2024-08-20 06:26:04 - PHP Warning:  mkdir(): No such file or directory in /opt/lampp/htdocs/opencart3/catalog/model/tool/image.php on line 47
+2024-08-20 06:26:04 - PHP Warning:  copy(/opt/lampp/htdocs/opencart3/image/cache/catalog/demo/manufacturer/disney-130x100.png): Failed to open stream: No such file or directory in /opt/lampp/htdocs/opencart3/catalog/model/tool/image.php on line 56
+2024-08-20 06:26:04 - PHP Warning:  mkdir(): Permission denied in /opt/lampp/htdocs/opencart3/catalog/model/tool/image.php on line 47
+2024-08-20 06:26:04 - PHP Warning:  mkdir(): No such file or directory in /opt/lampp/htdocs/opencart3/catalog/model/tool/image.php on line 47
+2024-08-20 06:26:04 - PHP Warning:  mkdir(): No such file or directory in /opt/lampp/htdocs/opencart3/catalog/model/tool/image.php on line 47
+2024-08-20 06:26:04 - PHP Warning:  copy(/opt/lampp/htdocs/opencart3/image/cache/catalog/demo/manufacturer/cocacola-130x100.png): Failed to open stream: No such file or directory in /opt/lampp/htdocs/opencart3/catalog/model/tool/image.php on line 56
+2024-08-20 06:26:04 - PHP Warning:  mkdir(): Permission denied in /opt/lampp/htdocs/opencart3/catalog/model/tool/image.php on line 47
+2024-08-20 06:26:04 - PHP Warning:  mkdir(): No such file or directory in /opt/lampp/htdocs/opencart3/catalog/model/tool/image.php on line 47
+2024-08-20 06:26:04 - PHP Warning:  mkdir(): No such file or directory in /opt/lampp/htdocs/opencart3/catalog/model/tool/image.php on line 47
+2024-08-20 06:26:04 - PHP Warning:  copy(/opt/lampp/htdocs/opencart3/image/cache/catalog/demo/manufacturer/burgerking-130x100.png): Failed to open stream: No such file or directory in /opt/lampp/htdocs/opencart3/catalog/model/tool/image.php on line 56
+2024-08-20 06:26:04 - PHP Warning:  mkdir(): Permission denied in /opt/lampp/htdocs/opencart3/catalog/model/tool/image.php on line 47
+2024-08-20 06:26:04 - PHP Warning:  mkdir(): No such file or directory in /opt/lampp/htdocs/opencart3/catalog/model/tool/image.php on line 47
+2024-08-20 06:26:04 - PHP Warning:  mkdir(): No such file or directory in /opt/lampp/htdocs/opencart3/catalog/model/tool/image.php on line 47
+2024-08-20 06:26:04 - PHP Warning:  copy(/opt/lampp/htdocs/opencart3/image/cache/catalog/demo/manufacturer/canon-130x100.png): Failed to open stream: No such file or directory in /opt/lampp/htdocs/opencart3/catalog/model/tool/image.php on line 56
+2024-08-20 06:26:04 - PHP Warning:  mkdir(): Permission denied in /opt/lampp/htdocs/opencart3/catalog/model/tool/image.php on line 47
+2024-08-20 06:26:04 - PHP Warning:  mkdir(): No such file or directory in /opt/lampp/htdocs/opencart3/catalog/model/tool/image.php on line 47
+2024-08-20 06:26:04 - PHP Warning:  mkdir(): No such file or directory in /opt/lampp/htdocs/opencart3/catalog/model/tool/image.php on line 47
+2024-08-20 06:26:04 - PHP Warning:  copy(/opt/lampp/htdocs/opencart3/image/cache/catalog/demo/manufacturer/nfl-130x100.png): Failed to open stream: No such file or directory in /opt/lampp/htdocs/opencart3/catalog/model/tool/image.php on line 56
+2024-08-20 06:26:04 - PHP Warning:  mkdir(): Permission denied in /opt/lampp/htdocs/opencart3/catalog/model/tool/image.php on line 47
+2024-08-20 06:26:04 - PHP Warning:  mkdir(): No such file or directory in /opt/lampp/htdocs/opencart3/catalog/model/tool/image.php on line 47
+2024-08-20 06:26:04 - PHP Warning:  mkdir(): No such file or directory in /opt/lampp/htdocs/opencart3/catalog/model/tool/image.php on line 47
+2024-08-20 06:26:04 - PHP Warning:  copy(/opt/lampp/htdocs/opencart3/image/cache/catalog/demo/manufacturer/redbull-130x100.png): Failed to open stream: No such file or directory in /opt/lampp/htdocs/opencart3/catalog/model/tool/image.php on line 56
+2024-08-20 06:26:04 - PHP Warning:  mkdir(): Permission denied in /opt/lampp/htdocs/opencart3/catalog/model/tool/image.php on line 47
+2024-08-20 06:26:04 - PHP Warning:  mkdir(): No such file or directory in /opt/lampp/htdocs/opencart3/catalog/model/tool/image.php on line 47
+2024-08-20 06:26:04 - PHP Warning:  mkdir(): No such file or directory in /opt/lampp/htdocs/opencart3/catalog/model/tool/image.php on line 47
+2024-08-20 06:26:04 - PHP Warning:  copy(/opt/lampp/htdocs/opencart3/image/cache/catalog/demo/manufacturer/sony-130x100.png): Failed to open stream: No such file or directory in /opt/lampp/htdocs/opencart3/catalog/model/tool/image.php on line 56
+2024-08-20 06:26:04 - PHP Warning:  mkdir(): Permission denied in /opt/lampp/htdocs/opencart3/catalog/model/tool/image.php on line 47
+2024-08-20 06:26:04 - PHP Warning:  mkdir(): No such file or directory in /opt/lampp/htdocs/opencart3/catalog/model/tool/image.php on line 47
+2024-08-20 06:26:04 - PHP Warning:  mkdir(): No such file or directory in /opt/lampp/htdocs/opencart3/catalog/model/tool/image.php on line 47
+2024-08-20 06:26:04 - PHP Warning:  copy(/opt/lampp/htdocs/opencart3/image/cache/catalog/demo/manufacturer/starbucks-130x100.png): Failed to open stream: No such file or directory in /opt/lampp/htdocs/opencart3/catalog/model/tool/image.php on line 56
+2024-08-20 06:26:04 - PHP Warning:  mkdir(): Permission denied in /opt/lampp/htdocs/opencart3/catalog/model/tool/image.php on line 47
+2024-08-20 06:26:04 - PHP Warning:  mkdir(): No such file or directory in /opt/lampp/htdocs/opencart3/catalog/model/tool/image.php on line 47
+2024-08-20 06:26:04 - PHP Warning:  mkdir(): No such file or directory in /opt/lampp/htdocs/opencart3/catalog/model/tool/image.php on line 47
+2024-08-20 06:26:04 - PHP Warning:  copy(/opt/lampp/htdocs/opencart3/image/cache/catalog/demo/manufacturer/nintendo-130x100.png): Failed to open stream: No such file or directory in /opt/lampp/htdocs/opencart3/catalog/model/tool/image.php on line 56
+2024-08-20 06:27:24 - PHP Warning: unlink(/opt/lampp/htdocs/opencart3/install/view/template/upgrade/upgrade.twig): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 107
+
+2024-08-20 06:27:24 - PHP Warning: rmdir(/opt/lampp/htdocs/opencart3/install/view/template/upgrade): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 109
+
+2024-08-20 06:27:24 - PHP Warning: unlink(/opt/lampp/htdocs/opencart3/install/view/template/install/step_4.twig): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 107
+
+2024-08-20 06:27:24 - PHP Warning: unlink(/opt/lampp/htdocs/opencart3/install/view/template/install/step_3.twig): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 107
+
+2024-08-20 06:27:24 - PHP Warning: unlink(/opt/lampp/htdocs/opencart3/install/view/template/install/step_2.twig): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 107
+
+2024-08-20 06:27:24 - PHP Warning: unlink(/opt/lampp/htdocs/opencart3/install/view/template/install/step_1.twig): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 107
+
+2024-08-20 06:27:24 - PHP Warning: rmdir(/opt/lampp/htdocs/opencart3/install/view/template/install): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 109
+
+2024-08-20 06:27:24 - PHP Warning: unlink(/opt/lampp/htdocs/opencart3/install/view/template/error/not_found.twig): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 107
+
+2024-08-20 06:27:24 - PHP Warning: rmdir(/opt/lampp/htdocs/opencart3/install/view/template/error): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 109
+
+2024-08-20 06:27:24 - PHP Warning: unlink(/opt/lampp/htdocs/opencart3/install/view/template/common/language.twig): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 107
+
+2024-08-20 06:27:24 - PHP Warning: unlink(/opt/lampp/htdocs/opencart3/install/view/template/common/header.twig): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 107
+
+2024-08-20 06:27:24 - PHP Warning: unlink(/opt/lampp/htdocs/opencart3/install/view/template/common/footer.twig): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 107
+
+2024-08-20 06:27:24 - PHP Warning: rmdir(/opt/lampp/htdocs/opencart3/install/view/template/common): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 109
+
+2024-08-20 06:27:24 - PHP Warning: rmdir(/opt/lampp/htdocs/opencart3/install/view/template): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 109
+
+2024-08-20 06:27:24 - PHP Warning: unlink(/opt/lampp/htdocs/opencart3/install/view/stylesheet/stylesheet.css): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 107
+
+2024-08-20 06:27:24 - PHP Warning: unlink(/opt/lampp/htdocs/opencart3/install/view/stylesheet/fontawesome/webfonts/fa-v4compatibility.woff2): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 107
+
+2024-08-20 06:27:24 - PHP Warning: unlink(/opt/lampp/htdocs/opencart3/install/view/stylesheet/fontawesome/webfonts/fa-v4compatibility.ttf): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 107
+
+2024-08-20 06:27:24 - PHP Warning: unlink(/opt/lampp/htdocs/opencart3/install/view/stylesheet/fontawesome/webfonts/fa-solid-900.woff2): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 107
+
+2024-08-20 06:27:24 - PHP Warning: unlink(/opt/lampp/htdocs/opencart3/install/view/stylesheet/fontawesome/webfonts/fa-solid-900.ttf): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 107
+
+2024-08-20 06:27:24 - PHP Warning: unlink(/opt/lampp/htdocs/opencart3/install/view/stylesheet/fontawesome/webfonts/fa-regular-400.woff2): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 107
+
+2024-08-20 06:27:24 - PHP Warning: unlink(/opt/lampp/htdocs/opencart3/install/view/stylesheet/fontawesome/webfonts/fa-regular-400.ttf): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 107
+
+2024-08-20 06:27:24 - PHP Warning: unlink(/opt/lampp/htdocs/opencart3/install/view/stylesheet/fontawesome/webfonts/fa-brands-400.woff2): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 107
+
+2024-08-20 06:27:24 - PHP Warning: unlink(/opt/lampp/htdocs/opencart3/install/view/stylesheet/fontawesome/webfonts/fa-brands-400.ttf): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 107
+
+2024-08-20 06:27:24 - PHP Warning: rmdir(/opt/lampp/htdocs/opencart3/install/view/stylesheet/fontawesome/webfonts): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 109
+
+2024-08-20 06:27:24 - PHP Warning: unlink(/opt/lampp/htdocs/opencart3/install/view/stylesheet/fontawesome/css/v5-font-face.min.css): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 107
+
+2024-08-20 06:27:24 - PHP Warning: unlink(/opt/lampp/htdocs/opencart3/install/view/stylesheet/fontawesome/css/v5-font-face.css): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 107
+
+2024-08-20 06:27:24 - PHP Warning: unlink(/opt/lampp/htdocs/opencart3/install/view/stylesheet/fontawesome/css/v4-shims.min.css): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 107
+
+2024-08-20 06:27:24 - PHP Warning: unlink(/opt/lampp/htdocs/opencart3/install/view/stylesheet/fontawesome/css/v4-shims.css): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 107
+
+2024-08-20 06:27:24 - PHP Warning: unlink(/opt/lampp/htdocs/opencart3/install/view/stylesheet/fontawesome/css/v4-font-face.min.css): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 107
+
+2024-08-20 06:27:24 - PHP Warning: unlink(/opt/lampp/htdocs/opencart3/install/view/stylesheet/fontawesome/css/v4-font-face.css): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 107
+
+2024-08-20 06:27:24 - PHP Warning: unlink(/opt/lampp/htdocs/opencart3/install/view/stylesheet/fontawesome/css/svg-with-js.min.css): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 107
+
+2024-08-20 06:27:24 - PHP Warning: unlink(/opt/lampp/htdocs/opencart3/install/view/stylesheet/fontawesome/css/svg-with-js.css): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 107
+
+2024-08-20 06:27:24 - PHP Warning: unlink(/opt/lampp/htdocs/opencart3/install/view/stylesheet/fontawesome/css/solid.min.css): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 107
+
+2024-08-20 06:27:24 - PHP Warning: unlink(/opt/lampp/htdocs/opencart3/install/view/stylesheet/fontawesome/css/solid.css): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 107
+
+2024-08-20 06:27:24 - PHP Warning: unlink(/opt/lampp/htdocs/opencart3/install/view/stylesheet/fontawesome/css/regular.min.css): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 107
+
+2024-08-20 06:27:24 - PHP Warning: unlink(/opt/lampp/htdocs/opencart3/install/view/stylesheet/fontawesome/css/regular.css): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 107
+
+2024-08-20 06:27:24 - PHP Warning: unlink(/opt/lampp/htdocs/opencart3/install/view/stylesheet/fontawesome/css/fontawesome.min.css): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 107
+
+2024-08-20 06:27:24 - PHP Warning: unlink(/opt/lampp/htdocs/opencart3/install/view/stylesheet/fontawesome/css/fontawesome.css): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 107
+
+2024-08-20 06:27:24 - PHP Warning: unlink(/opt/lampp/htdocs/opencart3/install/view/stylesheet/fontawesome/css/brands.min.css): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 107
+
+2024-08-20 06:27:24 - PHP Warning: unlink(/opt/lampp/htdocs/opencart3/install/view/stylesheet/fontawesome/css/brands.css): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 107
+
+2024-08-20 06:27:24 - PHP Warning: unlink(/opt/lampp/htdocs/opencart3/install/view/stylesheet/fontawesome/css/all.min.css): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 107
+
+2024-08-20 06:27:24 - PHP Warning: unlink(/opt/lampp/htdocs/opencart3/install/view/stylesheet/fontawesome/css/all.css): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 107
+
+2024-08-20 06:27:24 - PHP Warning: rmdir(/opt/lampp/htdocs/opencart3/install/view/stylesheet/fontawesome/css): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 109
+
+2024-08-20 06:27:24 - PHP Warning: unlink(/opt/lampp/htdocs/opencart3/install/view/stylesheet/fontawesome/LICENSE.txt): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 107
+
+2024-08-20 06:27:24 - PHP Warning: rmdir(/opt/lampp/htdocs/opencart3/install/view/stylesheet/fontawesome): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 109
+
+2024-08-20 06:27:24 - PHP Warning: unlink(/opt/lampp/htdocs/opencart3/install/view/stylesheet/bootstrap.css): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 107
+
+2024-08-20 06:27:24 - PHP Warning: rmdir(/opt/lampp/htdocs/opencart3/install/view/stylesheet): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 109
+
+2024-08-20 06:27:24 - PHP Warning: unlink(/opt/lampp/htdocs/opencart3/install/view/javascript/jquery/jquery-3.7.1.min.map): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 107
+
+2024-08-20 06:27:24 - PHP Warning: unlink(/opt/lampp/htdocs/opencart3/install/view/javascript/jquery/jquery-3.7.1.min.js): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 107
+
+2024-08-20 06:27:24 - PHP Warning: rmdir(/opt/lampp/htdocs/opencart3/install/view/javascript/jquery): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 109
+
+2024-08-20 06:27:24 - PHP Warning: unlink(/opt/lampp/htdocs/opencart3/install/view/javascript/common.js): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 107
+
+2024-08-20 06:27:24 - PHP Warning: unlink(/opt/lampp/htdocs/opencart3/install/view/javascript/bootstrap/js/bootstrap.min.js.map): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 107
+
+2024-08-20 06:27:24 - PHP Warning: unlink(/opt/lampp/htdocs/opencart3/install/view/javascript/bootstrap/js/bootstrap.min.js): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 107
+
+2024-08-20 06:27:24 - PHP Warning: unlink(/opt/lampp/htdocs/opencart3/install/view/javascript/bootstrap/js/bootstrap.js.map): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 107
+
+2024-08-20 06:27:24 - PHP Warning: unlink(/opt/lampp/htdocs/opencart3/install/view/javascript/bootstrap/js/bootstrap.js): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 107
+
+2024-08-20 06:27:24 - PHP Warning: unlink(/opt/lampp/htdocs/opencart3/install/view/javascript/bootstrap/js/bootstrap.esm.min.js.map): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 107
+
+2024-08-20 06:27:24 - PHP Warning: unlink(/opt/lampp/htdocs/opencart3/install/view/javascript/bootstrap/js/bootstrap.esm.min.js): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 107
+
+2024-08-20 06:27:24 - PHP Warning: unlink(/opt/lampp/htdocs/opencart3/install/view/javascript/bootstrap/js/bootstrap.esm.js.map): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 107
+
+2024-08-20 06:27:24 - PHP Warning: unlink(/opt/lampp/htdocs/opencart3/install/view/javascript/bootstrap/js/bootstrap.esm.js): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 107
+
+2024-08-20 06:27:24 - PHP Warning: unlink(/opt/lampp/htdocs/opencart3/install/view/javascript/bootstrap/js/bootstrap.bundle.min.js.map): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 107
+
+2024-08-20 06:27:24 - PHP Warning: unlink(/opt/lampp/htdocs/opencart3/install/view/javascript/bootstrap/js/bootstrap.bundle.min.js): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 107
+
+2024-08-20 06:27:24 - PHP Warning: unlink(/opt/lampp/htdocs/opencart3/install/view/javascript/bootstrap/js/bootstrap.bundle.js.map): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 107
+
+2024-08-20 06:27:24 - PHP Warning: unlink(/opt/lampp/htdocs/opencart3/install/view/javascript/bootstrap/js/bootstrap.bundle.js): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 107
+
+2024-08-20 06:27:24 - PHP Warning: rmdir(/opt/lampp/htdocs/opencart3/install/view/javascript/bootstrap/js): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 109
+
+2024-08-20 06:27:24 - PHP Warning: unlink(/opt/lampp/htdocs/opencart3/install/view/javascript/bootstrap/css/bootstrap.rtl.min.css.map): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 107
+
+2024-08-20 06:27:24 - PHP Warning: unlink(/opt/lampp/htdocs/opencart3/install/view/javascript/bootstrap/css/bootstrap.rtl.min.css): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 107
+
+2024-08-20 06:27:24 - PHP Warning: unlink(/opt/lampp/htdocs/opencart3/install/view/javascript/bootstrap/css/bootstrap.rtl.css.map): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 107
+
+2024-08-20 06:27:24 - PHP Warning: unlink(/opt/lampp/htdocs/opencart3/install/view/javascript/bootstrap/css/bootstrap.rtl.css): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 107
+
+2024-08-20 06:27:24 - PHP Warning: unlink(/opt/lampp/htdocs/opencart3/install/view/javascript/bootstrap/css/bootstrap.min.css.map): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 107
+
+2024-08-20 06:27:24 - PHP Warning: unlink(/opt/lampp/htdocs/opencart3/install/view/javascript/bootstrap/css/bootstrap.min.css): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 107
+
+2024-08-20 06:27:24 - PHP Warning: unlink(/opt/lampp/htdocs/opencart3/install/view/javascript/bootstrap/css/bootstrap.css.map): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 107
+
+2024-08-20 06:27:24 - PHP Warning: unlink(/opt/lampp/htdocs/opencart3/install/view/javascript/bootstrap/css/bootstrap.css): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 107
+
+2024-08-20 06:27:24 - PHP Warning: unlink(/opt/lampp/htdocs/opencart3/install/view/javascript/bootstrap/css/bootstrap-utilities.rtl.min.css.map): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 107
+
+2024-08-20 06:27:24 - PHP Warning: unlink(/opt/lampp/htdocs/opencart3/install/view/javascript/bootstrap/css/bootstrap-utilities.rtl.min.css): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 107
+
+2024-08-20 06:27:24 - PHP Warning: unlink(/opt/lampp/htdocs/opencart3/install/view/javascript/bootstrap/css/bootstrap-utilities.rtl.css.map): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 107
+
+2024-08-20 06:27:24 - PHP Warning: unlink(/opt/lampp/htdocs/opencart3/install/view/javascript/bootstrap/css/bootstrap-utilities.rtl.css): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 107
+
+2024-08-20 06:27:24 - PHP Warning: unlink(/opt/lampp/htdocs/opencart3/install/view/javascript/bootstrap/css/bootstrap-utilities.min.css.map): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 107
+
+2024-08-20 06:27:24 - PHP Warning: unlink(/opt/lampp/htdocs/opencart3/install/view/javascript/bootstrap/css/bootstrap-utilities.min.css): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 107
+
+2024-08-20 06:27:24 - PHP Warning: unlink(/opt/lampp/htdocs/opencart3/install/view/javascript/bootstrap/css/bootstrap-utilities.css.map): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 107
+
+2024-08-20 06:27:24 - PHP Warning: unlink(/opt/lampp/htdocs/opencart3/install/view/javascript/bootstrap/css/bootstrap-utilities.css): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 107
+
+2024-08-20 06:27:24 - PHP Warning: unlink(/opt/lampp/htdocs/opencart3/install/view/javascript/bootstrap/css/bootstrap-reboot.rtl.min.css.map): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 107
+
+2024-08-20 06:27:24 - PHP Warning: unlink(/opt/lampp/htdocs/opencart3/install/view/javascript/bootstrap/css/bootstrap-reboot.rtl.min.css): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 107
+
+2024-08-20 06:27:24 - PHP Warning: unlink(/opt/lampp/htdocs/opencart3/install/view/javascript/bootstrap/css/bootstrap-reboot.rtl.css.map): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 107
+
+2024-08-20 06:27:24 - PHP Warning: unlink(/opt/lampp/htdocs/opencart3/install/view/javascript/bootstrap/css/bootstrap-reboot.rtl.css): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 107
+
+2024-08-20 06:27:24 - PHP Warning: unlink(/opt/lampp/htdocs/opencart3/install/view/javascript/bootstrap/css/bootstrap-reboot.min.css.map): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 107
+
+2024-08-20 06:27:24 - PHP Warning: unlink(/opt/lampp/htdocs/opencart3/install/view/javascript/bootstrap/css/bootstrap-reboot.min.css): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 107
+
+2024-08-20 06:27:24 - PHP Warning: unlink(/opt/lampp/htdocs/opencart3/install/view/javascript/bootstrap/css/bootstrap-reboot.css.map): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 107
+
+2024-08-20 06:27:24 - PHP Warning: unlink(/opt/lampp/htdocs/opencart3/install/view/javascript/bootstrap/css/bootstrap-reboot.css): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 107
+
+2024-08-20 06:27:24 - PHP Warning: unlink(/opt/lampp/htdocs/opencart3/install/view/javascript/bootstrap/css/bootstrap-grid.rtl.min.css.map): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 107
+
+2024-08-20 06:27:24 - PHP Warning: unlink(/opt/lampp/htdocs/opencart3/install/view/javascript/bootstrap/css/bootstrap-grid.rtl.min.css): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 107
+
+2024-08-20 06:27:24 - PHP Warning: unlink(/opt/lampp/htdocs/opencart3/install/view/javascript/bootstrap/css/bootstrap-grid.rtl.css.map): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 107
+
+2024-08-20 06:27:24 - PHP Warning: unlink(/opt/lampp/htdocs/opencart3/install/view/javascript/bootstrap/css/bootstrap-grid.rtl.css): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 107
+
+2024-08-20 06:27:24 - PHP Warning: unlink(/opt/lampp/htdocs/opencart3/install/view/javascript/bootstrap/css/bootstrap-grid.min.css.map): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 107
+
+2024-08-20 06:27:24 - PHP Warning: unlink(/opt/lampp/htdocs/opencart3/install/view/javascript/bootstrap/css/bootstrap-grid.min.css): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 107
+
+2024-08-20 06:27:24 - PHP Warning: unlink(/opt/lampp/htdocs/opencart3/install/view/javascript/bootstrap/css/bootstrap-grid.css.map): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 107
+
+2024-08-20 06:27:24 - PHP Warning: unlink(/opt/lampp/htdocs/opencart3/install/view/javascript/bootstrap/css/bootstrap-grid.css): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 107
+
+2024-08-20 06:27:24 - PHP Warning: rmdir(/opt/lampp/htdocs/opencart3/install/view/javascript/bootstrap/css): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 109
+
+2024-08-20 06:27:24 - PHP Warning: rmdir(/opt/lampp/htdocs/opencart3/install/view/javascript/bootstrap): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 109
+
+2024-08-20 06:27:24 - PHP Warning: rmdir(/opt/lampp/htdocs/opencart3/install/view/javascript): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 109
+
+2024-08-20 06:27:24 - PHP Warning: unlink(/opt/lampp/htdocs/opencart3/install/view/image/maxmind.gif): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 107
+
+2024-08-20 06:27:24 - PHP Warning: unlink(/opt/lampp/htdocs/opencart3/install/view/image/logo.png): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 107
+
+2024-08-20 06:27:24 - PHP Warning: unlink(/opt/lampp/htdocs/opencart3/install/view/image/catalog.jpg): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 107
+
+2024-08-20 06:27:24 - PHP Warning: unlink(/opt/lampp/htdocs/opencart3/install/view/image/amazon.png): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 107
+
+2024-08-20 06:27:24 - PHP Warning: unlink(/opt/lampp/htdocs/opencart3/install/view/image/admin.jpg): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 107
+
+2024-08-20 06:27:24 - PHP Warning: rmdir(/opt/lampp/htdocs/opencart3/install/view/image): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 109
+
+2024-08-20 06:27:24 - PHP Warning: rmdir(/opt/lampp/htdocs/opencart3/install/view): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 109
+
+2024-08-20 06:27:24 - PHP Warning: unlink(/opt/lampp/htdocs/opencart3/install/opencart.sql): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 107
+
+2024-08-20 06:27:24 - PHP Warning: unlink(/opt/lampp/htdocs/opencart3/install/model/install/install.php): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 107
+
+2024-08-20 06:27:24 - PHP Warning: rmdir(/opt/lampp/htdocs/opencart3/install/model/install): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 109
+
+2024-08-20 06:27:24 - PHP Warning: rmdir(/opt/lampp/htdocs/opencart3/install/model): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 109
+
+2024-08-20 06:27:24 - PHP Warning: unlink(/opt/lampp/htdocs/opencart3/install/language/en-gb/upgrade/upgrade.php): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 107
+
+2024-08-20 06:27:24 - PHP Warning: rmdir(/opt/lampp/htdocs/opencart3/install/language/en-gb/upgrade): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 109
+
+2024-08-20 06:27:24 - PHP Warning: unlink(/opt/lampp/htdocs/opencart3/install/language/en-gb/install/step_4.php): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 107
+
+2024-08-20 06:27:24 - PHP Warning: unlink(/opt/lampp/htdocs/opencart3/install/language/en-gb/install/step_3.php): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 107
+
+2024-08-20 06:27:24 - PHP Warning: unlink(/opt/lampp/htdocs/opencart3/install/language/en-gb/install/step_2.php): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 107
+
+2024-08-20 06:27:24 - PHP Warning: unlink(/opt/lampp/htdocs/opencart3/install/language/en-gb/install/step_1.php): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 107
+
+2024-08-20 06:27:24 - PHP Warning: rmdir(/opt/lampp/htdocs/opencart3/install/language/en-gb/install): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 109
+
+2024-08-20 06:27:24 - PHP Warning: unlink(/opt/lampp/htdocs/opencart3/install/language/en-gb/error/not_found.php): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 107
+
+2024-08-20 06:27:24 - PHP Warning: rmdir(/opt/lampp/htdocs/opencart3/install/language/en-gb/error): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 109
+
+2024-08-20 06:27:24 - PHP Warning: unlink(/opt/lampp/htdocs/opencart3/install/language/en-gb/en-gb.png): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 107
+
+2024-08-20 06:27:24 - PHP Warning: unlink(/opt/lampp/htdocs/opencart3/install/language/en-gb/en-gb.php): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 107
+
+2024-08-20 06:27:24 - PHP Warning: unlink(/opt/lampp/htdocs/opencart3/install/language/en-gb/common/language.php): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 107
+
+2024-08-20 06:27:24 - PHP Warning: unlink(/opt/lampp/htdocs/opencart3/install/language/en-gb/common/header.php): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 107
+
+2024-08-20 06:27:24 - PHP Warning: unlink(/opt/lampp/htdocs/opencart3/install/language/en-gb/common/footer.php): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 107
+
+2024-08-20 06:27:24 - PHP Warning: rmdir(/opt/lampp/htdocs/opencart3/install/language/en-gb/common): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 109
+
+2024-08-20 06:27:24 - PHP Warning: rmdir(/opt/lampp/htdocs/opencart3/install/language/en-gb): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 109
+
+2024-08-20 06:27:24 - PHP Warning: rmdir(/opt/lampp/htdocs/opencart3/install/language): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 109
+
+2024-08-20 06:27:24 - PHP Warning: unlink(/opt/lampp/htdocs/opencart3/install/index.php): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 107
+
+2024-08-20 06:27:24 - PHP Warning: unlink(/opt/lampp/htdocs/opencart3/install/controller/upgrade/upgrade_9.php): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 107
+
+2024-08-20 06:27:24 - PHP Warning: unlink(/opt/lampp/htdocs/opencart3/install/controller/upgrade/upgrade_8.php): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 107
+
+2024-08-20 06:27:24 - PHP Warning: unlink(/opt/lampp/htdocs/opencart3/install/controller/upgrade/upgrade_7.php): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 107
+
+2024-08-20 06:27:24 - PHP Warning: unlink(/opt/lampp/htdocs/opencart3/install/controller/upgrade/upgrade_6.php): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 107
+
+2024-08-20 06:27:24 - PHP Warning: unlink(/opt/lampp/htdocs/opencart3/install/controller/upgrade/upgrade_5.php): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 107
+
+2024-08-20 06:27:24 - PHP Warning: unlink(/opt/lampp/htdocs/opencart3/install/controller/upgrade/upgrade_4.php): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 107
+
+2024-08-20 06:27:24 - PHP Warning: unlink(/opt/lampp/htdocs/opencart3/install/controller/upgrade/upgrade_3.php): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 107
+
+2024-08-20 06:27:24 - PHP Warning: unlink(/opt/lampp/htdocs/opencart3/install/controller/upgrade/upgrade_2.php): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 107
+
+2024-08-20 06:27:24 - PHP Warning: unlink(/opt/lampp/htdocs/opencart3/install/controller/upgrade/upgrade_1.php): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 107
+
+2024-08-20 06:27:24 - PHP Warning: unlink(/opt/lampp/htdocs/opencart3/install/controller/upgrade/upgrade.php): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 107
+
+2024-08-20 06:27:24 - PHP Warning: rmdir(/opt/lampp/htdocs/opencart3/install/controller/upgrade): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 109
+
+2024-08-20 06:27:24 - PHP Warning: unlink(/opt/lampp/htdocs/opencart3/install/controller/startup/upgrade.php): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 107
+
+2024-08-20 06:27:24 - PHP Warning: unlink(/opt/lampp/htdocs/opencart3/install/controller/startup/install.php): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 107
+
+2024-08-20 06:27:24 - PHP Warning: unlink(/opt/lampp/htdocs/opencart3/install/controller/startup/database.php): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 107
+
+2024-08-20 06:27:24 - PHP Warning: rmdir(/opt/lampp/htdocs/opencart3/install/controller/startup): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 109
+
+2024-08-20 06:27:24 - PHP Warning: unlink(/opt/lampp/htdocs/opencart3/install/controller/install/step_4.php): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 107
+
+2024-08-20 06:27:24 - PHP Warning: unlink(/opt/lampp/htdocs/opencart3/install/controller/install/step_3.php): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 107
+
+2024-08-20 06:27:24 - PHP Warning: unlink(/opt/lampp/htdocs/opencart3/install/controller/install/step_2.php): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 107
+
+2024-08-20 06:27:24 - PHP Warning: unlink(/opt/lampp/htdocs/opencart3/install/controller/install/step_1.php): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 107
+
+2024-08-20 06:27:24 - PHP Warning: unlink(/opt/lampp/htdocs/opencart3/install/controller/install/promotion.php): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 107
+
+2024-08-20 06:27:24 - PHP Warning: rmdir(/opt/lampp/htdocs/opencart3/install/controller/install): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 109
+
+2024-08-20 06:27:24 - PHP Warning: unlink(/opt/lampp/htdocs/opencart3/install/controller/error/not_found.php): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 107
+
+2024-08-20 06:27:24 - PHP Warning: rmdir(/opt/lampp/htdocs/opencart3/install/controller/error): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 109
+
+2024-08-20 06:27:24 - PHP Warning: unlink(/opt/lampp/htdocs/opencart3/install/controller/common/language.php): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 107
+
+2024-08-20 06:27:24 - PHP Warning: unlink(/opt/lampp/htdocs/opencart3/install/controller/common/header.php): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 107
+
+2024-08-20 06:27:24 - PHP Warning: unlink(/opt/lampp/htdocs/opencart3/install/controller/common/footer.php): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 107
+
+2024-08-20 06:27:24 - PHP Warning: rmdir(/opt/lampp/htdocs/opencart3/install/controller/common): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 109
+
+2024-08-20 06:27:24 - PHP Warning: rmdir(/opt/lampp/htdocs/opencart3/install/controller): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 109
+
+2024-08-20 06:27:24 - PHP Warning: unlink(/opt/lampp/htdocs/opencart3/install/cli_install.php): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 107
+
+2024-08-20 06:27:24 - PHP Warning: unlink(/opt/lampp/htdocs/opencart3/install/cli_cloud.php): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 107
+
+2024-08-20 06:27:24 - PHP Warning: rmdir(/opt/lampp/htdocs/opencart3/install/): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 113
+
+2024-08-20 06:29:18 - PHP Warning: mkdir(): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 196
+
+2024-08-20 06:29:18 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:29:18 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:29:18 - PHP Warning: copy(/opt/lampp/storage/composer.json): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:29:18 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:29:18 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:29:18 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:29:18 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:29:18 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:29:18 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:29:18 - PHP Warning: copy(/opt/lampp/storage/backup/index.html): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:29:18 - PHP Warning: copy(/opt/lampp/storage/cache/cache.currency.c5c18028d03262f0feeb2bf646fb83f1.1724138764): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:29:18 - PHP Warning: copy(/opt/lampp/storage/cache/cache.language.4ab6fc1e6e1e7fd0d80be63206cc592f.1724138764): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:29:18 - PHP Warning: copy(/opt/lampp/storage/cache/cache.language.7fa80dd4fa95bfff83bda8543f986b65.1724138771): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:29:18 - PHP Warning: copy(/opt/lampp/storage/cache/cache.store.f4e59086bfd5322620dbd8df0fc3e3e6.1724138863): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:29:18 - PHP Warning: copy(/opt/lampp/storage/cache/index.html): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:29:18 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:29:18 - PHP Warning: copy(/opt/lampp/storage/download/index.html): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:29:18 - PHP Warning: copy(/opt/lampp/storage/logs/error.log): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:29:18 - PHP Warning: copy(/opt/lampp/storage/logs/index.html): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:29:18 - PHP Warning: copy(/opt/lampp/storage/marketplace/index.html): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:29:18 - PHP Warning: copy(/opt/lampp/storage/marketplace/oc_language_example.ocmod.zip): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:29:18 - PHP Warning: copy(/opt/lampp/storage/marketplace/oc_payment_example.ocmod.zip): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:29:18 - PHP Warning: copy(/opt/lampp/storage/marketplace/oc_theme_example.ocmod.zip): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:29:18 - PHP Warning: copy(/opt/lampp/storage/marketplace/opencart.ocmod.zip): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:29:18 - PHP Warning: copy(/opt/lampp/storage/session/index.html): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:29:18 - PHP Warning: copy(/opt/lampp/storage/upload/index.html): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:29:18 - PHP Warning: copy(/opt/lampp/storage/vendor/autoload.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:29:18 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:29:18 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:29:18 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:29:18 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:29:18 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:29:18 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:29:18 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:29:18 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:29:18 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:29:18 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:29:18 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:29:18 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:29:18 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:29:18 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:29:18 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:29:18 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:29:18 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:29:18 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:29:18 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:29:18 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:29:18 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:29:18 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:29:18 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:29:18 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:29:18 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:29:18 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:29:18 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:29:18 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:29:18 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:29:18 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:29:18 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:29:18 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:29:18 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:29:18 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:29:18 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:29:18 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:29:18 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:29:18 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:29:18 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:29:18 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:29:18 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:29:18 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:29:18 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:29:18 - PHP Warning: copy(/opt/lampp/storage/vendor/bin/jp.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:29:18 - PHP Warning: copy(/opt/lampp/storage/vendor/bin/jp.php.bat): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:29:18 - PHP Warning: copy(/opt/lampp/storage/vendor/bin/pscss): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:29:18 - PHP Warning: copy(/opt/lampp/storage/vendor/bin/pscss.bat): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:29:18 - PHP Warning: copy(/opt/lampp/storage/vendor/composer/autoload_classmap.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:29:18 - PHP Warning: copy(/opt/lampp/storage/vendor/composer/autoload_files.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:29:18 - PHP Warning: copy(/opt/lampp/storage/vendor/composer/autoload_namespaces.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:29:18 - PHP Warning: copy(/opt/lampp/storage/vendor/composer/autoload_psr4.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:29:18 - PHP Warning: copy(/opt/lampp/storage/vendor/composer/autoload_real.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:29:18 - PHP Warning: copy(/opt/lampp/storage/vendor/composer/autoload_static.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:29:18 - PHP Warning: copy(/opt/lampp/storage/vendor/composer/ClassLoader.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:29:18 - PHP Warning: copy(/opt/lampp/storage/vendor/composer/installed.json): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:29:18 - PHP Warning: copy(/opt/lampp/storage/vendor/composer/installed.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:29:18 - PHP Warning: copy(/opt/lampp/storage/vendor/composer/InstalledVersions.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:29:18 - PHP Warning: copy(/opt/lampp/storage/vendor/composer/LICENSE): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:29:18 - PHP Warning: copy(/opt/lampp/storage/vendor/composer/platform_check.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:29:18 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:29:18 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:29:18 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:29:18 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:29:18 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:29:18 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:29:18 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:29:18 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:29:18 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:29:18 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:29:18 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:29:18 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:29:18 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:29:18 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:29:18 - PHP Warning: copy(/opt/lampp/storage/cache/template/00/0073e5e217538b37bd6c5e689495044c.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:29:18 - PHP Warning: copy(/opt/lampp/storage/cache/template/18/18a96653f0e3b1b4a14dfb0be09c8495.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:29:18 - PHP Warning: copy(/opt/lampp/storage/cache/template/1b/1bc145ed2632b92280ae9fd14a74fb8a.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:29:18 - PHP Warning: copy(/opt/lampp/storage/cache/template/22/22e8106f58ccb4631ca56e064b4fe1d1.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:29:18 - PHP Warning: copy(/opt/lampp/storage/cache/template/26/26c2c883dbaaecb07d529db936eb9736.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:29:18 - PHP Warning: copy(/opt/lampp/storage/cache/template/27/276551567253c72042d852bc8c9da666.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:29:18 - PHP Warning: copy(/opt/lampp/storage/cache/template/2f/2fa3ab600ebabfe30874986f0dde8b0f.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:29:18 - PHP Warning: copy(/opt/lampp/storage/cache/template/3e/3ef7f0c05f6a875ecf7ffb319563f7d2.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:29:18 - PHP Warning: copy(/opt/lampp/storage/cache/template/3f/3fe0801c88573fab50335003a1999097.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:29:18 - PHP Warning: copy(/opt/lampp/storage/cache/template/40/400d5a66b04b1c0b9c4d0a9c16789187.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:29:18 - PHP Warning: copy(/opt/lampp/storage/cache/template/44/4444ee14ceda3828aa7134847df74432.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:29:18 - PHP Warning: copy(/opt/lampp/storage/cache/template/51/51c133f857ec6744932f663c71d7a45d.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:29:18 - PHP Warning: copy(/opt/lampp/storage/cache/template/57/57e2618da837b15aaebda3c0d5d98822.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:29:18 - PHP Warning: copy(/opt/lampp/storage/cache/template/5f/5fbbb7dd6fd2cd54861bf4be21fe8bb1.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:29:18 - PHP Warning: copy(/opt/lampp/storage/cache/template/5f/5fe965cd93440436c06c31ad578cc1af.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:29:18 - PHP Warning: copy(/opt/lampp/storage/cache/template/65/6562f376ef6b990c8226dc8d624b45d1.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:29:18 - PHP Warning: copy(/opt/lampp/storage/cache/template/72/7248d6cb6575eea8e6b313ad0db59c91.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:29:18 - PHP Warning: copy(/opt/lampp/storage/cache/template/78/78649b218147ce12053f5e03b43b2443.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:29:18 - PHP Warning: copy(/opt/lampp/storage/cache/template/7c/7c636b95a47d28b2ac54faabc2a8b2d4.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:29:18 - PHP Warning: copy(/opt/lampp/storage/cache/template/80/80f3ac4b163c31c11609b036ec965a2f.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:29:18 - PHP Warning: copy(/opt/lampp/storage/cache/template/8a/8a618003028f4a39289dabe26b965ae3.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:29:18 - PHP Warning: copy(/opt/lampp/storage/cache/template/90/90d3526b59cc97b9dfb73669a8b56637.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:29:18 - PHP Warning: copy(/opt/lampp/storage/cache/template/9a/9a57760793b7e65aa9c3b9b5895e258b.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:29:18 - PHP Warning: copy(/opt/lampp/storage/cache/template/9a/9a98884d4542d152a91d8b75569180c5.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:29:18 - PHP Warning: copy(/opt/lampp/storage/cache/template/a7/a78d83d2304c7321a78907ea5fdfdfc7.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:29:18 - PHP Warning: copy(/opt/lampp/storage/cache/template/a7/a7de714f8d58127ccf24e19a2e946818.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:29:18 - PHP Warning: copy(/opt/lampp/storage/cache/template/b6/b6356f2b7400e22de549b74c465b6fa0.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:29:18 - PHP Warning: copy(/opt/lampp/storage/cache/template/c3/c3239fb0affeeee13fa4bac1e5e7eab3.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:29:18 - PHP Warning: copy(/opt/lampp/storage/cache/template/c3/c360382868a7a209ece7a3265afdfc19.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:29:18 - PHP Warning: copy(/opt/lampp/storage/cache/template/c9/c9e19aac73eadbc5729c281c58acf1d5.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:29:18 - PHP Warning: copy(/opt/lampp/storage/cache/template/d6/d60d0089a78f16dc0d0b6d1bdc5ccffe.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:29:18 - PHP Warning: copy(/opt/lampp/storage/cache/template/d8/d82e53f41359171b791bab0733368ab8.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:29:18 - PHP Warning: copy(/opt/lampp/storage/cache/template/d8/d86ad3982bdbff1d1ea1ecae7d05512c.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:29:18 - PHP Warning: copy(/opt/lampp/storage/cache/template/f5/f51651593af49a152e0942ee79c86d11.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:29:18 - PHP Warning: copy(/opt/lampp/storage/cache/template/f9/f91a0e185ecffc548ae40d85c9a266df.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:29:18 - PHP Warning: copy(/opt/lampp/storage/cache/template/f9/f9a359f2c86fab0311220085d982030f.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:29:18 - PHP Warning: copy(/opt/lampp/storage/cache/template/fd/fddcf01dbb64b01c7c6d815d35457168.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:29:18 - PHP Warning: copy(/opt/lampp/storage/vendor/aws/aws-crt-php/builder.json): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:29:18 - PHP Warning: copy(/opt/lampp/storage/vendor/aws/aws-crt-php/CODE_OF_CONDUCT.md): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:29:18 - PHP Warning: copy(/opt/lampp/storage/vendor/aws/aws-crt-php/composer.json): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:29:18 - PHP Warning: copy(/opt/lampp/storage/vendor/aws/aws-crt-php/config.m4): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:29:18 - PHP Warning: copy(/opt/lampp/storage/vendor/aws/aws-crt-php/config.w32): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:29:18 - PHP Warning: copy(/opt/lampp/storage/vendor/aws/aws-crt-php/CONTRIBUTING.md): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:29:18 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:29:18 - PHP Warning: copy(/opt/lampp/storage/vendor/aws/aws-crt-php/format-check.sh): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:29:18 - PHP Warning: copy(/opt/lampp/storage/vendor/aws/aws-crt-php/gen_api.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:29:18 - PHP Warning: copy(/opt/lampp/storage/vendor/aws/aws-crt-php/gen_stub.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:29:18 - PHP Warning: copy(/opt/lampp/storage/vendor/aws/aws-crt-php/LICENSE): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:29:18 - PHP Warning: copy(/opt/lampp/storage/vendor/aws/aws-crt-php/Makefile.frag): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:29:18 - PHP Warning: copy(/opt/lampp/storage/vendor/aws/aws-crt-php/Makefile.frag.w32): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:29:18 - PHP Warning: copy(/opt/lampp/storage/vendor/aws/aws-crt-php/NOTICE): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:29:18 - PHP Warning: copy(/opt/lampp/storage/vendor/aws/aws-crt-php/package.xml-template_post): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:29:18 - PHP Warning: copy(/opt/lampp/storage/vendor/aws/aws-crt-php/package.xml-template_pre): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:29:18 - PHP Warning: copy(/opt/lampp/storage/vendor/aws/aws-crt-php/php.ini): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:29:18 - PHP Warning: copy(/opt/lampp/storage/vendor/aws/aws-crt-php/php-win.ini): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:29:18 - PHP Warning: copy(/opt/lampp/storage/vendor/aws/aws-crt-php/prepare_package_xml.sh): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:29:18 - PHP Warning: copy(/opt/lampp/storage/vendor/aws/aws-crt-php/prepare_release.sh): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:29:18 - PHP Warning: copy(/opt/lampp/storage/vendor/aws/aws-crt-php/README.md): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:29:18 - PHP Warning: copy(/opt/lampp/storage/vendor/aws/aws-crt-php/run_tests): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:29:18 - PHP Warning: copy(/opt/lampp/storage/vendor/aws/aws-crt-php/run_tests.bat): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:29:18 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:29:18 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:29:18 - PHP Warning: copy(/opt/lampp/storage/vendor/aws/aws-crt-php/.clang-format): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:29:18 - PHP Warning: copy(/opt/lampp/storage/vendor/aws/aws-crt-php/.clang-format-ignore): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:29:18 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:29:18 - PHP Warning: copy(/opt/lampp/storage/vendor/aws/aws-crt-php/.gitignore): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:29:18 - PHP Warning: copy(/opt/lampp/storage/vendor/aws/aws-crt-php/.gitmodules): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:29:18 - PHP Warning: copy(/opt/lampp/storage/vendor/aws/aws-sdk-php/CODE_OF_CONDUCT.md): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:29:18 - PHP Warning: copy(/opt/lampp/storage/vendor/aws/aws-sdk-php/composer.json): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:29:18 - PHP Warning: copy(/opt/lampp/storage/vendor/aws/aws-sdk-php/CRT_INSTRUCTIONS.md): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:29:18 - PHP Warning: copy(/opt/lampp/storage/vendor/aws/aws-sdk-php/LICENSE): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:29:18 - PHP Warning: copy(/opt/lampp/storage/vendor/aws/aws-sdk-php/NOTICE): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:29:18 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:29:18 - PHP Warning: copy(/opt/lampp/storage/vendor/aws/aws-sdk-php/THIRD-PARTY-LICENSES): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:29:18 - PHP Warning: copy(/opt/lampp/storage/vendor/guzzlehttp/guzzle/CHANGELOG.md): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:29:18 - PHP Warning: copy(/opt/lampp/storage/vendor/guzzlehttp/guzzle/composer.json): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:29:18 - PHP Warning: copy(/opt/lampp/storage/vendor/guzzlehttp/guzzle/LICENSE): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:29:18 - PHP Warning: copy(/opt/lampp/storage/vendor/guzzlehttp/guzzle/README.md): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:29:18 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:29:18 - PHP Warning: copy(/opt/lampp/storage/vendor/guzzlehttp/guzzle/UPGRADING.md): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:29:18 - PHP Warning: copy(/opt/lampp/storage/vendor/guzzlehttp/promises/CHANGELOG.md): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:29:18 - PHP Warning: copy(/opt/lampp/storage/vendor/guzzlehttp/promises/composer.json): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:29:18 - PHP Warning: copy(/opt/lampp/storage/vendor/guzzlehttp/promises/LICENSE): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:29:18 - PHP Warning: copy(/opt/lampp/storage/vendor/guzzlehttp/promises/README.md): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:29:18 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:29:18 - PHP Warning: copy(/opt/lampp/storage/vendor/guzzlehttp/psr7/CHANGELOG.md): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:29:18 - PHP Warning: copy(/opt/lampp/storage/vendor/guzzlehttp/psr7/composer.json): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:29:18 - PHP Warning: copy(/opt/lampp/storage/vendor/guzzlehttp/psr7/LICENSE): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:29:18 - PHP Warning: copy(/opt/lampp/storage/vendor/guzzlehttp/psr7/README.md): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:29:18 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:29:18 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:29:18 - PHP Warning: copy(/opt/lampp/storage/vendor/mtdowling/jmespath.php/CHANGELOG.md): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:29:18 - PHP Warning: copy(/opt/lampp/storage/vendor/mtdowling/jmespath.php/composer.json): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:29:18 - PHP Warning: copy(/opt/lampp/storage/vendor/mtdowling/jmespath.php/LICENSE): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:29:18 - PHP Warning: copy(/opt/lampp/storage/vendor/mtdowling/jmespath.php/README.rst): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:29:18 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:29:18 - PHP Warning: copy(/opt/lampp/storage/vendor/psr/http-client/CHANGELOG.md): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:29:18 - PHP Warning: copy(/opt/lampp/storage/vendor/psr/http-client/composer.json): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:29:18 - PHP Warning: copy(/opt/lampp/storage/vendor/psr/http-client/LICENSE): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:29:18 - PHP Warning: copy(/opt/lampp/storage/vendor/psr/http-client/README.md): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:30:09 - PHP Warning: mkdir(): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 196
+
+2024-08-20 06:30:09 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:30:09 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:30:09 - PHP Warning: copy(/opt/lampp/storage/composer.json): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:30:09 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:30:09 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:30:09 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:30:09 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:30:09 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:30:09 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:30:09 - PHP Warning: copy(/opt/lampp/storage/backup/index.html): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:30:09 - PHP Warning: copy(/opt/lampp/storage/cache/cache.currency.c5c18028d03262f0feeb2bf646fb83f1.1724138764): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:30:09 - PHP Warning: copy(/opt/lampp/storage/cache/cache.language.4ab6fc1e6e1e7fd0d80be63206cc592f.1724138764): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:30:09 - PHP Warning: copy(/opt/lampp/storage/cache/cache.language.7fa80dd4fa95bfff83bda8543f986b65.1724138771): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:30:09 - PHP Warning: copy(/opt/lampp/storage/cache/cache.store.f4e59086bfd5322620dbd8df0fc3e3e6.1724138985): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:30:09 - PHP Warning: copy(/opt/lampp/storage/cache/index.html): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:30:09 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:30:09 - PHP Warning: copy(/opt/lampp/storage/download/index.html): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:30:09 - PHP Warning: copy(/opt/lampp/storage/logs/error.log): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:30:09 - PHP Warning: copy(/opt/lampp/storage/logs/index.html): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:30:09 - PHP Warning: copy(/opt/lampp/storage/marketplace/index.html): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:30:09 - PHP Warning: copy(/opt/lampp/storage/marketplace/oc_language_example.ocmod.zip): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:30:09 - PHP Warning: copy(/opt/lampp/storage/marketplace/oc_payment_example.ocmod.zip): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:30:09 - PHP Warning: copy(/opt/lampp/storage/marketplace/oc_theme_example.ocmod.zip): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:30:09 - PHP Warning: copy(/opt/lampp/storage/marketplace/opencart.ocmod.zip): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:30:09 - PHP Warning: copy(/opt/lampp/storage/session/index.html): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:30:09 - PHP Warning: copy(/opt/lampp/storage/upload/index.html): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:30:09 - PHP Warning: copy(/opt/lampp/storage/vendor/autoload.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:30:09 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:30:09 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:30:09 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:30:09 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:30:09 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:30:09 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:30:09 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:30:09 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:30:09 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:30:09 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:30:09 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:30:09 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:30:09 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:30:09 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:30:09 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:30:09 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:30:09 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:30:09 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:30:09 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:30:09 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:30:09 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:30:09 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:30:09 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:30:09 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:30:09 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:30:09 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:30:09 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:30:09 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:30:09 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:30:09 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:30:09 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:30:09 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:30:09 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:30:09 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:30:09 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:30:09 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:30:09 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:30:09 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:30:09 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:30:09 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:30:09 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:30:09 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:30:09 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:30:09 - PHP Warning: copy(/opt/lampp/storage/vendor/bin/jp.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:30:09 - PHP Warning: copy(/opt/lampp/storage/vendor/bin/jp.php.bat): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:30:09 - PHP Warning: copy(/opt/lampp/storage/vendor/bin/pscss): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:30:09 - PHP Warning: copy(/opt/lampp/storage/vendor/bin/pscss.bat): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:30:09 - PHP Warning: copy(/opt/lampp/storage/vendor/composer/autoload_classmap.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:30:09 - PHP Warning: copy(/opt/lampp/storage/vendor/composer/autoload_files.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:30:09 - PHP Warning: copy(/opt/lampp/storage/vendor/composer/autoload_namespaces.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:30:09 - PHP Warning: copy(/opt/lampp/storage/vendor/composer/autoload_psr4.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:30:09 - PHP Warning: copy(/opt/lampp/storage/vendor/composer/autoload_real.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:30:09 - PHP Warning: copy(/opt/lampp/storage/vendor/composer/autoload_static.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:30:09 - PHP Warning: copy(/opt/lampp/storage/vendor/composer/ClassLoader.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:30:09 - PHP Warning: copy(/opt/lampp/storage/vendor/composer/installed.json): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:30:09 - PHP Warning: copy(/opt/lampp/storage/vendor/composer/installed.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:30:09 - PHP Warning: copy(/opt/lampp/storage/vendor/composer/InstalledVersions.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:30:09 - PHP Warning: copy(/opt/lampp/storage/vendor/composer/LICENSE): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:30:09 - PHP Warning: copy(/opt/lampp/storage/vendor/composer/platform_check.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:30:09 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:30:09 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:30:09 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:30:09 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:30:09 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:30:09 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:30:09 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:30:09 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:30:09 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:30:09 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:30:09 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:30:09 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:30:09 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:30:09 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:30:09 - PHP Warning: copy(/opt/lampp/storage/cache/template/00/0073e5e217538b37bd6c5e689495044c.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:30:09 - PHP Warning: copy(/opt/lampp/storage/cache/template/18/18a96653f0e3b1b4a14dfb0be09c8495.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:30:09 - PHP Warning: copy(/opt/lampp/storage/cache/template/1b/1bc145ed2632b92280ae9fd14a74fb8a.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:30:09 - PHP Warning: copy(/opt/lampp/storage/cache/template/22/22e8106f58ccb4631ca56e064b4fe1d1.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:30:09 - PHP Warning: copy(/opt/lampp/storage/cache/template/26/26c2c883dbaaecb07d529db936eb9736.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:30:09 - PHP Warning: copy(/opt/lampp/storage/cache/template/27/276551567253c72042d852bc8c9da666.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:30:09 - PHP Warning: copy(/opt/lampp/storage/cache/template/2f/2fa3ab600ebabfe30874986f0dde8b0f.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:30:09 - PHP Warning: copy(/opt/lampp/storage/cache/template/3e/3ef7f0c05f6a875ecf7ffb319563f7d2.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:30:09 - PHP Warning: copy(/opt/lampp/storage/cache/template/3f/3fe0801c88573fab50335003a1999097.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:30:09 - PHP Warning: copy(/opt/lampp/storage/cache/template/40/400d5a66b04b1c0b9c4d0a9c16789187.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:30:09 - PHP Warning: copy(/opt/lampp/storage/cache/template/44/4444ee14ceda3828aa7134847df74432.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:30:09 - PHP Warning: copy(/opt/lampp/storage/cache/template/51/51c133f857ec6744932f663c71d7a45d.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:30:09 - PHP Warning: copy(/opt/lampp/storage/cache/template/57/57e2618da837b15aaebda3c0d5d98822.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:30:09 - PHP Warning: copy(/opt/lampp/storage/cache/template/5f/5fbbb7dd6fd2cd54861bf4be21fe8bb1.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:30:09 - PHP Warning: copy(/opt/lampp/storage/cache/template/5f/5fe965cd93440436c06c31ad578cc1af.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:30:09 - PHP Warning: copy(/opt/lampp/storage/cache/template/65/6562f376ef6b990c8226dc8d624b45d1.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:30:09 - PHP Warning: copy(/opt/lampp/storage/cache/template/72/7248d6cb6575eea8e6b313ad0db59c91.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:30:09 - PHP Warning: copy(/opt/lampp/storage/cache/template/78/78649b218147ce12053f5e03b43b2443.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:30:09 - PHP Warning: copy(/opt/lampp/storage/cache/template/7c/7c636b95a47d28b2ac54faabc2a8b2d4.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:30:09 - PHP Warning: copy(/opt/lampp/storage/cache/template/80/80f3ac4b163c31c11609b036ec965a2f.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:30:09 - PHP Warning: copy(/opt/lampp/storage/cache/template/8a/8a618003028f4a39289dabe26b965ae3.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:30:09 - PHP Warning: copy(/opt/lampp/storage/cache/template/90/90d3526b59cc97b9dfb73669a8b56637.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:30:09 - PHP Warning: copy(/opt/lampp/storage/cache/template/9a/9a57760793b7e65aa9c3b9b5895e258b.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:30:09 - PHP Warning: copy(/opt/lampp/storage/cache/template/9a/9a98884d4542d152a91d8b75569180c5.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:30:09 - PHP Warning: copy(/opt/lampp/storage/cache/template/a7/a78d83d2304c7321a78907ea5fdfdfc7.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:30:09 - PHP Warning: copy(/opt/lampp/storage/cache/template/a7/a7de714f8d58127ccf24e19a2e946818.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:30:09 - PHP Warning: copy(/opt/lampp/storage/cache/template/b6/b6356f2b7400e22de549b74c465b6fa0.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:30:09 - PHP Warning: copy(/opt/lampp/storage/cache/template/c3/c3239fb0affeeee13fa4bac1e5e7eab3.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:30:09 - PHP Warning: copy(/opt/lampp/storage/cache/template/c3/c360382868a7a209ece7a3265afdfc19.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:30:09 - PHP Warning: copy(/opt/lampp/storage/cache/template/c9/c9e19aac73eadbc5729c281c58acf1d5.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:30:09 - PHP Warning: copy(/opt/lampp/storage/cache/template/d6/d60d0089a78f16dc0d0b6d1bdc5ccffe.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:30:09 - PHP Warning: copy(/opt/lampp/storage/cache/template/d8/d82e53f41359171b791bab0733368ab8.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:30:09 - PHP Warning: copy(/opt/lampp/storage/cache/template/d8/d86ad3982bdbff1d1ea1ecae7d05512c.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:30:09 - PHP Warning: copy(/opt/lampp/storage/cache/template/f5/f51651593af49a152e0942ee79c86d11.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:30:09 - PHP Warning: copy(/opt/lampp/storage/cache/template/f9/f91a0e185ecffc548ae40d85c9a266df.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:30:09 - PHP Warning: copy(/opt/lampp/storage/cache/template/f9/f9a359f2c86fab0311220085d982030f.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:30:09 - PHP Warning: copy(/opt/lampp/storage/cache/template/fd/fddcf01dbb64b01c7c6d815d35457168.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:30:09 - PHP Warning: copy(/opt/lampp/storage/vendor/aws/aws-crt-php/builder.json): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:30:09 - PHP Warning: copy(/opt/lampp/storage/vendor/aws/aws-crt-php/CODE_OF_CONDUCT.md): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:30:09 - PHP Warning: copy(/opt/lampp/storage/vendor/aws/aws-crt-php/composer.json): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:30:09 - PHP Warning: copy(/opt/lampp/storage/vendor/aws/aws-crt-php/config.m4): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:30:09 - PHP Warning: copy(/opt/lampp/storage/vendor/aws/aws-crt-php/config.w32): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:30:09 - PHP Warning: copy(/opt/lampp/storage/vendor/aws/aws-crt-php/CONTRIBUTING.md): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:30:09 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:30:09 - PHP Warning: copy(/opt/lampp/storage/vendor/aws/aws-crt-php/format-check.sh): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:30:09 - PHP Warning: copy(/opt/lampp/storage/vendor/aws/aws-crt-php/gen_api.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:30:09 - PHP Warning: copy(/opt/lampp/storage/vendor/aws/aws-crt-php/gen_stub.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:30:09 - PHP Warning: copy(/opt/lampp/storage/vendor/aws/aws-crt-php/LICENSE): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:30:09 - PHP Warning: copy(/opt/lampp/storage/vendor/aws/aws-crt-php/Makefile.frag): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:30:09 - PHP Warning: copy(/opt/lampp/storage/vendor/aws/aws-crt-php/Makefile.frag.w32): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:30:09 - PHP Warning: copy(/opt/lampp/storage/vendor/aws/aws-crt-php/NOTICE): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:30:09 - PHP Warning: copy(/opt/lampp/storage/vendor/aws/aws-crt-php/package.xml-template_post): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:30:09 - PHP Warning: copy(/opt/lampp/storage/vendor/aws/aws-crt-php/package.xml-template_pre): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:30:09 - PHP Warning: copy(/opt/lampp/storage/vendor/aws/aws-crt-php/php.ini): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:30:09 - PHP Warning: copy(/opt/lampp/storage/vendor/aws/aws-crt-php/php-win.ini): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:30:09 - PHP Warning: copy(/opt/lampp/storage/vendor/aws/aws-crt-php/prepare_package_xml.sh): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:30:09 - PHP Warning: copy(/opt/lampp/storage/vendor/aws/aws-crt-php/prepare_release.sh): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:30:09 - PHP Warning: copy(/opt/lampp/storage/vendor/aws/aws-crt-php/README.md): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:30:09 - PHP Warning: copy(/opt/lampp/storage/vendor/aws/aws-crt-php/run_tests): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:30:09 - PHP Warning: copy(/opt/lampp/storage/vendor/aws/aws-crt-php/run_tests.bat): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:30:09 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:30:09 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:30:09 - PHP Warning: copy(/opt/lampp/storage/vendor/aws/aws-crt-php/.clang-format): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:30:09 - PHP Warning: copy(/opt/lampp/storage/vendor/aws/aws-crt-php/.clang-format-ignore): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:30:09 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:30:09 - PHP Warning: copy(/opt/lampp/storage/vendor/aws/aws-crt-php/.gitignore): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:30:09 - PHP Warning: copy(/opt/lampp/storage/vendor/aws/aws-crt-php/.gitmodules): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:30:09 - PHP Warning: copy(/opt/lampp/storage/vendor/aws/aws-sdk-php/CODE_OF_CONDUCT.md): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:30:09 - PHP Warning: copy(/opt/lampp/storage/vendor/aws/aws-sdk-php/composer.json): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:30:09 - PHP Warning: copy(/opt/lampp/storage/vendor/aws/aws-sdk-php/CRT_INSTRUCTIONS.md): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:30:09 - PHP Warning: copy(/opt/lampp/storage/vendor/aws/aws-sdk-php/LICENSE): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:30:09 - PHP Warning: copy(/opt/lampp/storage/vendor/aws/aws-sdk-php/NOTICE): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:30:09 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:30:09 - PHP Warning: copy(/opt/lampp/storage/vendor/aws/aws-sdk-php/THIRD-PARTY-LICENSES): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:30:09 - PHP Warning: copy(/opt/lampp/storage/vendor/guzzlehttp/guzzle/CHANGELOG.md): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:30:09 - PHP Warning: copy(/opt/lampp/storage/vendor/guzzlehttp/guzzle/composer.json): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:30:09 - PHP Warning: copy(/opt/lampp/storage/vendor/guzzlehttp/guzzle/LICENSE): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:30:09 - PHP Warning: copy(/opt/lampp/storage/vendor/guzzlehttp/guzzle/README.md): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:30:09 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:30:09 - PHP Warning: copy(/opt/lampp/storage/vendor/guzzlehttp/guzzle/UPGRADING.md): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:30:09 - PHP Warning: copy(/opt/lampp/storage/vendor/guzzlehttp/promises/CHANGELOG.md): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:30:09 - PHP Warning: copy(/opt/lampp/storage/vendor/guzzlehttp/promises/composer.json): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:30:09 - PHP Warning: copy(/opt/lampp/storage/vendor/guzzlehttp/promises/LICENSE): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:30:09 - PHP Warning: copy(/opt/lampp/storage/vendor/guzzlehttp/promises/README.md): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:30:09 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:30:09 - PHP Warning: copy(/opt/lampp/storage/vendor/guzzlehttp/psr7/CHANGELOG.md): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:30:09 - PHP Warning: copy(/opt/lampp/storage/vendor/guzzlehttp/psr7/composer.json): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:30:09 - PHP Warning: copy(/opt/lampp/storage/vendor/guzzlehttp/psr7/LICENSE): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:30:09 - PHP Warning: copy(/opt/lampp/storage/vendor/guzzlehttp/psr7/README.md): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:30:09 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:30:09 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:30:09 - PHP Warning: copy(/opt/lampp/storage/vendor/mtdowling/jmespath.php/CHANGELOG.md): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:30:09 - PHP Warning: copy(/opt/lampp/storage/vendor/mtdowling/jmespath.php/composer.json): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:30:09 - PHP Warning: copy(/opt/lampp/storage/vendor/mtdowling/jmespath.php/LICENSE): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:30:09 - PHP Warning: copy(/opt/lampp/storage/vendor/mtdowling/jmespath.php/README.rst): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:30:09 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:30:09 - PHP Warning: copy(/opt/lampp/storage/vendor/psr/http-client/CHANGELOG.md): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:30:09 - PHP Warning: copy(/opt/lampp/storage/vendor/psr/http-client/composer.json): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:30:09 - PHP Warning: copy(/opt/lampp/storage/vendor/psr/http-client/LICENSE): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:30:09 - PHP Warning: copy(/opt/lampp/storage/vendor/psr/http-client/README.md): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:31:11 - PHP Warning: mkdir(): Permission denied
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 196
+
+2024-08-20 06:31:11 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:31:11 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:31:11 - PHP Warning: copy(/opt/lampp/storage/composer.json): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:31:11 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:31:11 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:31:11 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:31:11 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:31:11 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:31:11 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:31:11 - PHP Warning: copy(/opt/lampp/storage/backup/index.html): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:31:11 - PHP Warning: copy(/opt/lampp/storage/cache/cache.currency.c5c18028d03262f0feeb2bf646fb83f1.1724138764): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:31:11 - PHP Warning: copy(/opt/lampp/storage/cache/cache.language.4ab6fc1e6e1e7fd0d80be63206cc592f.1724138764): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:31:11 - PHP Warning: copy(/opt/lampp/storage/cache/cache.language.7fa80dd4fa95bfff83bda8543f986b65.1724138771): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:31:11 - PHP Warning: copy(/opt/lampp/storage/cache/cache.store.f4e59086bfd5322620dbd8df0fc3e3e6.1724139060): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:31:11 - PHP Warning: copy(/opt/lampp/storage/cache/index.html): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:31:11 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:31:11 - PHP Warning: copy(/opt/lampp/storage/download/index.html): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:31:11 - PHP Warning: copy(/opt/lampp/storage/logs/error.log): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:31:11 - PHP Warning: copy(/opt/lampp/storage/logs/index.html): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:31:11 - PHP Warning: copy(/opt/lampp/storage/marketplace/index.html): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:31:11 - PHP Warning: copy(/opt/lampp/storage/marketplace/oc_language_example.ocmod.zip): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:31:11 - PHP Warning: copy(/opt/lampp/storage/marketplace/oc_payment_example.ocmod.zip): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:31:11 - PHP Warning: copy(/opt/lampp/storage/marketplace/oc_theme_example.ocmod.zip): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:31:11 - PHP Warning: copy(/opt/lampp/storage/marketplace/opencart.ocmod.zip): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:31:11 - PHP Warning: copy(/opt/lampp/storage/session/index.html): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:31:11 - PHP Warning: copy(/opt/lampp/storage/upload/index.html): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:31:11 - PHP Warning: copy(/opt/lampp/storage/vendor/autoload.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:31:11 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:31:11 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:31:11 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:31:11 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:31:11 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:31:11 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:31:11 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:31:11 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:31:11 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:31:11 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:31:11 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:31:11 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:31:11 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:31:11 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:31:11 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:31:11 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:31:11 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:31:11 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:31:11 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:31:11 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:31:11 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:31:11 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:31:11 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:31:11 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:31:11 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:31:11 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:31:11 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:31:11 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:31:11 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:31:11 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:31:11 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:31:11 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:31:11 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:31:11 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:31:11 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:31:11 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:31:11 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:31:11 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:31:11 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:31:11 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:31:11 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:31:11 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:31:11 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:31:11 - PHP Warning: copy(/opt/lampp/storage/vendor/bin/jp.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:31:11 - PHP Warning: copy(/opt/lampp/storage/vendor/bin/jp.php.bat): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:31:11 - PHP Warning: copy(/opt/lampp/storage/vendor/bin/pscss): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:31:11 - PHP Warning: copy(/opt/lampp/storage/vendor/bin/pscss.bat): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:31:11 - PHP Warning: copy(/opt/lampp/storage/vendor/composer/autoload_classmap.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:31:11 - PHP Warning: copy(/opt/lampp/storage/vendor/composer/autoload_files.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:31:11 - PHP Warning: copy(/opt/lampp/storage/vendor/composer/autoload_namespaces.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:31:11 - PHP Warning: copy(/opt/lampp/storage/vendor/composer/autoload_psr4.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:31:11 - PHP Warning: copy(/opt/lampp/storage/vendor/composer/autoload_real.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:31:11 - PHP Warning: copy(/opt/lampp/storage/vendor/composer/autoload_static.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:31:11 - PHP Warning: copy(/opt/lampp/storage/vendor/composer/ClassLoader.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:31:11 - PHP Warning: copy(/opt/lampp/storage/vendor/composer/installed.json): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:31:11 - PHP Warning: copy(/opt/lampp/storage/vendor/composer/installed.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:31:11 - PHP Warning: copy(/opt/lampp/storage/vendor/composer/InstalledVersions.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:31:11 - PHP Warning: copy(/opt/lampp/storage/vendor/composer/LICENSE): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:31:11 - PHP Warning: copy(/opt/lampp/storage/vendor/composer/platform_check.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:31:11 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:31:11 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:31:11 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:31:11 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:31:11 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:31:11 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:31:11 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:31:11 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:31:11 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:31:11 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:31:11 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:31:11 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:31:11 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:31:11 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:31:11 - PHP Warning: copy(/opt/lampp/storage/cache/template/00/0073e5e217538b37bd6c5e689495044c.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:31:11 - PHP Warning: copy(/opt/lampp/storage/cache/template/18/18a96653f0e3b1b4a14dfb0be09c8495.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:31:11 - PHP Warning: copy(/opt/lampp/storage/cache/template/1b/1bc145ed2632b92280ae9fd14a74fb8a.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:31:11 - PHP Warning: copy(/opt/lampp/storage/cache/template/22/22e8106f58ccb4631ca56e064b4fe1d1.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:31:11 - PHP Warning: copy(/opt/lampp/storage/cache/template/26/26c2c883dbaaecb07d529db936eb9736.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:31:11 - PHP Warning: copy(/opt/lampp/storage/cache/template/27/276551567253c72042d852bc8c9da666.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:31:11 - PHP Warning: copy(/opt/lampp/storage/cache/template/2f/2fa3ab600ebabfe30874986f0dde8b0f.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:31:11 - PHP Warning: copy(/opt/lampp/storage/cache/template/3e/3ef7f0c05f6a875ecf7ffb319563f7d2.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:31:11 - PHP Warning: copy(/opt/lampp/storage/cache/template/3f/3fe0801c88573fab50335003a1999097.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:31:11 - PHP Warning: copy(/opt/lampp/storage/cache/template/40/400d5a66b04b1c0b9c4d0a9c16789187.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:31:11 - PHP Warning: copy(/opt/lampp/storage/cache/template/44/4444ee14ceda3828aa7134847df74432.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:31:11 - PHP Warning: copy(/opt/lampp/storage/cache/template/51/51c133f857ec6744932f663c71d7a45d.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:31:11 - PHP Warning: copy(/opt/lampp/storage/cache/template/57/57e2618da837b15aaebda3c0d5d98822.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:31:11 - PHP Warning: copy(/opt/lampp/storage/cache/template/5f/5fbbb7dd6fd2cd54861bf4be21fe8bb1.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:31:11 - PHP Warning: copy(/opt/lampp/storage/cache/template/5f/5fe965cd93440436c06c31ad578cc1af.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:31:11 - PHP Warning: copy(/opt/lampp/storage/cache/template/65/6562f376ef6b990c8226dc8d624b45d1.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:31:11 - PHP Warning: copy(/opt/lampp/storage/cache/template/72/7248d6cb6575eea8e6b313ad0db59c91.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:31:11 - PHP Warning: copy(/opt/lampp/storage/cache/template/78/78649b218147ce12053f5e03b43b2443.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:31:11 - PHP Warning: copy(/opt/lampp/storage/cache/template/7c/7c636b95a47d28b2ac54faabc2a8b2d4.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:31:11 - PHP Warning: copy(/opt/lampp/storage/cache/template/80/80f3ac4b163c31c11609b036ec965a2f.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:31:11 - PHP Warning: copy(/opt/lampp/storage/cache/template/8a/8a618003028f4a39289dabe26b965ae3.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:31:11 - PHP Warning: copy(/opt/lampp/storage/cache/template/90/90d3526b59cc97b9dfb73669a8b56637.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:31:11 - PHP Warning: copy(/opt/lampp/storage/cache/template/9a/9a57760793b7e65aa9c3b9b5895e258b.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:31:11 - PHP Warning: copy(/opt/lampp/storage/cache/template/9a/9a98884d4542d152a91d8b75569180c5.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:31:11 - PHP Warning: copy(/opt/lampp/storage/cache/template/a7/a78d83d2304c7321a78907ea5fdfdfc7.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:31:11 - PHP Warning: copy(/opt/lampp/storage/cache/template/a7/a7de714f8d58127ccf24e19a2e946818.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:31:11 - PHP Warning: copy(/opt/lampp/storage/cache/template/b6/b6356f2b7400e22de549b74c465b6fa0.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:31:11 - PHP Warning: copy(/opt/lampp/storage/cache/template/c3/c3239fb0affeeee13fa4bac1e5e7eab3.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:31:11 - PHP Warning: copy(/opt/lampp/storage/cache/template/c3/c360382868a7a209ece7a3265afdfc19.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:31:11 - PHP Warning: copy(/opt/lampp/storage/cache/template/c9/c9e19aac73eadbc5729c281c58acf1d5.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:31:11 - PHP Warning: copy(/opt/lampp/storage/cache/template/d6/d60d0089a78f16dc0d0b6d1bdc5ccffe.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:31:11 - PHP Warning: copy(/opt/lampp/storage/cache/template/d8/d82e53f41359171b791bab0733368ab8.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:31:11 - PHP Warning: copy(/opt/lampp/storage/cache/template/d8/d86ad3982bdbff1d1ea1ecae7d05512c.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:31:11 - PHP Warning: copy(/opt/lampp/storage/cache/template/f5/f51651593af49a152e0942ee79c86d11.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:31:11 - PHP Warning: copy(/opt/lampp/storage/cache/template/f9/f91a0e185ecffc548ae40d85c9a266df.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:31:11 - PHP Warning: copy(/opt/lampp/storage/cache/template/f9/f9a359f2c86fab0311220085d982030f.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:31:11 - PHP Warning: copy(/opt/lampp/storage/cache/template/fd/fddcf01dbb64b01c7c6d815d35457168.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:31:11 - PHP Warning: copy(/opt/lampp/storage/vendor/aws/aws-crt-php/builder.json): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:31:11 - PHP Warning: copy(/opt/lampp/storage/vendor/aws/aws-crt-php/CODE_OF_CONDUCT.md): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:31:11 - PHP Warning: copy(/opt/lampp/storage/vendor/aws/aws-crt-php/composer.json): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:31:11 - PHP Warning: copy(/opt/lampp/storage/vendor/aws/aws-crt-php/config.m4): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:31:11 - PHP Warning: copy(/opt/lampp/storage/vendor/aws/aws-crt-php/config.w32): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:31:11 - PHP Warning: copy(/opt/lampp/storage/vendor/aws/aws-crt-php/CONTRIBUTING.md): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:31:11 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:31:11 - PHP Warning: copy(/opt/lampp/storage/vendor/aws/aws-crt-php/format-check.sh): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:31:11 - PHP Warning: copy(/opt/lampp/storage/vendor/aws/aws-crt-php/gen_api.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:31:11 - PHP Warning: copy(/opt/lampp/storage/vendor/aws/aws-crt-php/gen_stub.php): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:31:11 - PHP Warning: copy(/opt/lampp/storage/vendor/aws/aws-crt-php/LICENSE): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:31:11 - PHP Warning: copy(/opt/lampp/storage/vendor/aws/aws-crt-php/Makefile.frag): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:31:11 - PHP Warning: copy(/opt/lampp/storage/vendor/aws/aws-crt-php/Makefile.frag.w32): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:31:11 - PHP Warning: copy(/opt/lampp/storage/vendor/aws/aws-crt-php/NOTICE): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:31:11 - PHP Warning: copy(/opt/lampp/storage/vendor/aws/aws-crt-php/package.xml-template_post): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:31:11 - PHP Warning: copy(/opt/lampp/storage/vendor/aws/aws-crt-php/package.xml-template_pre): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:31:11 - PHP Warning: copy(/opt/lampp/storage/vendor/aws/aws-crt-php/php.ini): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:31:11 - PHP Warning: copy(/opt/lampp/storage/vendor/aws/aws-crt-php/php-win.ini): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:31:11 - PHP Warning: copy(/opt/lampp/storage/vendor/aws/aws-crt-php/prepare_package_xml.sh): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:31:11 - PHP Warning: copy(/opt/lampp/storage/vendor/aws/aws-crt-php/prepare_release.sh): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:31:11 - PHP Warning: copy(/opt/lampp/storage/vendor/aws/aws-crt-php/README.md): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:31:11 - PHP Warning: copy(/opt/lampp/storage/vendor/aws/aws-crt-php/run_tests): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:31:11 - PHP Warning: copy(/opt/lampp/storage/vendor/aws/aws-crt-php/run_tests.bat): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:31:11 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:31:11 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:31:11 - PHP Warning: copy(/opt/lampp/storage/vendor/aws/aws-crt-php/.clang-format): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:31:11 - PHP Warning: copy(/opt/lampp/storage/vendor/aws/aws-crt-php/.clang-format-ignore): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:31:11 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:31:11 - PHP Warning: copy(/opt/lampp/storage/vendor/aws/aws-crt-php/.gitignore): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:31:11 - PHP Warning: copy(/opt/lampp/storage/vendor/aws/aws-crt-php/.gitmodules): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:31:11 - PHP Warning: copy(/opt/lampp/storage/vendor/aws/aws-sdk-php/CODE_OF_CONDUCT.md): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:31:11 - PHP Warning: copy(/opt/lampp/storage/vendor/aws/aws-sdk-php/composer.json): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:31:11 - PHP Warning: copy(/opt/lampp/storage/vendor/aws/aws-sdk-php/CRT_INSTRUCTIONS.md): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:31:11 - PHP Warning: copy(/opt/lampp/storage/vendor/aws/aws-sdk-php/LICENSE): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:31:11 - PHP Warning: copy(/opt/lampp/storage/vendor/aws/aws-sdk-php/NOTICE): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:31:11 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:31:11 - PHP Warning: copy(/opt/lampp/storage/vendor/aws/aws-sdk-php/THIRD-PARTY-LICENSES): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:31:11 - PHP Warning: copy(/opt/lampp/storage/vendor/guzzlehttp/guzzle/CHANGELOG.md): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:31:11 - PHP Warning: copy(/opt/lampp/storage/vendor/guzzlehttp/guzzle/composer.json): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:31:11 - PHP Warning: copy(/opt/lampp/storage/vendor/guzzlehttp/guzzle/LICENSE): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:31:11 - PHP Warning: copy(/opt/lampp/storage/vendor/guzzlehttp/guzzle/README.md): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:31:11 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:31:11 - PHP Warning: copy(/opt/lampp/storage/vendor/guzzlehttp/guzzle/UPGRADING.md): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:31:11 - PHP Warning: copy(/opt/lampp/storage/vendor/guzzlehttp/promises/CHANGELOG.md): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:31:11 - PHP Warning: copy(/opt/lampp/storage/vendor/guzzlehttp/promises/composer.json): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:31:11 - PHP Warning: copy(/opt/lampp/storage/vendor/guzzlehttp/promises/LICENSE): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:31:11 - PHP Warning: copy(/opt/lampp/storage/vendor/guzzlehttp/promises/README.md): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:31:11 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:31:11 - PHP Warning: copy(/opt/lampp/storage/vendor/guzzlehttp/psr7/CHANGELOG.md): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:31:11 - PHP Warning: copy(/opt/lampp/storage/vendor/guzzlehttp/psr7/composer.json): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:31:11 - PHP Warning: copy(/opt/lampp/storage/vendor/guzzlehttp/psr7/LICENSE): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:31:11 - PHP Warning: copy(/opt/lampp/storage/vendor/guzzlehttp/psr7/README.md): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:31:11 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:31:11 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:31:11 - PHP Warning: copy(/opt/lampp/storage/vendor/mtdowling/jmespath.php/CHANGELOG.md): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:31:11 - PHP Warning: copy(/opt/lampp/storage/vendor/mtdowling/jmespath.php/composer.json): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:31:11 - PHP Warning: copy(/opt/lampp/storage/vendor/mtdowling/jmespath.php/LICENSE): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:31:11 - PHP Warning: copy(/opt/lampp/storage/vendor/mtdowling/jmespath.php/README.rst): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:31:11 - PHP Warning: mkdir(): No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 210
+
+2024-08-20 06:31:11 - PHP Warning: copy(/opt/lampp/storage/vendor/psr/http-client/CHANGELOG.md): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:31:11 - PHP Warning: copy(/opt/lampp/storage/vendor/psr/http-client/composer.json): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:31:11 - PHP Warning: copy(/opt/lampp/storage/vendor/psr/http-client/LICENSE): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 06:31:11 - PHP Warning: copy(/opt/lampp/storage/vendor/psr/http-client/README.md): Failed to open stream: No such file or directory
+File: /opt/lampp/htdocs/opencart3/admin/controller/common/security.php
+Line: 214
+
+2024-08-20 07:59:55 - 0:  Class "Controller" not found
+File: /opt/lampp/htdocs/opencart3/admin/controller/test/test.php
+Line: 2
+
+2024-08-20 08:00:10 - 0:  Class "Controller" not found
+File: /opt/lampp/htdocs/opencart3/admin/controller/test/test.php
+Line: 2
+
+2024-08-20 08:00:12 - 0:  Class "Controller" not found
+File: /opt/lampp/htdocs/opencart3/admin/controller/test/test.php
+Line: 2
+
+2024-08-20 08:00:14 - 0:  Class "Controller" not found
+File: /opt/lampp/htdocs/opencart3/admin/controller/test/test.php
+Line: 2
+
+2024-08-20 08:05:06 - 0:  Class "Controller" not found
+File: /opt/lampp/htdocs/opencart3/admin/controller/test/test.php
+Line: 2
+
+2024-08-20 08:05:09 - 0:  Class "Controller" not found
+File: /opt/lampp/htdocs/opencart3/admin/controller/test/test.php
+Line: 2
+
+2024-08-20 08:05:58 - 0:  Class "Model" not found
+File: /opt/lampp/htdocs/opencart3/admin/model/test/test.php
+Line: 2
+
+2024-08-20 08:07:02 - 0:  Class "Model" not found
+File: /opt/lampp/htdocs/opencart3/admin/model/test/test.php
+Line: 2
+
+2024-08-20 08:07:07 - 0:  Class "Model" not found
+File: /opt/lampp/htdocs/opencart3/admin/model/test/test.php
+Line: 2
+
+2024-08-20 09:49:42 - 0:  Class "Controller" not found
+File: /opt/lampp/htdocs/opencart3/admin/controller/test/test.php
+Line: 6
+
+2024-08-21 09:35:15 - 0:  Unknown "else" tag.
+File: /opt/lampp/htdocs/opencart3/admin/view/template/extension/product_extra_feature.twig
+Line: 27
+
+2024-08-21 09:55:09 - 0:  Error: Can't DROP COLUMN `custom_name`; check that it exists<br/>Error No: 1091<br/>ALTER TABLE `oc_product_description` DROP COLUMN `custom_name`, DROP COLUMN `custom_color`
+File: /opt/lampp/htdocs/opencart3/system/library/db/mysqli.php
+Line: 76
+
+2024-08-21 09:55:52 - 0:  Error: Can't DROP COLUMN `custom_name`; check that it exists<br/>Error No: 1091<br/>ALTER TABLE `oc_product_description` DROP COLUMN `custom_name`, DROP COLUMN `custom_color`
+File: /opt/lampp/htdocs/opencart3/system/library/db/mysqli.php
+Line: 76
+
+2024-08-21 09:56:57 - 0:  Error: Can't DROP COLUMN `custom_name`; check that it exists<br/>Error No: 1091<br/>ALTER TABLE `oc_product_description` DROP COLUMN `custom_name`, DROP COLUMN `custom_color`
+File: /opt/lampp/htdocs/opencart3/system/library/db/mysqli.php
+Line: 76
+
+2024-08-21 10:07:21 - 0:  Unable to find template "admin/view/template/extension/product_extra_feature_edit.twig" (looked into: ).
+File: /opt/lampp/htdocs/opencart3/system/storage/vendor/twig/twig/src/Loader/FilesystemLoader.php
+Line: 227
+
+2024-08-21 10:08:09 - 0:  Unable to find template "common/column_left.twig" (looked into: ) in "admin/view/template/extension/product_extra_feature_edit.twig" at line 1.
+File: /opt/lampp/htdocs/opencart3/system/storage/vendor/twig/twig/src/Loader/FilesystemLoader.php
+Line: 227
+
+2024-08-21 10:43:45 - 0:  Error: Duplicate column name 'custom_name'<br/>Error No: 1060<br/>ALTER TABLE `oc_product_description` ADD `custom_name` VARCHAR(255) NULL, ADD `custom_color` VARCHAR(255) NULL
+File: /opt/lampp/htdocs/opencart3/system/library/db/mysqli.php
+Line: 76
+
+2024-08-21 10:44:21 - 0:  Error: Duplicate column name 'custom_name'<br/>Error No: 1060<br/>ALTER TABLE `oc_product_description` ADD `custom_name` VARCHAR(255) NULL, ADD `custom_color` VARCHAR(255) NULL
+File: /opt/lampp/htdocs/opencart3/system/library/db/mysqli.php
+Line: 76
+
+2024-08-21 10:45:11 - 0:  Error: Duplicate column name 'custom_name'<br/>Error No: 1060<br/>ALTER TABLE `oc_product_description` ADD `custom_name` VARCHAR(255) NULL, ADD `custom_color` VARCHAR(255) NULL
+File: /opt/lampp/htdocs/opencart3/system/library/db/mysqli.php
+Line: 76
+
+2024-08-21 10:45:32 - 0:  Error: Duplicate column name 'custom_name'<br/>Error No: 1060<br/>ALTER TABLE `oc_product_description` ADD `custom_name` VARCHAR(255) NULL, ADD `custom_color` VARCHAR(255) NULL
+File: /opt/lampp/htdocs/opencart3/system/library/db/mysqli.php
+Line: 76
+
+2024-08-21 10:45:47 - 0:  Error: Duplicate column name 'custom_name'<br/>Error No: 1060<br/>ALTER TABLE `oc_product_description` ADD `custom_name` VARCHAR(255) NULL, ADD `custom_color` VARCHAR(255) NULL
+File: /opt/lampp/htdocs/opencart3/system/library/db/mysqli.php
+Line: 76
+
+2024-08-21 10:46:23 - 0:  Error: Duplicate column name 'custom_name'<br/>Error No: 1060<br/>ALTER TABLE `oc_product_description` ADD `custom_name` VARCHAR(255) NULL, ADD `custom_color` VARCHAR(255) NULL
+File: /opt/lampp/htdocs/opencart3/system/library/db/mysqli.php
+Line: 76
+
+2024-08-21 10:48:19 - 0:  Error: Duplicate column name 'custom_name'<br/>Error No: 1060<br/>ALTER TABLE `oc_product_description` ADD `custom_name` VARCHAR(255) NULL, ADD `custom_color` VARCHAR(255) NULL
+File: /opt/lampp/htdocs/opencart3/system/library/db/mysqli.php
+Line: 76
+
+2024-08-21 10:49:31 - 0:  Error: Duplicate column name 'custom_name'<br/>Error No: 1060<br/>ALTER TABLE `oc_product_description` ADD `custom_name` VARCHAR(255) NULL, ADD `custom_color` VARCHAR(255) NULL
+File: /opt/lampp/htdocs/opencart3/system/library/db/mysqli.php
+Line: 76
+
+2024-08-21 10:54:38 - 0:  Error: Duplicate column name 'custom_name'<br/>Error No: 1060<br/>ALTER TABLE `oc_product_description` ADD `custom_name` VARCHAR(255) NULL, ADD `custom_color` VARCHAR(255) NULL
+File: /opt/lampp/htdocs/opencart3/system/library/db/mysqli.php
+Line: 76
+
+2024-08-21 10:55:29 - 0:  Error: Duplicate column name 'custom_name'<br/>Error No: 1060<br/>ALTER TABLE `oc_product_description` ADD `custom_name` VARCHAR(255) NULL, ADD `custom_color` VARCHAR(255) NULL
+File: /opt/lampp/htdocs/opencart3/system/library/db/mysqli.php
+Line: 76
+
+2024-08-21 11:21:34 - 0:  Error: Duplicate column name 'custom_name'<br/>Error No: 1060<br/>ALTER TABLE `oc_product_description` ADD `custom_name` VARCHAR(255) NULL, ADD `custom_color` VARCHAR(255) NULL
+File: /opt/lampp/htdocs/opencart3/system/library/db/mysqli.php
+Line: 76
+
+2024-08-21 11:24:53 - 0:  Error: Duplicate column name 'custom_name'<br/>Error No: 1060<br/>ALTER TABLE `oc_product_description` ADD `custom_name` VARCHAR(255) NULL, ADD `custom_color` VARCHAR(255) NULL
+File: /opt/lampp/htdocs/opencart3/system/library/db/mysqli.php
+Line: 76
+
+2024-08-21 11:28:05 - 0:  Error: Duplicate column name 'custom_name'<br/>Error No: 1060<br/>ALTER TABLE `oc_product_description` ADD `custom_name` VARCHAR(255) NULL, ADD `custom_color` VARCHAR(255) NULL
+File: /opt/lampp/htdocs/opencart3/system/library/db/mysqli.php
+Line: 76
+
+2024-08-21 11:34:49 - 0:  Error: Can't DROP COLUMN `custom_name`; check that it exists<br/>Error No: 1091<br/>ALTER TABLE `oc_product_description` DROP COLUMN `custom_name`, DROP COLUMN `custom_color`
+File: /opt/lampp/htdocs/opencart3/system/library/db/mysqli.php
+Line: 76
+
+2024-08-21 11:35:50 - 0:  Error: Can't DROP COLUMN `custom_name`; check that it exists<br/>Error No: 1091<br/>ALTER TABLE `oc_product_description` DROP COLUMN `custom_name`, DROP COLUMN `custom_color`
+File: /opt/lampp/htdocs/opencart3/system/library/db/mysqli.php
+Line: 76
+
