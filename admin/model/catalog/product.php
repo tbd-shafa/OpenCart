@@ -157,7 +157,21 @@ class Product extends \Opencart\System\Engine\Model {
 
 		return $product_id;
 	}
-
+	public function getProductDescriptions($product_id) {
+		$query = $this->db->query("SELECT * FROM " . DB_PREFIX . "product_description WHERE product_id = '" . (int)$product_id . "'");
+	
+		$product_description_data = array();
+	
+		foreach ($query->rows as $result) {
+			$product_description_data[$result['language_id']] = array(
+				'custom_name' => $result['custom_name'],
+				'custom_color' => $result['custom_color']
+			);
+		}
+	
+		return $product_description_data;
+	}
+	
 	/**
 	 * @param int   $product_id
 	 * @param array $data

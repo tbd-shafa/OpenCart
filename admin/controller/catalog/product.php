@@ -1046,6 +1046,33 @@ class Product extends \Opencart\System\Engine\Controller {
 		$data['column_left'] = $this->load->controller('common/column_left');
 		$data['footer'] = $this->load->controller('common/footer');
 
+
+		// Get the status of the product_extra_feature extension
+		$data['product_extra_feature_status'] = $this->config->get('product_extra_feature_status');
+
+		// Load custom fields if the extension is enabled
+		if ($data['product_extra_feature_status']) {
+			if (isset($this->request->get['product_id'])) {
+				$product_id = $this->request->get['product_id'];
+
+				// Use the new or existing method
+				if (method_exists($this->model_catalog_product, 'getProductDescriptions')) {
+					$product_description = $this->model_catalog_product->getProductDescriptions($product_id);
+
+					$data['custom_name'] = $product_description[$this->config->get('config_language_id')]['custom_name'] ?? '';
+					$data['custom_color'] = $product_description[$this->config->get('config_language_id')]['custom_color'] ?? '';
+				} else {
+					// Fallback to another method if needed
+					$product_info = $this->model_catalog_product->getProduct($product_id);
+
+					$data['custom_name'] = $product_info['custom_name'] ?? '';
+					$data['custom_color'] = $product_info['custom_color'] ?? '';
+				}
+			} else {
+				$data['custom_name'] = '';
+				$data['custom_color'] = '';
+			}
+		}
 		$this->response->setOutput($this->load->view('catalog/product_form', $data));
 	}
 
@@ -1076,6 +1103,7 @@ class Product extends \Opencart\System\Engine\Controller {
 		}
 
 		$this->load->model('catalog/product');
+		
 
 		if ($this->request->post['master_id']) {
 			$product_options = $this->model_catalog_product->getOptions($this->request->post['master_id']);
