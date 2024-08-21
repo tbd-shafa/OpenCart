@@ -1,10 +1,13 @@
 <?php
+
 namespace Opencart\Admin\Controller\Extension;
 
-class ProductExtraFeature extends \Opencart\System\Engine\Controller {
-    public function index(): void {
+class ProductExtraFeature extends \Opencart\System\Engine\Controller
+{
+    public function index(): void
+    {
         $this->load->language('extension/product_extra_feature');
-        
+
 
         $this->document->setTitle($this->language->get('heading_title'));
 
@@ -17,7 +20,8 @@ class ProductExtraFeature extends \Opencart\System\Engine\Controller {
 
         $this->response->setOutput($this->load->view('extension/product_extra_feature', $data));
     }
-    public function saveStatus(): void {
+    public function saveStatus(): void
+    {
         $this->load->model('setting/setting');
         $json = [];
 
@@ -37,8 +41,9 @@ class ProductExtraFeature extends \Opencart\System\Engine\Controller {
         $this->response->addHeader('Content-Type: application/json');
         $this->response->setOutput(json_encode($json));
     }
-    public function install(): void {
-       
+    public function install(): void
+    {
+
         $this->load->model('setting/setting');
         $this->load->language('extension/product_extra_feature');
 
@@ -50,11 +55,12 @@ class ProductExtraFeature extends \Opencart\System\Engine\Controller {
 
         // Set success message
         $this->session->data['success'] = $this->language->get('text_success_install');
-        
+
         $this->response->redirect($this->url->link('extension/product_extra_feature', 'user_token=' . $this->session->data['user_token'], true));
     }
 
-    public function uninstall(): void {
+    public function uninstall(): void
+    {
         $this->load->model('setting/setting');
         $this->load->language('extension/product_extra_feature');
 
@@ -66,7 +72,7 @@ class ProductExtraFeature extends \Opencart\System\Engine\Controller {
 
         // Set success message
         $this->session->data['success'] = $this->language->get('text_success_uninstall');
-        
+
         $this->response->redirect($this->url->link('extension/product_extra_feature', 'user_token=' . $this->session->data['user_token'], true));
     }
 }

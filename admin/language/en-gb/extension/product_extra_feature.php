@@ -31,4 +31,3 @@ $_['button_uninstall'] = 'Uninstall';
 // Error
 $_['error_permission'] = 'Warning: You do not have permission to modify the Product Extra Feature extension!';
 $_['error_extension']  = 'Warning: Product Extra Feature does not exist!';
-
