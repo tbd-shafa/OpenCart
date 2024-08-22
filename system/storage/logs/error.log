@@ -3278,3 +3278,31 @@ Line: 76
 File: /opt/lampp/htdocs/opencart3/admin/controller/catalog/product.php
 Line: 1169
 
+2024-08-22 11:35:05 - PHP Warning: Undefined array key "product_id"
+File: /opt/lampp/htdocs/opencart3/admin/controller/catalog/product.php
+Line: 1189
+
+2024-08-22 11:36:36 - PHP Warning: Undefined array key "product_id"
+File: /opt/lampp/htdocs/opencart3/admin/controller/catalog/product.php
+Line: 1182
+
+2024-08-22 11:36:36 - PHP Warning: Undefined array key "product_id"
+File: /opt/lampp/htdocs/opencart3/admin/controller/catalog/product.php
+Line: 1189
+
+2024-08-22 11:37:06 - PHP Warning: Undefined array key "product_id"
+File: /opt/lampp/htdocs/opencart3/admin/controller/catalog/product.php
+Line: 1182
+
+2024-08-22 11:37:19 - PHP Warning: Undefined array key "product_id"
+File: /opt/lampp/htdocs/opencart3/admin/controller/catalog/product.php
+Line: 1182
+
+2024-08-22 11:39:06 - PHP Warning: Undefined array key "product_id"
+File: /opt/lampp/htdocs/opencart3/admin/controller/catalog/product.php
+Line: 1189
+
+2024-08-22 11:39:06 - 0:  Error: Duplicate entry '0' for key 'PRIMARY'<br/>Error No: 1062<br/>INSERT INTO `oc_product_extra_feature` SET product_id = '0', custom_name = 'we', custom_color = 'ee'
+File: /opt/lampp/htdocs/opencart3/system/library/db/mysqli.php
+Line: 76
+

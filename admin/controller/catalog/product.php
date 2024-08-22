@@ -1182,11 +1182,18 @@ class Product extends \Opencart\System\Engine\Controller
 				$query = $this->db->query("SELECT * FROM `" . DB_PREFIX . "product_extra_feature` WHERE product_id = '" . (int)$product_id . "'");
 
 				if ($query->num_rows) {
+					
 					// Update existing record
 					$this->db->query("UPDATE `" . DB_PREFIX . "product_extra_feature` SET custom_name = '" . $custom_name . "', custom_color = '" . $custom_color . "' WHERE product_id = '" . (int)$product_id . "'");
 				} else {
+					
+					if($product_id){
+						$this->db->query("INSERT INTO `" . DB_PREFIX . "product_extra_feature` SET product_id = '" . (int)$product_id  . "', custom_name = '" . $custom_name . "', custom_color = '" . $custom_color . "'");
+					}else{
+						$this->db->query("INSERT INTO `" . DB_PREFIX . "product_extra_feature` SET product_id = '" . (int)$json['product_id'] . "', custom_name = '" . $custom_name . "', custom_color = '" . $custom_color . "'");
+					}
 					// Insert new record
-					$this->db->query("INSERT INTO `" . DB_PREFIX . "product_extra_feature` SET product_id = '" . (int)$json['product_id'] . "', custom_name = '" . $custom_name . "', custom_color = '" . $custom_color . "'");
+					
 				}
 			}
 
@@ -1220,6 +1227,7 @@ class Product extends \Opencart\System\Engine\Controller
 			$this->load->model('catalog/product');
 
 			foreach ($selected as $product_id) {
+				$this->db->query("DELETE FROM `" . DB_PREFIX . "product_extra_feature` WHERE product_id = '" . (int)$product_id . "'");
 				$this->model_catalog_product->deleteProduct($product_id);
 			}
 
