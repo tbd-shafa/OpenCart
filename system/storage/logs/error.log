@@ -3246,3 +3246,7 @@ Line: 147
 File: /opt/lampp/htdocs/opencart3/system/library/image.php
 Line: 147
 
+2024-08-22 09:25:32 - PHP Warning: Undefined array key "product_id"
+File: /opt/lampp/htdocs/opencart3/admin/controller/catalog/product.php
+Line: 1175
+
