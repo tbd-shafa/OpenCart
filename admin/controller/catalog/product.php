@@ -1083,11 +1083,12 @@ class Product extends \Opencart\System\Engine\Controller {
 		$this->load->language('catalog/product');
 
 		$json = [];
-
+         
 		if (!$this->user->hasPermission('modify', 'catalog/product')) {
+			
 			$json['error']['warning'] = $this->language->get('error_permission');
 		}
-
+		
 		foreach ($this->request->post['product_description'] as $language_id => $value) {
 			if ((oc_strlen(trim($value['name'])) < 1) || (oc_strlen($value['name']) > 255)) {
 				$json['error']['name_' . $language_id] = $this->language->get('error_name');
@@ -1097,15 +1098,15 @@ class Product extends \Opencart\System\Engine\Controller {
 				$json['error']['meta_title_' . $language_id] = $this->language->get('error_meta_title');
 			}
 		}
-
+		
 		if ((oc_strlen($this->request->post['model']) < 1) || (oc_strlen($this->request->post['model']) > 64)) {
 			$json['error']['model'] = $this->language->get('error_model');
 		}
 
 		$this->load->model('catalog/product');
-		
 
 		if ($this->request->post['master_id']) {
+			
 			$product_options = $this->model_catalog_product->getOptions($this->request->post['master_id']);
 
 			foreach ($product_options as $product_option) {
@@ -1114,10 +1115,9 @@ class Product extends \Opencart\System\Engine\Controller {
 				}
 			}
 		}
-
+		
 		if ($this->request->post['product_seo_url']) {
 			$this->load->model('design/seo_url');
-
 			foreach ($this->request->post['product_seo_url'] as $store_id => $language) {
 				foreach ($language as $language_id => $keyword) {
 					if ((oc_strlen(trim($keyword)) < 1) || (oc_strlen($keyword) > 64)) {
@@ -1140,8 +1140,9 @@ class Product extends \Opencart\System\Engine\Controller {
 		if (isset($json['error']) && !isset($json['error']['warning'])) {
 			$json['error']['warning'] = $this->language->get('error_warning');
 		}
-
+		
 		if (!$json) {
+			
 			if (!$this->request->post['product_id']) {
 				if (!$this->request->post['master_id']) {
 					// Normal product add
@@ -1151,6 +1152,7 @@ class Product extends \Opencart\System\Engine\Controller {
 					$json['product_id'] = $this->model_catalog_product->addVariant($this->request->post['master_id'], $this->request->post);
 				}
 			} else {
+				
 				if (!$this->request->post['master_id']) {
 					// Normal product edit
 					$this->model_catalog_product->editProduct($this->request->post['product_id'], $this->request->post);
@@ -1161,6 +1163,18 @@ class Product extends \Opencart\System\Engine\Controller {
 
 				// Variant products edit if master product is edited
 				$this->model_catalog_product->editVariants($this->request->post['product_id'], $this->request->post);
+			}
+
+			 // Custom fields save and update if the extension is enabled
+			  if ($this->config->get('product_extra_feature_status')) {
+				$custom_name = $this->request->post['custom_name'] ?? '';
+				$custom_color = $this->request->post['custom_color'] ?? '';
+	
+				// Save custom fields to product_description table
+				foreach ($this->request->post['product_description'] as $language_id => $description) {
+					$this->db->query("UPDATE " . DB_PREFIX . "product_description SET custom_name = '" . $this->db->escape($custom_name) . "', custom_color = '" . $this->db->escape($custom_color) . "' WHERE product_id = '" . (int)$json['product_id'] . "' AND language_id = '" . (int)$language_id . "'");
+				}
+				
 			}
 
 			$json['success'] = $this->language->get('text_success');
