@@ -3306,3 +3306,19 @@ Line: 1189
 File: /opt/lampp/htdocs/opencart3/system/library/db/mysqli.php
 Line: 76
 
+2024-08-22 12:33:58 - 0:  Error: Could not call registry key model_tool_image!
+File: /opt/lampp/htdocs/opencart3/system/engine/controller.php
+Line: 39
+
+2024-08-22 12:34:34 - 0:  Error: Could not call registry key model_tool_image!
+File: /opt/lampp/htdocs/opencart3/system/engine/controller.php
+Line: 39
+
+2024-08-22 12:35:28 - 0:  Error: Could not call registry key model_tool_image!
+File: /opt/lampp/htdocs/opencart3/system/engine/controller.php
+Line: 39
+
+2024-08-22 12:54:22 - 0:  Error: Could not call registry key model_tool_image!
+File: /opt/lampp/htdocs/opencart3/system/engine/controller.php
+Line: 39
+
