@@ -1,15 +1,19 @@
 <?php
+
 namespace Opencart\Admin\Controller\Catalog;
+
 /**
  * Class Product
  *
  * @package Opencart\Admin\Controller\Catalog
  */
-class Product extends \Opencart\System\Engine\Controller {
+class Product extends \Opencart\System\Engine\Controller
+{
 	/**
 	 * @return void
 	 */
-	public function index(): void {
+	public function index(): void
+	{
 		$this->load->language('catalog/product');
 
 		$this->document->setTitle($this->language->get('heading_title'));
@@ -114,7 +118,8 @@ class Product extends \Opencart\System\Engine\Controller {
 	/**
 	 * @return void
 	 */
-	public function list(): void {
+	public function list(): void
+	{
 		$this->load->language('catalog/product');
 
 		$this->response->setOutput($this->getList());
@@ -123,7 +128,8 @@ class Product extends \Opencart\System\Engine\Controller {
 	/**
 	 * @return string
 	 */
-	protected function getList(): string {
+	protected function getList(): string
+	{
 		if (isset($this->request->get['filter_name'])) {
 			$filter_name = $this->request->get['filter_name'];
 		} else {
@@ -337,7 +343,8 @@ class Product extends \Opencart\System\Engine\Controller {
 	/**
 	 * @return void
 	 */
-	public function form(): void {
+	public function form(): void
+	{
 		$this->load->language('catalog/product');
 
 		$this->document->setTitle($this->language->get('heading_title'));
@@ -1055,18 +1062,15 @@ class Product extends \Opencart\System\Engine\Controller {
 			if (isset($this->request->get['product_id'])) {
 				$product_id = $this->request->get['product_id'];
 
-				// Use the new or existing method
-				if (method_exists($this->model_catalog_product, 'getProductDescriptions')) {
-					$product_description = $this->model_catalog_product->getProductDescriptions($product_id);
+				// Fetch custom fields from the new table
+				$query = $this->db->query("SELECT custom_name, custom_color FROM `" . DB_PREFIX . "product_extra_feature` WHERE product_id = '" . (int)$product_id . "'");
 
-					$data['custom_name'] = $product_description[$this->config->get('config_language_id')]['custom_name'] ?? '';
-					$data['custom_color'] = $product_description[$this->config->get('config_language_id')]['custom_color'] ?? '';
+				if ($query->num_rows) {
+					$data['custom_name'] = $query->row['custom_name'];
+					$data['custom_color'] = $query->row['custom_color'];
 				} else {
-					// Fallback to another method if needed
-					$product_info = $this->model_catalog_product->getProduct($product_id);
-
-					$data['custom_name'] = $product_info['custom_name'] ?? '';
-					$data['custom_color'] = $product_info['custom_color'] ?? '';
+					$data['custom_name'] = '';
+					$data['custom_color'] = '';
 				}
 			} else {
 				$data['custom_name'] = '';
@@ -1079,16 +1083,17 @@ class Product extends \Opencart\System\Engine\Controller {
 	/**
 	 * @return void
 	 */
-	public function save(): void {
+	public function save(): void
+	{
 		$this->load->language('catalog/product');
 
 		$json = [];
-         
+
 		if (!$this->user->hasPermission('modify', 'catalog/product')) {
-			
+
 			$json['error']['warning'] = $this->language->get('error_permission');
 		}
-		
+
 		foreach ($this->request->post['product_description'] as $language_id => $value) {
 			if ((oc_strlen(trim($value['name'])) < 1) || (oc_strlen($value['name']) > 255)) {
 				$json['error']['name_' . $language_id] = $this->language->get('error_name');
@@ -1098,7 +1103,7 @@ class Product extends \Opencart\System\Engine\Controller {
 				$json['error']['meta_title_' . $language_id] = $this->language->get('error_meta_title');
 			}
 		}
-		
+
 		if ((oc_strlen($this->request->post['model']) < 1) || (oc_strlen($this->request->post['model']) > 64)) {
 			$json['error']['model'] = $this->language->get('error_model');
 		}
@@ -1106,7 +1111,7 @@ class Product extends \Opencart\System\Engine\Controller {
 		$this->load->model('catalog/product');
 
 		if ($this->request->post['master_id']) {
-			
+
 			$product_options = $this->model_catalog_product->getOptions($this->request->post['master_id']);
 
 			foreach ($product_options as $product_option) {
@@ -1115,7 +1120,7 @@ class Product extends \Opencart\System\Engine\Controller {
 				}
 			}
 		}
-		
+
 		if ($this->request->post['product_seo_url']) {
 			$this->load->model('design/seo_url');
 			foreach ($this->request->post['product_seo_url'] as $store_id => $language) {
@@ -1140,9 +1145,9 @@ class Product extends \Opencart\System\Engine\Controller {
 		if (isset($json['error']) && !isset($json['error']['warning'])) {
 			$json['error']['warning'] = $this->language->get('error_warning');
 		}
-		
+
 		if (!$json) {
-			
+
 			if (!$this->request->post['product_id']) {
 				if (!$this->request->post['master_id']) {
 					// Normal product add
@@ -1152,7 +1157,7 @@ class Product extends \Opencart\System\Engine\Controller {
 					$json['product_id'] = $this->model_catalog_product->addVariant($this->request->post['master_id'], $this->request->post);
 				}
 			} else {
-				
+
 				if (!$this->request->post['master_id']) {
 					// Normal product edit
 					$this->model_catalog_product->editProduct($this->request->post['product_id'], $this->request->post);
@@ -1165,16 +1170,24 @@ class Product extends \Opencart\System\Engine\Controller {
 				$this->model_catalog_product->editVariants($this->request->post['product_id'], $this->request->post);
 			}
 
-			 // Custom fields save and update if the extension is enabled
-			  if ($this->config->get('product_extra_feature_status')) {
-				$custom_name = $this->request->post['custom_name'] ?? '';
-				$custom_color = $this->request->post['custom_color'] ?? '';
-	
-				// Save custom fields to product_description table
-				foreach ($this->request->post['product_description'] as $language_id => $description) {
-					$this->db->query("UPDATE " . DB_PREFIX . "product_description SET custom_name = '" . $this->db->escape($custom_name) . "', custom_color = '" . $this->db->escape($custom_color) . "' WHERE product_id = '" . (int)$json['product_id'] . "' AND language_id = '" . (int)$language_id . "'");
+			// Custom fields save and update if the extension is enabled
+			if ($this->config->get('product_extra_feature_status')) {
+
+				// $this->db->query("INSERT INTO `" . DB_PREFIX . "product_extra_feature` SET product_id = '" . (int)$json['product_id'] . "', custom_name = '" . $custom_name . "', custom_color = '" . $custom_color . "'");
+				$product_id = $this->request->post['product_id'];
+				$custom_name = $this->db->escape($this->request->post['custom_name']);
+				$custom_color = $this->db->escape($this->request->post['custom_color']);
+
+				// Check if the record exists
+				$query = $this->db->query("SELECT * FROM `" . DB_PREFIX . "product_extra_feature` WHERE product_id = '" . (int)$product_id . "'");
+
+				if ($query->num_rows) {
+					// Update existing record
+					$this->db->query("UPDATE `" . DB_PREFIX . "product_extra_feature` SET custom_name = '" . $custom_name . "', custom_color = '" . $custom_color . "' WHERE product_id = '" . (int)$product_id . "'");
+				} else {
+					// Insert new record
+					$this->db->query("INSERT INTO `" . DB_PREFIX . "product_extra_feature` SET product_id = '" . (int)$json['product_id'] . "', custom_name = '" . $custom_name . "', custom_color = '" . $custom_color . "'");
 				}
-				
 			}
 
 			$json['success'] = $this->language->get('text_success');
@@ -1187,7 +1200,8 @@ class Product extends \Opencart\System\Engine\Controller {
 	/**
 	 * @return void
 	 */
-	public function delete(): void {
+	public function delete(): void
+	{
 		$this->load->language('catalog/product');
 
 		$json = [];
@@ -1219,7 +1233,8 @@ class Product extends \Opencart\System\Engine\Controller {
 	/**
 	 * @return void
 	 */
-	public function copy(): void {
+	public function copy(): void
+	{
 		$this->load->language('catalog/product');
 
 		$json = [];
@@ -1251,7 +1266,8 @@ class Product extends \Opencart\System\Engine\Controller {
 	/**
 	 * @return void
 	 */
-	public function report(): void {
+	public function report(): void
+	{
 		$this->load->language('catalog/product');
 
 		$this->response->setOutput($this->getReport());
@@ -1260,7 +1276,8 @@ class Product extends \Opencart\System\Engine\Controller {
 	/**
 	 * @return string
 	 */
-	public function getReport(): string {
+	public function getReport(): string
+	{
 		if (isset($this->request->get['product_id'])) {
 			$product_id = (int)$this->request->get['product_id'];
 		} else {
@@ -1318,7 +1335,8 @@ class Product extends \Opencart\System\Engine\Controller {
 	/**
 	 * @return void
 	 */
-	public function autocomplete(): void {
+	public function autocomplete(): void
+	{
 		$json = [];
 
 		if (isset($this->request->get['filter_name'])) {

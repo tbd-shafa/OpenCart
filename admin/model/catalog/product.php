@@ -351,16 +351,16 @@ class Product extends \Opencart\System\Engine\Model {
 			}
 		}
 
-		//custom 
-		if ($this->config->get('product_extra_feature_status')) {
-			$product_id = $this->request->post['product_id'];
-			$custom_name = $this->request->post['custom_name'] ?? '';
-			$custom_color = $this->request->post['custom_color'] ?? '';
+		//custom extra product feature
+		// if ($this->config->get('product_extra_feature_status')) {
+		// 	$product_id = $this->request->post['product_id'];
+		// 	$custom_name = $this->request->post['custom_name'] ?? '';
+		// 	$custom_color = $this->request->post['custom_color'] ?? '';
 
-			foreach ($this->request->post['product_description'] as $language_id => $description) {
-				$this->db->query("UPDATE " . DB_PREFIX . "product_description SET custom_name = '" . $this->db->escape($custom_name) . "', custom_color = '" . $this->db->escape($custom_color) . "' WHERE product_id = '" . (int)$product_id . "' AND language_id = '" . (int)$language_id . "'");
-			}
-		}
+		// 	foreach ($this->request->post['product_description'] as $language_id => $description) {
+		// 		$this->db->query("UPDATE " . DB_PREFIX . "product_description SET custom_name = '" . $this->db->escape($custom_name) . "', custom_color = '" . $this->db->escape($custom_color) . "' WHERE product_id = '" . (int)$product_id . "' AND language_id = '" . (int)$language_id . "'");
+		// 	}
+		// }
 		
 		$this->cache->delete('product');
 	}

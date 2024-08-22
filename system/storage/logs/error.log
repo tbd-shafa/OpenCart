@@ -3270,3 +3270,11 @@ Line: 1175
 File: /opt/lampp/htdocs/opencart3/admin/controller/catalog/product.php
 Line: 1175
 
+2024-08-22 11:01:37 - 0:  Error: Unknown column 'language_id' in 'where clause'<br/>Error No: 1054<br/>UPDATE oc_product_extra_feature SET custom_name = 'rete', custom_color = 'retet' WHERE product_id = '58' AND language_id = '1'
+File: /opt/lampp/htdocs/opencart3/system/library/db/mysqli.php
+Line: 76
+
+2024-08-22 11:06:57 - PHP Warning: Undefined array key "product_id"
+File: /opt/lampp/htdocs/opencart3/admin/controller/catalog/product.php
+Line: 1169
+
