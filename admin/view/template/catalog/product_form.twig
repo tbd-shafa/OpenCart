@@ -134,6 +134,22 @@
                        
                       </div>
                     </div>
+<fieldset>
+    <legend>{{ text_custom_image }}</legend>
+    <div class="row">
+        <div class="col-sm-4 col-md-3 mb-3">
+            <div id="custom-image" class="card image">
+                <img src="{{ custom_thumb }}" alt="" title="" id="thumb-custom-image" data-oc-placeholder="{{ placeholder }}" class="card-img-top"/> 
+                <input type="hidden" name="custom_image" value="{{ custom_image }}" id="input-custom-image"/>
+                <div class="card-body">
+                    <button type="button" data-oc-toggle="image" data-oc-target="#input-custom-image" data-oc-thumb="#thumb-custom-image" class="btn btn-primary btn-block"><i class="fa-solid fa-pencil"></i> {{ button_edit }}</button>
+                    <button type="button" data-oc-toggle="clear" data-oc-target="#input-custom-image" data-oc-thumb="#thumb-custom-image" class="btn btn-warning btn-block"><i class="fa-regular fa-trash-can"></i> {{ button_clear }}</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</fieldset>
+
 {% endif %}
                     
                     <div class="row mb-3">
