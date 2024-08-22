@@ -53,22 +53,22 @@ class ProductExtraFeature extends \Opencart\System\Engine\Controller
         // // Set the status of the extension as enabled
         // $this->model_setting_setting->editSetting('product_extra_feature', ['product_extra_feature_status' => 1]);
 
-         // Check if the custom_name column already exists
-    $query = $this->db->query("SHOW COLUMNS FROM `" . DB_PREFIX . "product_description` LIKE 'custom_name'");
-    if (!$query->num_rows) {
-        // Add the custom_name column to the oc_product_description table if it doesn't exist
-        $this->db->query("ALTER TABLE `" . DB_PREFIX . "product_description` ADD `custom_name` VARCHAR(255) NULL");
-    }
+        // Check if the custom_name column already exists
+        $query = $this->db->query("SHOW COLUMNS FROM `" . DB_PREFIX . "product_description` LIKE 'custom_name'");
+        if (!$query->num_rows) {
+            // Add the custom_name column to the oc_product_description table if it doesn't exist
+            $this->db->query("ALTER TABLE `" . DB_PREFIX . "product_description` ADD `custom_name` VARCHAR(255) NULL");
+        }
 
-    // Check if the custom_color column already exists
-    $query = $this->db->query("SHOW COLUMNS FROM `" . DB_PREFIX . "product_description` LIKE 'custom_color'");
-    if (!$query->num_rows) {
-        // Add the custom_color column to the oc_product_description table if it doesn't exist
-        $this->db->query("ALTER TABLE `" . DB_PREFIX . "product_description` ADD `custom_color` VARCHAR(255) NULL");
-    }
+        // Check if the custom_color column already exists
+        $query = $this->db->query("SHOW COLUMNS FROM `" . DB_PREFIX . "product_description` LIKE 'custom_color'");
+        if (!$query->num_rows) {
+            // Add the custom_color column to the oc_product_description table if it doesn't exist
+            $this->db->query("ALTER TABLE `" . DB_PREFIX . "product_description` ADD `custom_color` VARCHAR(255) NULL");
+        }
 
-    // Set the status of the extension as enabled
-    $this->model_setting_setting->editSetting('product_extra_feature', ['product_extra_feature_status' => 1]);
+        // Set the status of the extension as enabled
+        $this->model_setting_setting->editSetting('product_extra_feature', ['product_extra_feature_status' => 1]);
         // Set success message
         $this->session->data['success'] = $this->language->get('text_success_install');
 
@@ -81,13 +81,13 @@ class ProductExtraFeature extends \Opencart\System\Engine\Controller
         $this->load->language('extension/product_extra_feature');
 
         // Remove the custom columns from the oc_product_description table
-       // $this->db->query("ALTER TABLE `" . DB_PREFIX . "product_description` DROP COLUMN `custom_name`, DROP COLUMN `custom_color`");
+        // $this->db->query("ALTER TABLE `" . DB_PREFIX . "product_description` DROP COLUMN `custom_name`, DROP COLUMN `custom_color`");
 
         // Remove the extension settings
         $this->model_setting_setting->deleteSetting('product_extra_feature');
         $json['success'] = $this->language->get('text_success_uninstall');
         // Set success message
-       // $this->session->data['success'] = $this->language->get('text_success_uninstall');
+        // $this->session->data['success'] = $this->language->get('text_success_uninstall');
 
         $this->response->redirect($this->url->link('extension/product_extra_feature', 'user_token=' . $this->session->data['user_token'], true));
     }
