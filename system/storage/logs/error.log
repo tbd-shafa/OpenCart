@@ -3234,3 +3234,15 @@ Line: 76
 File: /opt/lampp/htdocs/opencart3/system/library/db/mysqli.php
 Line: 76
 
+2024-08-22 09:06:10 - PHP Warning: imagepng(/opt/lampp/htdocs/opencart3/image/cache/catalog/cart-136x136.png): Failed to open stream: Permission denied
+File: /opt/lampp/htdocs/opencart3/system/library/image.php
+Line: 147
+
+2024-08-22 09:06:10 - PHP Warning: imagepng(/opt/lampp/htdocs/opencart3/image/cache/catalog/opencart-logo-136x136.png): Failed to open stream: Permission denied
+File: /opt/lampp/htdocs/opencart3/system/library/image.php
+Line: 147
+
+2024-08-22 09:06:10 - PHP Warning: imagepng(/opt/lampp/htdocs/opencart3/image/cache/catalog/profile-pic-136x136.png): Failed to open stream: Permission denied
+File: /opt/lampp/htdocs/opencart3/system/library/image.php
+Line: 147
+
