@@ -53,9 +53,10 @@
 {% if custom_color %}
     <p><strong>Custom Color:</strong> {{ custom_color }}</p>
 {% endif %}
-
 {% if custom_image %}
-    <p><strong>Custom Image:</strong> <img src="{{ custom_image }}" alt="{{ custom_name }}" /></p>
+    <a href="{{ custom_popup }}" title="{{ heading_title }}" class="image-popup">
+        <p><strong>Custom Image:</strong> <img src="{{ custom_image }}" alt="{{ custom_name }}" /></p>
+    </a>
 {% endif %}
 
           </ul>
@@ -401,5 +402,19 @@ $(document).ready(function() {
         }
     });
 });
+$(document).ready(function() {
+    $('.image-popup').magnificPopup({
+        type: 'image',
+        closeOnContentClick: true,
+        closeBtnInside: true, // Ensures the close button is inside the popup
+        image: {
+            verticalFit: true
+        },
+        // Optional: Customize the close button icon
+        tClose: 'Close (Esc)', // Alt text for close button
+        closeMarkup: '<button title="%title%" type="button" class="mfp-close">&times;</button>', // Custom close button markup
+    });
+});
+
 //--></script>
 {{ footer }}
