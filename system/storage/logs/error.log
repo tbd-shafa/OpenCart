@@ -3334,3 +3334,51 @@ Line: 144
 File: /opt/lampp/htdocs/opencart3/admin/controller/catalog/product.php
 Line: 1079
 
+2024-08-23 11:41:07 - 0:  Opencart\System\Library\DB::escape(): Argument #1 ($value) must be of type string, array given, called in /opt/lampp/htdocs/opencart3/admin/controller/catalog/product.php on line 1217
+File: /opt/lampp/htdocs/opencart3/system/library/db.php
+Line: 58
+
+2024-08-23 11:41:37 - PHP Warning: Undefined array key "custom_color"
+File: /opt/lampp/htdocs/opencart3/admin/controller/catalog/product.php
+Line: 1217
+
+2024-08-23 11:41:37 - 0:  Opencart\System\Library\DB::escape(): Argument #1 ($value) must be of type string, null given, called in /opt/lampp/htdocs/opencart3/admin/controller/catalog/product.php on line 1217
+File: /opt/lampp/htdocs/opencart3/system/library/db.php
+Line: 58
+
+2024-08-23 11:41:42 - PHP Warning: Undefined array key "custom_color"
+File: /opt/lampp/htdocs/opencart3/admin/controller/catalog/product.php
+Line: 1217
+
+2024-08-23 11:41:42 - 0:  Opencart\System\Library\DB::escape(): Argument #1 ($value) must be of type string, null given, called in /opt/lampp/htdocs/opencart3/admin/controller/catalog/product.php on line 1217
+File: /opt/lampp/htdocs/opencart3/system/library/db.php
+Line: 58
+
+2024-08-23 11:41:48 - PHP Warning: Undefined array key "custom_color"
+File: /opt/lampp/htdocs/opencart3/admin/controller/catalog/product.php
+Line: 1217
+
+2024-08-23 11:41:48 - 0:  Opencart\System\Library\DB::escape(): Argument #1 ($value) must be of type string, null given, called in /opt/lampp/htdocs/opencart3/admin/controller/catalog/product.php on line 1217
+File: /opt/lampp/htdocs/opencart3/system/library/db.php
+Line: 58
+
+2024-08-23 11:46:13 - PHP Unknown: explode(): Passing null to parameter #2 ($string) of type string is deprecated
+File: /opt/lampp/htdocs/opencart3/admin/controller/catalog/product.php
+Line: 1075
+
+2024-08-23 11:46:13 - PHP Unknown: explode(): Passing null to parameter #2 ($string) of type string is deprecated
+File: /opt/lampp/htdocs/opencart3/admin/controller/catalog/product.php
+Line: 1075
+
+2024-08-23 11:49:26 - PHP Unknown: explode(): Passing null to parameter #2 ($string) of type string is deprecated
+File: /opt/lampp/htdocs/opencart3/admin/controller/catalog/product.php
+Line: 1075
+
+2024-08-23 12:04:44 - PHP Warning: Undefined array key "colors"
+File: /opt/lampp/htdocs/opencart3/admin/controller/catalog/product.php
+Line: 1100
+
+2024-08-23 12:05:13 - PHP Warning: Undefined array key "colors"
+File: /opt/lampp/htdocs/opencart3/admin/controller/catalog/product.php
+Line: 1100
+

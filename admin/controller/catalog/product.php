@@ -1072,7 +1072,12 @@ class Product extends \Opencart\System\Engine\Controller
 
 				if ($query->num_rows) {
 					$data['custom_name'] = $query->row['custom_name'];
-					$data['custom_color'] = explode(',', $query->row['custom_color']); // Assuming custom_color stores comma-separated color IDs
+					if (!empty($query->row['custom_color'])) {
+						$data['custom_color'] = explode(',', $query->row['custom_color']); // Assuming custom_color stores comma-separated color IDs
+					} else {
+
+						$data['custom_color'] = []; // Set to an empty array if custom_color is null or empty
+					}
 					$data['custom_image'] = $query->row['custom_image'];
 
 					// If there is a custom image, generate a thumbnail
@@ -1084,14 +1089,22 @@ class Product extends \Opencart\System\Engine\Controller
 						$data['custom_thumb'] = $data['placeholder'];
 					}
 				} else {
+
 					$data['custom_name'] = '';
+
 					$data['custom_color'] = [];
 					$data['custom_image'] = '';
 					$data['custom_thumb'] = ''; // No thumbnail if no image
 				}
 			} else {
+				$query = $this->db->query("SELECT color_id, name FROM `" . DB_PREFIX . "color`");
+				$data['colors'] = [];
+				if ($query->num_rows) {
+					$data['colors'] = $query->rows;
+				}
+
 				$data['custom_name'] = '';
-				$data['custom_color'] = [];
+				//$data['custom_color'] = [];
 				$data['custom_image'] = '';
 				$data['placeholder'] = $this->model_tool_image->resize('no_image.png', 100, 100);
 				$data['custom_thumb'] = $data['placeholder'];
@@ -1195,9 +1208,8 @@ class Product extends \Opencart\System\Engine\Controller
 			if ($this->config->get('product_extra_feature_status')) {
 				// Handle custom image upload
 				if (!empty($this->request->files['custom_image']['name']) && is_file($this->request->files['custom_image']['tmp_name'])) {
-					// Load the image model
-					$this->load->model('tool/image');
 
+					$this->load->model('tool/image');
 					// Handle the file upload and get the file name
 					$filename = basename($this->request->files['custom_image']['name']);
 					$file = $this->request->files['custom_image']['tmp_name'];
@@ -1211,10 +1223,15 @@ class Product extends \Opencart\System\Engine\Controller
 
 				// Handle other custom fields
 
-				// $this->db->query("INSERT INTO `" . DB_PREFIX . "product_extra_feature` SET product_id = '" . (int)$json['product_id'] . "', custom_name = '" . $custom_name . "', custom_color = '" . $custom_color . "'");
+
 				$product_id = $this->request->post['product_id'];
 				$custom_name = $this->db->escape($this->request->post['custom_name']);
-				$custom_color = $this->db->escape($this->request->post['custom_color']);
+				// Handle multiple custom colors (expecting an array of color IDs)
+				if (isset($this->request->post['custom_color']) && is_array($this->request->post['custom_color'])) {
+					$custom_color = implode(',', array_map('intval', $this->request->post['custom_color']));
+				} else {
+					$custom_color = ''; // No color selected
+				}
 
 				$custom_image = isset($this->request->post['custom_image']) ? $this->db->escape($this->request->post['custom_image']) : '';
 
@@ -1222,21 +1239,16 @@ class Product extends \Opencart\System\Engine\Controller
 				$query = $this->db->query("SELECT * FROM `" . DB_PREFIX . "product_extra_feature` WHERE product_id = '" . (int)$product_id . "'");
 
 				if ($query->num_rows) {
-
-					// Update existing record
-					//$this->db->query("UPDATE `" . DB_PREFIX . "product_extra_feature` SET custom_name = '" . $custom_name . "', custom_color = '" . $custom_color . "' WHERE product_id = '" . (int)$product_id . "'");
 					$this->db->query("UPDATE `" . DB_PREFIX . "product_extra_feature` SET custom_name = '" . $custom_name . "', custom_color = '" . $custom_color . "', custom_image = '" . $custom_image . "' WHERE product_id = '" . (int)$product_id . "'");
 				} else {
 
 					if ($product_id) {
-						//$this->db->query("INSERT INTO `" . DB_PREFIX . "product_extra_feature` SET product_id = '" . (int)$product_id  . "', custom_name = '" . $custom_name . "', custom_color = '" . $custom_color . "'");
+
 						$this->db->query("INSERT INTO `" . DB_PREFIX . "product_extra_feature` SET product_id = '" . (int)$product_id . "', custom_name = '" . $custom_name . "', custom_color = '" . $custom_color . "', custom_image = '" . $custom_image . "'");
 					} else {
-						//$this->db->query("INSERT INTO `" . DB_PREFIX . "product_extra_feature` SET product_id = '" . (int)$json['product_id'] . "', custom_name = '" . $custom_name . "', custom_color = '" . $custom_color . "'");
+
 						$this->db->query("INSERT INTO `" . DB_PREFIX . "product_extra_feature` SET product_id = '" . (int)$json['product_id'] . "', custom_name = '" . $custom_name . "', custom_color = '" . $custom_color . "', custom_image = '" . $custom_image . "'");
 					}
-					// Insert new record
-
 				}
 			}
 
