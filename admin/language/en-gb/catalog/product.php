@@ -136,3 +136,4 @@ $_['error_keyword_character'] = 'Keyword can only use characters a-z, 0-9, - and
 $_['error_required']          = '%s required!';
 $_['text_custom_name'] = 'Custom Name';
 $_['text_custom_color'] = 'Custom Color';
+$_['custom_none'] = 'select Color';

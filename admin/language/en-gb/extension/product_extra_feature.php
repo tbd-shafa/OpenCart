@@ -8,8 +8,8 @@ $_['text_success'] = 'Success: You have modified the Product Extra Feature exten
 $_['text_edit'] = 'Edit Product Extra Feature';
 $_['text_success_install'] = 'Success: Product Extra Feature has been installed!';
 $_['text_success_uninstall'] = 'Success: Product Extra Feature has been uninstalled!';
-$_['text_list']        = 'Product Extra Feature List';
-
+$_['text_list']  = 'Product Extra Feature List';
+$_['text_none']  = 'select color';
 $_['text_success_status_update'] = 'Status updated successfully!';
 $_['text_error'] = 'Failed to update status.';
 

@@ -54,7 +54,7 @@ class ProductExtraFeature extends \Opencart\System\Engine\Controller
             $this->db->query("CREATE TABLE `" . DB_PREFIX . "product_extra_feature` (
             `product_id` INT(11) NOT NULL,
             `custom_name` VARCHAR(255) NULL,
-            `custom_color` VARCHAR(255) NULL,
+            `custom_color` TEXT NULL,
             `custom_image` VARCHAR(255) NULL,
             PRIMARY KEY (`product_id`)
         ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci");
@@ -68,7 +68,7 @@ class ProductExtraFeature extends \Opencart\System\Engine\Controller
             // Check if the `custom_color` column exists, if not, add it
             $query = $this->db->query("SHOW COLUMNS FROM `" . DB_PREFIX . "product_extra_feature` LIKE 'custom_color'");
             if (!$query->num_rows) {
-                $this->db->query("ALTER TABLE `" . DB_PREFIX . "product_extra_feature` ADD `custom_color` VARCHAR(255) NULL");
+                $this->db->query("ALTER TABLE `" . DB_PREFIX . "product_extra_feature` ADD `custom_color` TEXT NULL");
             }
 
             // Check if the `custom_image` column exists, if not, add it
