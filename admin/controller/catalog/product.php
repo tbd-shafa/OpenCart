@@ -1057,18 +1057,22 @@ class Product extends \Opencart\System\Engine\Controller
 		// Get the status of the product_extra_feature extension
 		$data['product_extra_feature_status'] = $this->config->get('product_extra_feature_status');
 
-		
+
 		// Load custom fields if the extension is enabled
 		if ($data['product_extra_feature_status']) {
 			if (isset($this->request->get['product_id'])) {
 				$product_id = $this->request->get['product_id'];
-
+				$query = $this->db->query("SELECT color_id, name FROM `" . DB_PREFIX . "color`");
+				$data['colors'] = [];
+				if ($query->num_rows) {
+					$data['colors'] = $query->rows;
+				}
 				// Fetch custom fields from the new table
 				$query = $this->db->query("SELECT custom_name, custom_color, custom_image FROM `" . DB_PREFIX . "product_extra_feature` WHERE product_id = '" . (int)$product_id . "'");
 
 				if ($query->num_rows) {
 					$data['custom_name'] = $query->row['custom_name'];
-					$data['custom_color'] = $query->row['custom_color'];
+					$data['custom_color'] = explode(',', $query->row['custom_color']); // Assuming custom_color stores comma-separated color IDs
 					$data['custom_image'] = $query->row['custom_image'];
 
 					// If there is a custom image, generate a thumbnail
@@ -1076,21 +1080,19 @@ class Product extends \Opencart\System\Engine\Controller
 						$this->load->model('tool/image');
 						$data['custom_thumb'] = $this->model_tool_image->resize($query->row['custom_image'], 100, 100);
 					} else {
-						//$data['custom_thumb'] = '';
 						$data['placeholder'] = $this->model_tool_image->resize('no_image.png', 100, 100);
 						$data['custom_thumb'] = $data['placeholder'];
 					}
 				} else {
 					$data['custom_name'] = '';
-					$data['custom_color'] = '';
+					$data['custom_color'] = [];
 					$data['custom_image'] = '';
 					$data['custom_thumb'] = ''; // No thumbnail if no image
 				}
 			} else {
 				$data['custom_name'] = '';
-				$data['custom_color'] = '';
+				$data['custom_color'] = [];
 				$data['custom_image'] = '';
-				// $data['custom_thumb'] = ''; // No thumbnail if no image
 				$data['placeholder'] = $this->model_tool_image->resize('no_image.png', 100, 100);
 				$data['custom_thumb'] = $data['placeholder'];
 			}

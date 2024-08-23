@@ -3330,3 +3330,7 @@ Line: 144
 File: /opt/lampp/htdocs/opencart3/admin/view/template/catalog/product_form.twig
 Line: 144
 
+2024-08-23 11:31:15 - PHP Unknown: explode(): Passing null to parameter #2 ($string) of type string is deprecated
+File: /opt/lampp/htdocs/opencart3/admin/controller/catalog/product.php
+Line: 1079
+
