@@ -1089,13 +1089,15 @@ if ($data['product_extra_feature_status']) {
             $data['custom_name'] = $query->row['custom_name'];
             $data['custom_color'] = $query->row['custom_color'];
             $data['custom_image'] = $query->row['custom_image'];
-
+		
             // If there is a custom image, generate a thumbnail
             if (!empty($query->row['custom_image'])) {
                 $this->load->model('tool/image');
                 $data['custom_thumb'] = $this->model_tool_image->resize($query->row['custom_image'], 100, 100);
             } else {
-                $data['custom_thumb'] = '';
+                //$data['custom_thumb'] = '';
+				$data['placeholder'] = $this->model_tool_image->resize('no_image.png', 100, 100);
+				$data['custom_thumb'] = $data['placeholder'];
             }
         } else {
             $data['custom_name'] = '';
@@ -1107,7 +1109,9 @@ if ($data['product_extra_feature_status']) {
         $data['custom_name'] = '';
         $data['custom_color'] = '';
         $data['custom_image'] = '';
-        $data['custom_thumb'] = ''; // No thumbnail if no image
+       // $data['custom_thumb'] = ''; // No thumbnail if no image
+	   $data['placeholder'] = $this->model_tool_image->resize('no_image.png', 100, 100);
+				$data['custom_thumb'] = $data['placeholder'];
     }
 }
 
