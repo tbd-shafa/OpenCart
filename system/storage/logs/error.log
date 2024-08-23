@@ -3382,3 +3382,7 @@ Line: 1100
 File: /opt/lampp/htdocs/opencart3/admin/controller/catalog/product.php
 Line: 1100
 
+2024-08-23 12:42:26 - Cannot use [] for reading in /opt/lampp/htdocs/opencart3/catalog/controller/product/product.php on line 527
+2024-08-23 12:43:53 - explode(): Argument #2 ($string) must be of type string, array given in /opt/lampp/htdocs/opencart3/system/storage/vendor/twig/twig/src/Extension/CoreExtension.php on line 766
+2024-08-23 12:43:56 - explode(): Argument #2 ($string) must be of type string, array given in /opt/lampp/htdocs/opencart3/system/storage/vendor/twig/twig/src/Extension/CoreExtension.php on line 766
+2024-08-23 12:44:28 - explode(): Argument #2 ($string) must be of type string, array given in /opt/lampp/htdocs/opencart3/system/storage/vendor/twig/twig/src/Extension/CoreExtension.php on line 766

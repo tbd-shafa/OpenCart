@@ -1030,22 +1030,51 @@ class __TwigTemplate_bc0d57e9cef4a3778cedcf726061ddd3 extends Template
             echo "            ";
             if (($context["custom_color"] ?? null)) {
                 // line 317
-                echo "                <p><strong>Custom Color:</strong> ";
-                echo ($context["custom_color"] ?? null);
-                echo "</p>
-            ";
+                echo "    <p><strong>Custom Color:</strong></p>
+   <div id=\"custom-colors\">
+    ";
+                // line 319
+                $context['_parent'] = $context;
+                $context['_seq'] = twig_ensure_traversable(($context["custom_color"] ?? null));
+                foreach ($context['_seq'] as $context["_key"] => $context["color"]) {
+                    // line 320
+                    echo "        <div class=\"form-check\">
+            <input type=\"radio\" name=\"selected_color\" value=\"";
+                    // line 321
+                    echo $context["color"];
+                    echo "\" id=\"color-";
+                    echo $context["color"];
+                    echo "\" class=\"form-check-input\">
+            <label for=\"color-";
+                    // line 322
+                    echo $context["color"];
+                    echo "\" class=\"form-check-label\">";
+                    echo $context["color"];
+                    echo "</label>
+        </div>
+    ";
+                }
+                $_parent = $context['_parent'];
+                unset($context['_seq'], $context['_iterated'], $context['_key'], $context['color'], $context['_parent'], $context['loop']);
+                $context = array_intersect_key($context, $_parent) + $_parent;
+                // line 325
+                echo "</div>
+
+";
             }
-            // line 319
-            echo "            ";
+            // line 328
+            echo "
+            ";
+            // line 329
             if (($context["custom_image"] ?? null)) {
-                // line 320
+                // line 330
                 echo "                <a href=\"";
                 echo ($context["custom_popup"] ?? null);
                 echo "\" title=\"";
                 echo ($context["heading_title"] ?? null);
                 echo "\" class=\"image-popup\">
         <p><strong>Custom Image:</strong> <img src=\"";
-                // line 321
+                // line 331
                 echo ($context["custom_image"] ?? null);
                 echo "\" alt=\"";
                 echo ($context["custom_name"] ?? null);
@@ -1053,28 +1082,28 @@ class __TwigTemplate_bc0d57e9cef4a3778cedcf726061ddd3 extends Template
     </a>
             ";
             }
-            // line 324
+            // line 334
             echo "        </div>
     ";
         }
-        // line 326
+        // line 336
         echo "        </div>
       </div>
 
       ";
-        // line 329
+        // line 339
         if (($context["products"] ?? null)) {
-            // line 330
+            // line 340
             echo "        <h3>";
             echo ($context["text_related"] ?? null);
             echo "</h3>
         <div class=\"row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4\">
           ";
-            // line 332
+            // line 342
             $context['_parent'] = $context;
             $context['_seq'] = twig_ensure_traversable(($context["products"] ?? null));
             foreach ($context['_seq'] as $context["_key"] => $context["product"]) {
-                // line 333
+                // line 343
                 echo "            <div class=\"col mb-3\">";
                 echo $context["product"];
                 echo "</div>
@@ -1083,21 +1112,21 @@ class __TwigTemplate_bc0d57e9cef4a3778cedcf726061ddd3 extends Template
             $_parent = $context['_parent'];
             unset($context['_seq'], $context['_iterated'], $context['_key'], $context['product'], $context['_parent'], $context['loop']);
             $context = array_intersect_key($context, $_parent) + $_parent;
-            // line 335
+            // line 345
             echo "        </div>
       ";
         }
-        // line 337
+        // line 347
         echo "
       ";
-        // line 338
+        // line 348
         if (($context["tags"] ?? null)) {
-            // line 339
+            // line 349
             echo "        <p>";
             echo ($context["text_tags"] ?? null);
             echo "
           ";
-            // line 340
+            // line 350
             $context['_parent'] = $context;
             $context['_seq'] = twig_ensure_traversable(range(0, (twig_length_filter($this->env, ($context["tags"] ?? null)) - 1)));
             $context['loop'] = [
@@ -1114,16 +1143,16 @@ class __TwigTemplate_bc0d57e9cef4a3778cedcf726061ddd3 extends Template
                 $context['loop']['last'] = 1 === $length;
             }
             foreach ($context['_seq'] as $context["_key"] => $context["i"]) {
-                // line 341
+                // line 351
                 echo "            <a href=\"";
-                echo twig_get_attribute($this->env, $this->source, (($__internal_compile_0 = ($context["tags"] ?? null)) && is_array($__internal_compile_0) || $__internal_compile_0 instanceof ArrayAccess ? ($__internal_compile_0[$context["i"]] ?? null) : null), "href", [], "any", false, false, false, 341);
+                echo twig_get_attribute($this->env, $this->source, (($__internal_compile_0 = ($context["tags"] ?? null)) && is_array($__internal_compile_0) || $__internal_compile_0 instanceof ArrayAccess ? ($__internal_compile_0[$context["i"]] ?? null) : null), "href", [], "any", false, false, false, 351);
                 echo "\">";
-                echo twig_get_attribute($this->env, $this->source, (($__internal_compile_1 = ($context["tags"] ?? null)) && is_array($__internal_compile_1) || $__internal_compile_1 instanceof ArrayAccess ? ($__internal_compile_1[$context["i"]] ?? null) : null), "tag", [], "any", false, false, false, 341);
+                echo twig_get_attribute($this->env, $this->source, (($__internal_compile_1 = ($context["tags"] ?? null)) && is_array($__internal_compile_1) || $__internal_compile_1 instanceof ArrayAccess ? ($__internal_compile_1[$context["i"]] ?? null) : null), "tag", [], "any", false, false, false, 351);
                 echo "</a>";
-                if ( !twig_get_attribute($this->env, $this->source, $context["loop"], "end", [], "any", false, false, false, 341)) {
+                if ( !twig_get_attribute($this->env, $this->source, $context["loop"], "end", [], "any", false, false, false, 351)) {
                     echo ",";
                 }
-                // line 342
+                // line 352
                 echo "          ";
                 ++$context['loop']['index0'];
                 ++$context['loop']['index'];
@@ -1137,18 +1166,18 @@ class __TwigTemplate_bc0d57e9cef4a3778cedcf726061ddd3 extends Template
             $_parent = $context['_parent'];
             unset($context['_seq'], $context['_iterated'], $context['_key'], $context['i'], $context['_parent'], $context['loop']);
             $context = array_intersect_key($context, $_parent) + $_parent;
-            // line 343
+            // line 353
             echo "        </p>
       ";
         }
-        // line 345
+        // line 355
         echo "
       ";
-        // line 346
+        // line 356
         echo ($context["content_bottom"] ?? null);
         echo "</div>
     ";
-        // line 347
+        // line 357
         echo ($context["column_right"] ?? null);
         echo "</div>
 </div>
@@ -1166,7 +1195,7 @@ class __TwigTemplate_bc0d57e9cef4a3778cedcf726061ddd3 extends Template
 
     \$.ajax({
         url: 'index.php?route=checkout/cart.add&language=";
-        // line 362
+        // line 372
         echo ($context["language"] ?? null);
         echo "',
         type: 'post',
@@ -1231,7 +1260,7 @@ class __TwigTemplate_bc0d57e9cef4a3778cedcf726061ddd3 extends Template
 
 //--></script>
 ";
-        // line 424
+        // line 434
         echo ($context["footer"] ?? null);
         echo "
 ";
@@ -1249,7 +1278,7 @@ class __TwigTemplate_bc0d57e9cef4a3778cedcf726061ddd3 extends Template
 
     public function getDebugInfo()
     {
-        return array (  1235 => 424,  1170 => 362,  1152 => 347,  1148 => 346,  1145 => 345,  1141 => 343,  1127 => 342,  1118 => 341,  1101 => 340,  1096 => 339,  1094 => 338,  1091 => 337,  1087 => 335,  1078 => 333,  1074 => 332,  1068 => 330,  1066 => 329,  1061 => 326,  1057 => 324,  1049 => 321,  1042 => 320,  1039 => 319,  1033 => 317,  1030 => 316,  1024 => 314,  1022 => 313,  1019 => 312,  1017 => 311,  1014 => 310,  1008 => 308,  1006 => 307,  1003 => 306,  997 => 302,  990 => 300,  981 => 297,  977 => 296,  974 => 295,  970 => 294,  963 => 290,  959 => 288,  955 => 287,  950 => 284,  948 => 283,  943 => 281,  938 => 278,  934 => 276,  931 => 275,  925 => 273,  923 => 272,  920 => 271,  914 => 269,  912 => 268,  907 => 266,  901 => 262,  892 => 259,  886 => 258,  882 => 256,  878 => 254,  875 => 253,  871 => 252,  868 => 251,  866 => 250,  863 => 249,  857 => 247,  855 => 246,  849 => 243,  843 => 240,  839 => 239,  835 => 238,  831 => 236,  825 => 232,  814 => 230,  810 => 229,  806 => 227,  795 => 225,  791 => 224,  787 => 223,  780 => 219,  777 => 218,  775 => 217,  772 => 216,  769 => 215,  762 => 213,  756 => 210,  746 => 207,  739 => 205,  732 => 204,  730 => 203,  727 => 202,  721 => 199,  711 => 196,  704 => 194,  697 => 193,  695 => 192,  692 => 191,  686 => 188,  676 => 185,  669 => 183,  662 => 182,  660 => 181,  657 => 180,  651 => 177,  644 => 175,  630 => 174,  623 => 172,  616 => 171,  614 => 170,  611 => 169,  605 => 166,  595 => 165,  589 => 164,  582 => 163,  580 => 162,  577 => 161,  571 => 158,  561 => 157,  555 => 156,  548 => 155,  546 => 154,  543 => 153,  537 => 150,  534 => 149,  526 => 146,  519 => 145,  517 => 144,  512 => 143,  499 => 142,  497 => 141,  493 => 140,  485 => 139,  482 => 138,  478 => 137,  474 => 136,  470 => 135,  463 => 134,  461 => 133,  458 => 132,  452 => 129,  449 => 128,  441 => 125,  434 => 123,  432 => 122,  427 => 121,  411 => 120,  403 => 119,  400 => 118,  396 => 117,  392 => 116,  388 => 115,  381 => 114,  379 => 113,  376 => 112,  370 => 109,  367 => 108,  360 => 106,  353 => 105,  351 => 104,  344 => 103,  340 => 102,  336 => 101,  330 => 100,  324 => 99,  317 => 98,  315 => 97,  312 => 96,  308 => 95,  303 => 93,  300 => 92,  298 => 91,  290 => 86,  283 => 84,  277 => 83,  272 => 80,  268 => 78,  265 => 77,  254 => 75,  250 => 74,  245 => 71,  243 => 70,  240 => 69,  232 => 67,  230 => 66,  227 => 65,  219 => 63,  217 => 62,  214 => 61,  209 => 59,  204 => 58,  198 => 55,  195 => 54,  193 => 53,  190 => 52,  188 => 51,  180 => 48,  177 => 47,  169 => 45,  167 => 44,  160 => 42,  157 => 41,  147 => 39,  145 => 38,  139 => 35,  135 => 33,  129 => 29,  125 => 27,  108 => 25,  104 => 24,  101 => 23,  99 => 22,  96 => 21,  82 => 19,  80 => 18,  75 => 15,  73 => 14,  66 => 10,  61 => 8,  58 => 7,  47 => 5,  43 => 4,  37 => 1,);
+        return array (  1264 => 434,  1199 => 372,  1181 => 357,  1177 => 356,  1174 => 355,  1170 => 353,  1156 => 352,  1147 => 351,  1130 => 350,  1125 => 349,  1123 => 348,  1120 => 347,  1116 => 345,  1107 => 343,  1103 => 342,  1097 => 340,  1095 => 339,  1090 => 336,  1086 => 334,  1078 => 331,  1071 => 330,  1069 => 329,  1066 => 328,  1061 => 325,  1050 => 322,  1044 => 321,  1041 => 320,  1037 => 319,  1033 => 317,  1030 => 316,  1024 => 314,  1022 => 313,  1019 => 312,  1017 => 311,  1014 => 310,  1008 => 308,  1006 => 307,  1003 => 306,  997 => 302,  990 => 300,  981 => 297,  977 => 296,  974 => 295,  970 => 294,  963 => 290,  959 => 288,  955 => 287,  950 => 284,  948 => 283,  943 => 281,  938 => 278,  934 => 276,  931 => 275,  925 => 273,  923 => 272,  920 => 271,  914 => 269,  912 => 268,  907 => 266,  901 => 262,  892 => 259,  886 => 258,  882 => 256,  878 => 254,  875 => 253,  871 => 252,  868 => 251,  866 => 250,  863 => 249,  857 => 247,  855 => 246,  849 => 243,  843 => 240,  839 => 239,  835 => 238,  831 => 236,  825 => 232,  814 => 230,  810 => 229,  806 => 227,  795 => 225,  791 => 224,  787 => 223,  780 => 219,  777 => 218,  775 => 217,  772 => 216,  769 => 215,  762 => 213,  756 => 210,  746 => 207,  739 => 205,  732 => 204,  730 => 203,  727 => 202,  721 => 199,  711 => 196,  704 => 194,  697 => 193,  695 => 192,  692 => 191,  686 => 188,  676 => 185,  669 => 183,  662 => 182,  660 => 181,  657 => 180,  651 => 177,  644 => 175,  630 => 174,  623 => 172,  616 => 171,  614 => 170,  611 => 169,  605 => 166,  595 => 165,  589 => 164,  582 => 163,  580 => 162,  577 => 161,  571 => 158,  561 => 157,  555 => 156,  548 => 155,  546 => 154,  543 => 153,  537 => 150,  534 => 149,  526 => 146,  519 => 145,  517 => 144,  512 => 143,  499 => 142,  497 => 141,  493 => 140,  485 => 139,  482 => 138,  478 => 137,  474 => 136,  470 => 135,  463 => 134,  461 => 133,  458 => 132,  452 => 129,  449 => 128,  441 => 125,  434 => 123,  432 => 122,  427 => 121,  411 => 120,  403 => 119,  400 => 118,  396 => 117,  392 => 116,  388 => 115,  381 => 114,  379 => 113,  376 => 112,  370 => 109,  367 => 108,  360 => 106,  353 => 105,  351 => 104,  344 => 103,  340 => 102,  336 => 101,  330 => 100,  324 => 99,  317 => 98,  315 => 97,  312 => 96,  308 => 95,  303 => 93,  300 => 92,  298 => 91,  290 => 86,  283 => 84,  277 => 83,  272 => 80,  268 => 78,  265 => 77,  254 => 75,  250 => 74,  245 => 71,  243 => 70,  240 => 69,  232 => 67,  230 => 66,  227 => 65,  219 => 63,  217 => 62,  214 => 61,  209 => 59,  204 => 58,  198 => 55,  195 => 54,  193 => 53,  190 => 52,  188 => 51,  180 => 48,  177 => 47,  169 => 45,  167 => 44,  160 => 42,  157 => 41,  147 => 39,  145 => 38,  139 => 35,  135 => 33,  129 => 29,  125 => 27,  108 => 25,  104 => 24,  101 => 23,  99 => 22,  96 => 21,  82 => 19,  80 => 18,  75 => 15,  73 => 14,  66 => 10,  61 => 8,  58 => 7,  47 => 5,  43 => 4,  37 => 1,);
     }
 
     public function getSourceContext()

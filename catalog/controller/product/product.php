@@ -512,10 +512,23 @@ $product_extra_feature = $this->model_catalog_product_extra_feature->getProductE
 
 if ($product_extra_feature) {
     $data['custom_name'] = $product_extra_feature['custom_name'];
-    $data['custom_color'] = $product_extra_feature['custom_color'];
+    // Fetch color names using the new function
+    $color_ids = explode(',', $product_extra_feature['custom_color']);
+	
+    $data['custom_color'] = [];
+	
+    foreach ($color_ids as $color_id) {
+        $color_name = $this->model_catalog_product_extra_feature->getColorNameById($color_id);
+		
+        if ($color_name) {
+            $data['custom_color'][] = $color_name;
+        }
+    }
+	
    $data['custom_image'] = $this->model_tool_image->resize($product_extra_feature['custom_image'], $this->config->get('config_image_thumb_width'), $this->config->get('config_image_thumb_height')); // Adjust the image size as needed
    $data['custom_popup'] = $this->model_tool_image->resize($product_extra_feature['custom_image'], $this->config->get('config_image_popup_width'), $this->config->get('config_image_popup_height')); // Adjust the image size as needed
 } else {
+	
     $data['custom_name'] = '';
     $data['custom_color'] = '';
     $data['custom_image'] = '';

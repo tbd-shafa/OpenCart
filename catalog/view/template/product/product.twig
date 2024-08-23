@@ -314,8 +314,18 @@
                 <p><strong>Custom Name:</strong> {{ custom_name }}</p>
             {% endif %}
             {% if custom_color %}
-                <p><strong>Custom Color:</strong> {{ custom_color }}</p>
-            {% endif %}
+    <p><strong>Custom Color:</strong></p>
+   <div id="custom-colors">
+    {% for color in custom_color %}
+        <div class="form-check">
+            <input type="radio" name="selected_color" value="{{ color }}" id="color-{{ color }}" class="form-check-input">
+            <label for="color-{{ color }}" class="form-check-label">{{ color }}</label>
+        </div>
+    {% endfor %}
+</div>
+
+{% endif %}
+
             {% if custom_image %}
                 <a href="{{ custom_popup }}" title="{{ heading_title }}" class="image-popup">
         <p><strong>Custom Image:</strong> <img src="{{ custom_image }}" alt="{{ custom_name }}" /></p>

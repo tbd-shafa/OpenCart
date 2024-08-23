@@ -11,5 +11,14 @@ class ProductExtraFeature extends \Opencart\System\Engine\Model  {
         
         return $query->row;
     }
+    public function getColorNameById($color_id) {
+        $query = $this->db->query("SELECT name FROM `" . DB_PREFIX . "color` WHERE color_id = '" . (int)$color_id . "'");
+        
+        if ($query->num_rows) {
+            return $query->row['name'];
+        } else {
+            return null; // Return null if the color ID is not found
+        }
+    }
 }
 ?>
