@@ -1057,26 +1057,7 @@ class Product extends \Opencart\System\Engine\Controller
 		// Get the status of the product_extra_feature extension
 		$data['product_extra_feature_status'] = $this->config->get('product_extra_feature_status');
 
-		// Load custom fields if the extension is enabled
-		// if ($data['product_extra_feature_status']) {
-		// 	if (isset($this->request->get['product_id'])) {
-		// 		$product_id = $this->request->get['product_id'];
-
-		// 		// Fetch custom fields from the new table
-		// 		$query = $this->db->query("SELECT custom_name, custom_color FROM `" . DB_PREFIX . "product_extra_feature` WHERE product_id = '" . (int)$product_id . "'");
-
-		// 		if ($query->num_rows) {
-		// 			$data['custom_name'] = $query->row['custom_name'];
-		// 			$data['custom_color'] = $query->row['custom_color'];
-		// 		} else {
-		// 			$data['custom_name'] = '';
-		// 			$data['custom_color'] = '';
-		// 		}
-		// 	} else {
-		// 		$data['custom_name'] = '';
-		// 		$data['custom_color'] = '';
-		// 	}
-		// }
+		
 		// Load custom fields if the extension is enabled
 		if ($data['product_extra_feature_status']) {
 			if (isset($this->request->get['product_id'])) {
