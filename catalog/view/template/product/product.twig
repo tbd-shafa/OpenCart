@@ -240,7 +240,27 @@
                   <input type="hidden" name="product_id" value="{{ product_id }}" id="input-product-id"/>
                   <div id="error-quantity" class="form-text"></div>
                   <br/>
-                  <button type="submit" id="button-cart" class="btn btn-primary btn-lg btn-block">{{ button_cart }}</button>
+                  <button type="submit" id="button-cart" class="btn btn-primary btn-lg btn-block"disabled>{{ button_cart }}</button>
+                  <script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Get the Add to Cart button
+    var addToCartButton = document.getElementById('button-cart');
+    
+    // Get all the radio buttons
+    var colorRadios = document.querySelectorAll('input[name="selected_color"]');
+    
+    // Attach an event listener to each radio button
+    colorRadios.forEach(function(radio) {
+        radio.addEventListener('change', function() {
+            // Enable the Add to Cart button when a color is selected
+            if (radio.checked) {
+                addToCartButton.disabled = false;
+            }
+        });
+    });
+});
+</script>
+
                 </div>
 
                 {% if minimum > 1 %}
