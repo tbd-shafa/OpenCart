@@ -181,80 +181,41 @@ class __TwigTemplate_bc0d57e9cef4a3778cedcf726061ddd3 extends Template
         echo " ";
         echo ($context["stock"] ?? null);
         echo "</li>
-            ";
-        // line 49
-        if (($context["custom_name"] ?? null)) {
-            // line 50
-            echo "    <p><strong>Custom Name:</strong> ";
-            echo ($context["custom_name"] ?? null);
-            echo "</p>
-";
-        }
-        // line 52
-        echo "
-";
-        // line 53
-        if (($context["custom_color"] ?? null)) {
-            // line 54
-            echo "    <p><strong>Custom Color:</strong> ";
-            echo ($context["custom_color"] ?? null);
-            echo "</p>
-";
-        }
-        // line 56
-        if (($context["custom_image"] ?? null)) {
-            // line 57
-            echo "    <a href=\"";
-            echo ($context["custom_popup"] ?? null);
-            echo "\" title=\"";
-            echo ($context["heading_title"] ?? null);
-            echo "\" class=\"image-popup\">
-        <p><strong>Custom Image:</strong> <img src=\"";
-            // line 58
-            echo ($context["custom_image"] ?? null);
-            echo "\" alt=\"";
-            echo ($context["custom_name"] ?? null);
-            echo "\" /></p>
-    </a>
-";
-        }
-        // line 61
-        echo "
           </ul>
 
           ";
-        // line 64
+        // line 51
         if (($context["price"] ?? null)) {
-            // line 65
+            // line 52
             echo "            <ul class=\"list-unstyled\">
               ";
-            // line 66
+            // line 53
             if ( !($context["special"] ?? null)) {
-                // line 67
+                // line 54
                 echo "                <li>
                   <h2><span class=\"price-new\">";
-                // line 68
+                // line 55
                 echo ($context["price"] ?? null);
                 echo "</span></h2>
                 </li>
               ";
             } else {
-                // line 71
+                // line 58
                 echo "                <li><span class=\"price-old\">";
                 echo ($context["price"] ?? null);
                 echo "</span></li>
                 <li><h2><span class=\"price-new\">";
-                // line 72
+                // line 59
                 echo ($context["special"] ?? null);
                 echo "</span></h2></li>
               ";
             }
-            // line 74
+            // line 61
             echo "
               ";
-            // line 75
+            // line 62
             if (($context["tax"] ?? null)) {
-                // line 76
+                // line 63
                 echo "                <li>";
                 echo ($context["text_tax"] ?? null);
                 echo " ";
@@ -262,12 +223,12 @@ class __TwigTemplate_bc0d57e9cef4a3778cedcf726061ddd3 extends Template
                 echo "</li>
               ";
             }
-            // line 78
+            // line 65
             echo "
               ";
-            // line 79
+            // line 66
             if (($context["points"] ?? null)) {
-                // line 80
+                // line 67
                 echo "                <li>";
                 echo ($context["text_points"] ?? null);
                 echo " ";
@@ -275,57 +236,57 @@ class __TwigTemplate_bc0d57e9cef4a3778cedcf726061ddd3 extends Template
                 echo "</li>
               ";
             }
-            // line 82
+            // line 69
             echo "
               ";
-            // line 83
+            // line 70
             if (($context["discounts"] ?? null)) {
-                // line 84
+                // line 71
                 echo "                <li>
                   <hr>
                 </li>
                 ";
-                // line 87
+                // line 74
                 $context['_parent'] = $context;
                 $context['_seq'] = twig_ensure_traversable(($context["discounts"] ?? null));
                 foreach ($context['_seq'] as $context["_key"] => $context["discount"]) {
-                    // line 88
+                    // line 75
                     echo "                  <li>";
-                    echo twig_get_attribute($this->env, $this->source, $context["discount"], "quantity", [], "any", false, false, false, 88);
+                    echo twig_get_attribute($this->env, $this->source, $context["discount"], "quantity", [], "any", false, false, false, 75);
                     echo ($context["text_discount"] ?? null);
-                    echo twig_get_attribute($this->env, $this->source, $context["discount"], "price", [], "any", false, false, false, 88);
+                    echo twig_get_attribute($this->env, $this->source, $context["discount"], "price", [], "any", false, false, false, 75);
                     echo "</li>
                 ";
                 }
                 $_parent = $context['_parent'];
                 unset($context['_seq'], $context['_iterated'], $context['_key'], $context['discount'], $context['_parent'], $context['loop']);
                 $context = array_intersect_key($context, $_parent) + $_parent;
-                // line 90
+                // line 77
                 echo "              ";
             }
-            // line 91
+            // line 78
             echo "            </ul>
           ";
         }
-        // line 93
+        // line 80
         echo "
           <form method=\"post\" data-oc-toggle=\"ajax\">
             <div class=\"btn-group\">
               <button type=\"submit\" formaction=\"";
-        // line 96
+        // line 83
         echo ($context["add_to_wishlist"] ?? null);
         echo "\" data-bs-toggle=\"tooltip\" class=\"btn btn-light\" title=\"";
         echo ($context["button_wishlist"] ?? null);
         echo "\"><i class=\"fa-solid fa-heart\"></i></button>
               <button type=\"submit\" formaction=\"";
-        // line 97
+        // line 84
         echo ($context["add_to_compare"] ?? null);
         echo "\" data-bs-toggle=\"tooltip\" class=\"btn btn-light\" title=\"";
         echo ($context["button_compare"] ?? null);
         echo "\"><i class=\"fa-solid fa-arrow-right-arrow-left\"></i></button>
             </div>
             <input type=\"hidden\" name=\"product_id\" value=\"";
-        // line 99
+        // line 86
         echo ($context["product_id"] ?? null);
         echo "\"/>
           </form>
@@ -333,150 +294,150 @@ class __TwigTemplate_bc0d57e9cef4a3778cedcf726061ddd3 extends Template
           <div id=\"product\">
             <form id=\"form-product\">
               ";
-        // line 104
+        // line 91
         if (($context["options"] ?? null)) {
-            // line 105
+            // line 92
             echo "            <hr>
               <h3>";
-            // line 106
+            // line 93
             echo ($context["text_option"] ?? null);
             echo "</h3>
               <div>
                 ";
-            // line 108
+            // line 95
             $context['_parent'] = $context;
             $context['_seq'] = twig_ensure_traversable(($context["options"] ?? null));
             foreach ($context['_seq'] as $context["_key"] => $context["option"]) {
-                // line 109
+                // line 96
                 echo "
                   ";
-                // line 110
-                if ((twig_get_attribute($this->env, $this->source, $context["option"], "type", [], "any", false, false, false, 110) == "select")) {
-                    // line 111
+                // line 97
+                if ((twig_get_attribute($this->env, $this->source, $context["option"], "type", [], "any", false, false, false, 97) == "select")) {
+                    // line 98
                     echo "                    <div class=\"mb-3";
-                    if (twig_get_attribute($this->env, $this->source, $context["option"], "required", [], "any", false, false, false, 111)) {
+                    if (twig_get_attribute($this->env, $this->source, $context["option"], "required", [], "any", false, false, false, 98)) {
                         echo " required";
                     }
                     echo "\">
                       <label for=\"input-option-";
-                    // line 112
-                    echo twig_get_attribute($this->env, $this->source, $context["option"], "product_option_id", [], "any", false, false, false, 112);
+                    // line 99
+                    echo twig_get_attribute($this->env, $this->source, $context["option"], "product_option_id", [], "any", false, false, false, 99);
                     echo "\" class=\"form-label\">";
-                    echo twig_get_attribute($this->env, $this->source, $context["option"], "name", [], "any", false, false, false, 112);
+                    echo twig_get_attribute($this->env, $this->source, $context["option"], "name", [], "any", false, false, false, 99);
                     echo "</label>
                       <select name=\"option[";
-                    // line 113
-                    echo twig_get_attribute($this->env, $this->source, $context["option"], "product_option_id", [], "any", false, false, false, 113);
+                    // line 100
+                    echo twig_get_attribute($this->env, $this->source, $context["option"], "product_option_id", [], "any", false, false, false, 100);
                     echo "]\" id=\"input-option-";
-                    echo twig_get_attribute($this->env, $this->source, $context["option"], "product_option_id", [], "any", false, false, false, 113);
+                    echo twig_get_attribute($this->env, $this->source, $context["option"], "product_option_id", [], "any", false, false, false, 100);
                     echo "\" class=\"form-select\">
                         <option value=\"\">";
-                    // line 114
+                    // line 101
                     echo ($context["text_select"] ?? null);
                     echo "</option>
                         ";
-                    // line 115
+                    // line 102
                     $context['_parent'] = $context;
-                    $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, $context["option"], "product_option_value", [], "any", false, false, false, 115));
+                    $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, $context["option"], "product_option_value", [], "any", false, false, false, 102));
                     foreach ($context['_seq'] as $context["_key"] => $context["option_value"]) {
-                        // line 116
+                        // line 103
                         echo "                          <option value=\"";
-                        echo twig_get_attribute($this->env, $this->source, $context["option_value"], "product_option_value_id", [], "any", false, false, false, 116);
+                        echo twig_get_attribute($this->env, $this->source, $context["option_value"], "product_option_value_id", [], "any", false, false, false, 103);
                         echo "\">";
-                        echo twig_get_attribute($this->env, $this->source, $context["option_value"], "name", [], "any", false, false, false, 116);
+                        echo twig_get_attribute($this->env, $this->source, $context["option_value"], "name", [], "any", false, false, false, 103);
                         echo "
                             ";
-                        // line 117
-                        if (twig_get_attribute($this->env, $this->source, $context["option_value"], "price", [], "any", false, false, false, 117)) {
-                            // line 118
+                        // line 104
+                        if (twig_get_attribute($this->env, $this->source, $context["option_value"], "price", [], "any", false, false, false, 104)) {
+                            // line 105
                             echo "                              (";
-                            echo twig_get_attribute($this->env, $this->source, $context["option_value"], "price_prefix", [], "any", false, false, false, 118);
-                            echo twig_get_attribute($this->env, $this->source, $context["option_value"], "price", [], "any", false, false, false, 118);
+                            echo twig_get_attribute($this->env, $this->source, $context["option_value"], "price_prefix", [], "any", false, false, false, 105);
+                            echo twig_get_attribute($this->env, $this->source, $context["option_value"], "price", [], "any", false, false, false, 105);
                             echo ")
                             ";
                         }
-                        // line 119
+                        // line 106
                         echo "</option>
                         ";
                     }
                     $_parent = $context['_parent'];
                     unset($context['_seq'], $context['_iterated'], $context['_key'], $context['option_value'], $context['_parent'], $context['loop']);
                     $context = array_intersect_key($context, $_parent) + $_parent;
-                    // line 121
+                    // line 108
                     echo "                      </select>
                       <div id=\"error-option-";
-                    // line 122
-                    echo twig_get_attribute($this->env, $this->source, $context["option"], "product_option_id", [], "any", false, false, false, 122);
+                    // line 109
+                    echo twig_get_attribute($this->env, $this->source, $context["option"], "product_option_id", [], "any", false, false, false, 109);
                     echo "\" class=\"invalid-feedback\"></div>
                     </div>
                   ";
                 }
-                // line 125
+                // line 112
                 echo "
                   ";
-                // line 126
-                if ((twig_get_attribute($this->env, $this->source, $context["option"], "type", [], "any", false, false, false, 126) == "radio")) {
-                    // line 127
+                // line 113
+                if ((twig_get_attribute($this->env, $this->source, $context["option"], "type", [], "any", false, false, false, 113) == "radio")) {
+                    // line 114
                     echo "                    <div class=\"mb-3";
-                    if (twig_get_attribute($this->env, $this->source, $context["option"], "required", [], "any", false, false, false, 127)) {
+                    if (twig_get_attribute($this->env, $this->source, $context["option"], "required", [], "any", false, false, false, 114)) {
                         echo " required";
                     }
                     echo "\">
                       <label class=\"form-label\">";
-                    // line 128
-                    echo twig_get_attribute($this->env, $this->source, $context["option"], "name", [], "any", false, false, false, 128);
+                    // line 115
+                    echo twig_get_attribute($this->env, $this->source, $context["option"], "name", [], "any", false, false, false, 115);
                     echo "</label>
                       <div id=\"input-option-";
-                    // line 129
-                    echo twig_get_attribute($this->env, $this->source, $context["option"], "product_option_id", [], "any", false, false, false, 129);
+                    // line 116
+                    echo twig_get_attribute($this->env, $this->source, $context["option"], "product_option_id", [], "any", false, false, false, 116);
                     echo "\">
                         ";
-                    // line 130
+                    // line 117
                     $context['_parent'] = $context;
-                    $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, $context["option"], "product_option_value", [], "any", false, false, false, 130));
+                    $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, $context["option"], "product_option_value", [], "any", false, false, false, 117));
                     foreach ($context['_seq'] as $context["_key"] => $context["option_value"]) {
-                        // line 131
+                        // line 118
                         echo "                          <div class=\"form-check\">
                             <input type=\"radio\" name=\"option[";
-                        // line 132
-                        echo twig_get_attribute($this->env, $this->source, $context["option"], "product_option_id", [], "any", false, false, false, 132);
+                        // line 119
+                        echo twig_get_attribute($this->env, $this->source, $context["option"], "product_option_id", [], "any", false, false, false, 119);
                         echo "]\" value=\"";
-                        echo twig_get_attribute($this->env, $this->source, $context["option_value"], "product_option_value_id", [], "any", false, false, false, 132);
+                        echo twig_get_attribute($this->env, $this->source, $context["option_value"], "product_option_value_id", [], "any", false, false, false, 119);
                         echo "\" id=\"input-option-value-";
-                        echo twig_get_attribute($this->env, $this->source, $context["option_value"], "product_option_value_id", [], "any", false, false, false, 132);
+                        echo twig_get_attribute($this->env, $this->source, $context["option_value"], "product_option_value_id", [], "any", false, false, false, 119);
                         echo "\" class=\"form-check-input\"/>
                             <label for=\"input-option-value-";
-                        // line 133
-                        echo twig_get_attribute($this->env, $this->source, $context["option_value"], "product_option_value_id", [], "any", false, false, false, 133);
+                        // line 120
+                        echo twig_get_attribute($this->env, $this->source, $context["option_value"], "product_option_value_id", [], "any", false, false, false, 120);
                         echo "\" class=\"form-check-label\">";
-                        if (twig_get_attribute($this->env, $this->source, $context["option_value"], "image", [], "any", false, false, false, 133)) {
+                        if (twig_get_attribute($this->env, $this->source, $context["option_value"], "image", [], "any", false, false, false, 120)) {
                             echo "<img src=\"";
-                            echo twig_get_attribute($this->env, $this->source, $context["option_value"], "image", [], "any", false, false, false, 133);
+                            echo twig_get_attribute($this->env, $this->source, $context["option_value"], "image", [], "any", false, false, false, 120);
                             echo "\" alt=\"";
-                            echo twig_get_attribute($this->env, $this->source, $context["option_value"], "name", [], "any", false, false, false, 133);
+                            echo twig_get_attribute($this->env, $this->source, $context["option_value"], "name", [], "any", false, false, false, 120);
                             echo " ";
-                            if (twig_get_attribute($this->env, $this->source, $context["option_value"], "price", [], "any", false, false, false, 133)) {
-                                echo twig_get_attribute($this->env, $this->source, $context["option_value"], "price_prefix", [], "any", false, false, false, 133);
+                            if (twig_get_attribute($this->env, $this->source, $context["option_value"], "price", [], "any", false, false, false, 120)) {
+                                echo twig_get_attribute($this->env, $this->source, $context["option_value"], "price_prefix", [], "any", false, false, false, 120);
                                 echo " ";
-                                echo twig_get_attribute($this->env, $this->source, $context["option_value"], "price", [], "any", false, false, false, 133);
+                                echo twig_get_attribute($this->env, $this->source, $context["option_value"], "price", [], "any", false, false, false, 120);
                             }
                             echo "\" class=\"img-thumbnail\"/>";
                         }
-                        // line 134
+                        // line 121
                         echo "                              ";
-                        echo twig_get_attribute($this->env, $this->source, $context["option_value"], "name", [], "any", false, false, false, 134);
+                        echo twig_get_attribute($this->env, $this->source, $context["option_value"], "name", [], "any", false, false, false, 121);
                         echo "
                               ";
-                        // line 135
-                        if (twig_get_attribute($this->env, $this->source, $context["option_value"], "price", [], "any", false, false, false, 135)) {
-                            // line 136
+                        // line 122
+                        if (twig_get_attribute($this->env, $this->source, $context["option_value"], "price", [], "any", false, false, false, 122)) {
+                            // line 123
                             echo "                                (";
-                            echo twig_get_attribute($this->env, $this->source, $context["option_value"], "price_prefix", [], "any", false, false, false, 136);
-                            echo twig_get_attribute($this->env, $this->source, $context["option_value"], "price", [], "any", false, false, false, 136);
+                            echo twig_get_attribute($this->env, $this->source, $context["option_value"], "price_prefix", [], "any", false, false, false, 123);
+                            echo twig_get_attribute($this->env, $this->source, $context["option_value"], "price", [], "any", false, false, false, 123);
                             echo ")
                               ";
                         }
-                        // line 138
+                        // line 125
                         echo "                            </label>
                           </div>
                         ";
@@ -484,84 +445,84 @@ class __TwigTemplate_bc0d57e9cef4a3778cedcf726061ddd3 extends Template
                     $_parent = $context['_parent'];
                     unset($context['_seq'], $context['_iterated'], $context['_key'], $context['option_value'], $context['_parent'], $context['loop']);
                     $context = array_intersect_key($context, $_parent) + $_parent;
-                    // line 141
+                    // line 128
                     echo "                      </div>
                       <div id=\"error-option-";
-                    // line 142
-                    echo twig_get_attribute($this->env, $this->source, $context["option"], "product_option_id", [], "any", false, false, false, 142);
+                    // line 129
+                    echo twig_get_attribute($this->env, $this->source, $context["option"], "product_option_id", [], "any", false, false, false, 129);
                     echo "\" class=\"invalid-feedback\"></div>
                     </div>
                   ";
                 }
-                // line 145
+                // line 132
                 echo "
                   ";
-                // line 146
-                if ((twig_get_attribute($this->env, $this->source, $context["option"], "type", [], "any", false, false, false, 146) == "checkbox")) {
-                    // line 147
+                // line 133
+                if ((twig_get_attribute($this->env, $this->source, $context["option"], "type", [], "any", false, false, false, 133) == "checkbox")) {
+                    // line 134
                     echo "                    <div class=\"mb-3";
-                    if (twig_get_attribute($this->env, $this->source, $context["option"], "required", [], "any", false, false, false, 147)) {
+                    if (twig_get_attribute($this->env, $this->source, $context["option"], "required", [], "any", false, false, false, 134)) {
                         echo " required";
                     }
                     echo "\">
                       <label class=\"form-label\">";
-                    // line 148
-                    echo twig_get_attribute($this->env, $this->source, $context["option"], "name", [], "any", false, false, false, 148);
+                    // line 135
+                    echo twig_get_attribute($this->env, $this->source, $context["option"], "name", [], "any", false, false, false, 135);
                     echo "</label>
                       <div id=\"input-option-";
-                    // line 149
-                    echo twig_get_attribute($this->env, $this->source, $context["option"], "product_option_id", [], "any", false, false, false, 149);
+                    // line 136
+                    echo twig_get_attribute($this->env, $this->source, $context["option"], "product_option_id", [], "any", false, false, false, 136);
                     echo "\">
                         ";
-                    // line 150
+                    // line 137
                     $context['_parent'] = $context;
-                    $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, $context["option"], "product_option_value", [], "any", false, false, false, 150));
+                    $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, $context["option"], "product_option_value", [], "any", false, false, false, 137));
                     foreach ($context['_seq'] as $context["_key"] => $context["option_value"]) {
-                        // line 151
+                        // line 138
                         echo "                          <div class=\"form-check\">
                             <input type=\"checkbox\" name=\"option[";
-                        // line 152
-                        echo twig_get_attribute($this->env, $this->source, $context["option"], "product_option_id", [], "any", false, false, false, 152);
+                        // line 139
+                        echo twig_get_attribute($this->env, $this->source, $context["option"], "product_option_id", [], "any", false, false, false, 139);
                         echo "][]\" value=\"";
-                        echo twig_get_attribute($this->env, $this->source, $context["option_value"], "product_option_value_id", [], "any", false, false, false, 152);
+                        echo twig_get_attribute($this->env, $this->source, $context["option_value"], "product_option_value_id", [], "any", false, false, false, 139);
                         echo "\" id=\"input-option-value-";
-                        echo twig_get_attribute($this->env, $this->source, $context["option_value"], "product_option_value_id", [], "any", false, false, false, 152);
+                        echo twig_get_attribute($this->env, $this->source, $context["option_value"], "product_option_value_id", [], "any", false, false, false, 139);
                         echo "\" class=\"form-check-input\"/>
                             <label for=\"input-option-value-";
-                        // line 153
-                        echo twig_get_attribute($this->env, $this->source, $context["option_value"], "product_option_value_id", [], "any", false, false, false, 153);
+                        // line 140
+                        echo twig_get_attribute($this->env, $this->source, $context["option_value"], "product_option_value_id", [], "any", false, false, false, 140);
                         echo "\" class=\"form-check-label\">
                               ";
-                        // line 154
-                        if (twig_get_attribute($this->env, $this->source, $context["option_value"], "image", [], "any", false, false, false, 154)) {
-                            // line 155
+                        // line 141
+                        if (twig_get_attribute($this->env, $this->source, $context["option_value"], "image", [], "any", false, false, false, 141)) {
+                            // line 142
                             echo "                                <img src=\"";
-                            echo twig_get_attribute($this->env, $this->source, $context["option_value"], "image", [], "any", false, false, false, 155);
+                            echo twig_get_attribute($this->env, $this->source, $context["option_value"], "image", [], "any", false, false, false, 142);
                             echo "\" alt=\"";
-                            echo twig_get_attribute($this->env, $this->source, $context["option_value"], "name", [], "any", false, false, false, 155);
+                            echo twig_get_attribute($this->env, $this->source, $context["option_value"], "name", [], "any", false, false, false, 142);
                             echo " ";
-                            if (twig_get_attribute($this->env, $this->source, $context["option_value"], "price", [], "any", false, false, false, 155)) {
-                                echo twig_get_attribute($this->env, $this->source, $context["option_value"], "price_prefix", [], "any", false, false, false, 155);
+                            if (twig_get_attribute($this->env, $this->source, $context["option_value"], "price", [], "any", false, false, false, 142)) {
+                                echo twig_get_attribute($this->env, $this->source, $context["option_value"], "price_prefix", [], "any", false, false, false, 142);
                                 echo " ";
-                                echo twig_get_attribute($this->env, $this->source, $context["option_value"], "price", [], "any", false, false, false, 155);
+                                echo twig_get_attribute($this->env, $this->source, $context["option_value"], "price", [], "any", false, false, false, 142);
                             }
                             echo "\" class=\"img-thumbnail\"/>";
                         }
-                        // line 156
+                        // line 143
                         echo "                              ";
-                        echo twig_get_attribute($this->env, $this->source, $context["option_value"], "name", [], "any", false, false, false, 156);
+                        echo twig_get_attribute($this->env, $this->source, $context["option_value"], "name", [], "any", false, false, false, 143);
                         echo "
                               ";
-                        // line 157
-                        if (twig_get_attribute($this->env, $this->source, $context["option_value"], "price", [], "any", false, false, false, 157)) {
-                            // line 158
+                        // line 144
+                        if (twig_get_attribute($this->env, $this->source, $context["option_value"], "price", [], "any", false, false, false, 144)) {
+                            // line 145
                             echo "                                (";
-                            echo twig_get_attribute($this->env, $this->source, $context["option_value"], "price_prefix", [], "any", false, false, false, 158);
-                            echo twig_get_attribute($this->env, $this->source, $context["option_value"], "price", [], "any", false, false, false, 158);
+                            echo twig_get_attribute($this->env, $this->source, $context["option_value"], "price_prefix", [], "any", false, false, false, 145);
+                            echo twig_get_attribute($this->env, $this->source, $context["option_value"], "price", [], "any", false, false, false, 145);
                             echo ")
                               ";
                         }
-                        // line 159
+                        // line 146
                         echo "</label>
                           </div>
                         ";
@@ -569,108 +530,108 @@ class __TwigTemplate_bc0d57e9cef4a3778cedcf726061ddd3 extends Template
                     $_parent = $context['_parent'];
                     unset($context['_seq'], $context['_iterated'], $context['_key'], $context['option_value'], $context['_parent'], $context['loop']);
                     $context = array_intersect_key($context, $_parent) + $_parent;
-                    // line 162
+                    // line 149
                     echo "                      </div>
                       <div id=\"error-option-";
-                    // line 163
-                    echo twig_get_attribute($this->env, $this->source, $context["option"], "product_option_id", [], "any", false, false, false, 163);
+                    // line 150
+                    echo twig_get_attribute($this->env, $this->source, $context["option"], "product_option_id", [], "any", false, false, false, 150);
                     echo "\" class=\"invalid-feedback\"></div>
                     </div>
                   ";
                 }
-                // line 166
+                // line 153
                 echo "
                   ";
-                // line 167
-                if ((twig_get_attribute($this->env, $this->source, $context["option"], "type", [], "any", false, false, false, 167) == "text")) {
-                    // line 168
+                // line 154
+                if ((twig_get_attribute($this->env, $this->source, $context["option"], "type", [], "any", false, false, false, 154) == "text")) {
+                    // line 155
                     echo "                    <div class=\"mb-3";
-                    if (twig_get_attribute($this->env, $this->source, $context["option"], "required", [], "any", false, false, false, 168)) {
+                    if (twig_get_attribute($this->env, $this->source, $context["option"], "required", [], "any", false, false, false, 155)) {
                         echo " required";
                     }
                     echo "\">
                       <label for=\"input-option-";
-                    // line 169
-                    echo twig_get_attribute($this->env, $this->source, $context["option"], "product_option_id", [], "any", false, false, false, 169);
+                    // line 156
+                    echo twig_get_attribute($this->env, $this->source, $context["option"], "product_option_id", [], "any", false, false, false, 156);
                     echo "\" class=\"form-label\">";
-                    echo twig_get_attribute($this->env, $this->source, $context["option"], "name", [], "any", false, false, false, 169);
+                    echo twig_get_attribute($this->env, $this->source, $context["option"], "name", [], "any", false, false, false, 156);
                     echo "</label>
                       <input type=\"text\" name=\"option[";
-                    // line 170
-                    echo twig_get_attribute($this->env, $this->source, $context["option"], "product_option_id", [], "any", false, false, false, 170);
+                    // line 157
+                    echo twig_get_attribute($this->env, $this->source, $context["option"], "product_option_id", [], "any", false, false, false, 157);
                     echo "]\" value=\"";
-                    echo twig_get_attribute($this->env, $this->source, $context["option"], "value", [], "any", false, false, false, 170);
+                    echo twig_get_attribute($this->env, $this->source, $context["option"], "value", [], "any", false, false, false, 157);
                     echo "\" placeholder=\"";
-                    echo twig_get_attribute($this->env, $this->source, $context["option"], "name", [], "any", false, false, false, 170);
+                    echo twig_get_attribute($this->env, $this->source, $context["option"], "name", [], "any", false, false, false, 157);
                     echo "\" id=\"input-option-";
-                    echo twig_get_attribute($this->env, $this->source, $context["option"], "product_option_id", [], "any", false, false, false, 170);
+                    echo twig_get_attribute($this->env, $this->source, $context["option"], "product_option_id", [], "any", false, false, false, 157);
                     echo "\" class=\"form-control\"/>
                       <div id=\"error-option-";
-                    // line 171
-                    echo twig_get_attribute($this->env, $this->source, $context["option"], "product_option_id", [], "any", false, false, false, 171);
+                    // line 158
+                    echo twig_get_attribute($this->env, $this->source, $context["option"], "product_option_id", [], "any", false, false, false, 158);
                     echo "\" class=\"invalid-feedback\"></div>
                     </div>
                   ";
                 }
-                // line 174
+                // line 161
                 echo "
                   ";
-                // line 175
-                if ((twig_get_attribute($this->env, $this->source, $context["option"], "type", [], "any", false, false, false, 175) == "textarea")) {
-                    // line 176
+                // line 162
+                if ((twig_get_attribute($this->env, $this->source, $context["option"], "type", [], "any", false, false, false, 162) == "textarea")) {
+                    // line 163
                     echo "                    <div class=\"mb-3";
-                    if (twig_get_attribute($this->env, $this->source, $context["option"], "required", [], "any", false, false, false, 176)) {
+                    if (twig_get_attribute($this->env, $this->source, $context["option"], "required", [], "any", false, false, false, 163)) {
                         echo " required";
                     }
                     echo "\">
                       <label for=\"input-option-";
-                    // line 177
-                    echo twig_get_attribute($this->env, $this->source, $context["option"], "product_option_id", [], "any", false, false, false, 177);
+                    // line 164
+                    echo twig_get_attribute($this->env, $this->source, $context["option"], "product_option_id", [], "any", false, false, false, 164);
                     echo "\" class=\"form-label\">";
-                    echo twig_get_attribute($this->env, $this->source, $context["option"], "name", [], "any", false, false, false, 177);
+                    echo twig_get_attribute($this->env, $this->source, $context["option"], "name", [], "any", false, false, false, 164);
                     echo "</label>
                       <textarea name=\"option[";
-                    // line 178
-                    echo twig_get_attribute($this->env, $this->source, $context["option"], "product_option_id", [], "any", false, false, false, 178);
+                    // line 165
+                    echo twig_get_attribute($this->env, $this->source, $context["option"], "product_option_id", [], "any", false, false, false, 165);
                     echo "]\" rows=\"5\" placeholder=\"";
-                    echo twig_get_attribute($this->env, $this->source, $context["option"], "name", [], "any", false, false, false, 178);
+                    echo twig_get_attribute($this->env, $this->source, $context["option"], "name", [], "any", false, false, false, 165);
                     echo "\" id=\"input-option-";
-                    echo twig_get_attribute($this->env, $this->source, $context["option"], "product_option_id", [], "any", false, false, false, 178);
+                    echo twig_get_attribute($this->env, $this->source, $context["option"], "product_option_id", [], "any", false, false, false, 165);
                     echo "\" class=\"form-control\">";
-                    echo twig_get_attribute($this->env, $this->source, $context["option"], "value", [], "any", false, false, false, 178);
+                    echo twig_get_attribute($this->env, $this->source, $context["option"], "value", [], "any", false, false, false, 165);
                     echo "</textarea>
                       <div id=\"error-option-";
-                    // line 179
-                    echo twig_get_attribute($this->env, $this->source, $context["option"], "product_option_id", [], "any", false, false, false, 179);
+                    // line 166
+                    echo twig_get_attribute($this->env, $this->source, $context["option"], "product_option_id", [], "any", false, false, false, 166);
                     echo "\" class=\"invalid-feedback\"></div>
                     </div>
                   ";
                 }
-                // line 182
+                // line 169
                 echo "
                   ";
-                // line 183
-                if ((twig_get_attribute($this->env, $this->source, $context["option"], "type", [], "any", false, false, false, 183) == "file")) {
-                    // line 184
+                // line 170
+                if ((twig_get_attribute($this->env, $this->source, $context["option"], "type", [], "any", false, false, false, 170) == "file")) {
+                    // line 171
                     echo "                    <div class=\"mb-3";
-                    if (twig_get_attribute($this->env, $this->source, $context["option"], "required", [], "any", false, false, false, 184)) {
+                    if (twig_get_attribute($this->env, $this->source, $context["option"], "required", [], "any", false, false, false, 171)) {
                         echo " required";
                     }
                     echo "\">
                       <label for=\"button-upload-";
-                    // line 185
-                    echo twig_get_attribute($this->env, $this->source, $context["option"], "product_option_id", [], "any", false, false, false, 185);
+                    // line 172
+                    echo twig_get_attribute($this->env, $this->source, $context["option"], "product_option_id", [], "any", false, false, false, 172);
                     echo "\" class=\"form-label\">";
-                    echo twig_get_attribute($this->env, $this->source, $context["option"], "name", [], "any", false, false, false, 185);
+                    echo twig_get_attribute($this->env, $this->source, $context["option"], "name", [], "any", false, false, false, 172);
                     echo "</label>
                       <div>
                         <button type=\"button\" id=\"button-upload-";
-                    // line 187
-                    echo twig_get_attribute($this->env, $this->source, $context["option"], "product_option_id", [], "any", false, false, false, 187);
+                    // line 174
+                    echo twig_get_attribute($this->env, $this->source, $context["option"], "product_option_id", [], "any", false, false, false, 174);
                     echo "\" data-oc-toggle=\"upload\" data-oc-url=\"";
                     echo ($context["upload"] ?? null);
                     echo "\" data-oc-target=\"#input-option-";
-                    echo twig_get_attribute($this->env, $this->source, $context["option"], "product_option_id", [], "any", false, false, false, 187);
+                    echo twig_get_attribute($this->env, $this->source, $context["option"], "product_option_id", [], "any", false, false, false, 174);
                     echo "\" data-oc-size-max=\"";
                     echo ($context["config_file_max_size"] ?? null);
                     echo "\" data-oc-size-error=\"";
@@ -679,255 +640,255 @@ class __TwigTemplate_bc0d57e9cef4a3778cedcf726061ddd3 extends Template
                     echo ($context["button_upload"] ?? null);
                     echo "</button>
                         <input type=\"hidden\" name=\"option[";
-                    // line 188
-                    echo twig_get_attribute($this->env, $this->source, $context["option"], "product_option_id", [], "any", false, false, false, 188);
+                    // line 175
+                    echo twig_get_attribute($this->env, $this->source, $context["option"], "product_option_id", [], "any", false, false, false, 175);
                     echo "]\" value=\"\" id=\"input-option-";
-                    echo twig_get_attribute($this->env, $this->source, $context["option"], "product_option_id", [], "any", false, false, false, 188);
+                    echo twig_get_attribute($this->env, $this->source, $context["option"], "product_option_id", [], "any", false, false, false, 175);
                     echo "\"/>
                       </div>
                       <div id=\"error-option-";
-                    // line 190
-                    echo twig_get_attribute($this->env, $this->source, $context["option"], "product_option_id", [], "any", false, false, false, 190);
+                    // line 177
+                    echo twig_get_attribute($this->env, $this->source, $context["option"], "product_option_id", [], "any", false, false, false, 177);
                     echo "\" class=\"invalid-feedback\"></div>
                     </div>
                   ";
                 }
-                // line 193
+                // line 180
                 echo "
                   ";
-                // line 194
-                if ((twig_get_attribute($this->env, $this->source, $context["option"], "type", [], "any", false, false, false, 194) == "date")) {
-                    // line 195
+                // line 181
+                if ((twig_get_attribute($this->env, $this->source, $context["option"], "type", [], "any", false, false, false, 181) == "date")) {
+                    // line 182
                     echo "                    <div class=\"mb-3";
-                    if (twig_get_attribute($this->env, $this->source, $context["option"], "required", [], "any", false, false, false, 195)) {
+                    if (twig_get_attribute($this->env, $this->source, $context["option"], "required", [], "any", false, false, false, 182)) {
                         echo " required";
                     }
                     echo "\">
                       <label for=\"input-option-";
-                    // line 196
-                    echo twig_get_attribute($this->env, $this->source, $context["option"], "product_option_id", [], "any", false, false, false, 196);
+                    // line 183
+                    echo twig_get_attribute($this->env, $this->source, $context["option"], "product_option_id", [], "any", false, false, false, 183);
                     echo "\" class=\"form-label\">";
-                    echo twig_get_attribute($this->env, $this->source, $context["option"], "name", [], "any", false, false, false, 196);
+                    echo twig_get_attribute($this->env, $this->source, $context["option"], "name", [], "any", false, false, false, 183);
                     echo "</label>
                       <div class=\"input-group\">
                         <input type=\"text\" name=\"option[";
-                    // line 198
-                    echo twig_get_attribute($this->env, $this->source, $context["option"], "product_option_id", [], "any", false, false, false, 198);
+                    // line 185
+                    echo twig_get_attribute($this->env, $this->source, $context["option"], "product_option_id", [], "any", false, false, false, 185);
                     echo "]\" value=\"";
-                    echo twig_get_attribute($this->env, $this->source, $context["option"], "value", [], "any", false, false, false, 198);
+                    echo twig_get_attribute($this->env, $this->source, $context["option"], "value", [], "any", false, false, false, 185);
                     echo "\" id=\"input-option-";
-                    echo twig_get_attribute($this->env, $this->source, $context["option"], "product_option_id", [], "any", false, false, false, 198);
+                    echo twig_get_attribute($this->env, $this->source, $context["option"], "product_option_id", [], "any", false, false, false, 185);
                     echo "\" class=\"form-control date\"/>
                         <div class=\"input-group-text\"><i class=\"fa-regular fa-calendar\"></i></div>
                       </div>
                       <div id=\"error-option-";
-                    // line 201
-                    echo twig_get_attribute($this->env, $this->source, $context["option"], "product_option_id", [], "any", false, false, false, 201);
+                    // line 188
+                    echo twig_get_attribute($this->env, $this->source, $context["option"], "product_option_id", [], "any", false, false, false, 188);
                     echo "\" class=\"invalid-feedback\"></div>
                     </div>
                   ";
                 }
-                // line 204
+                // line 191
                 echo "
                   ";
-                // line 205
-                if ((twig_get_attribute($this->env, $this->source, $context["option"], "type", [], "any", false, false, false, 205) == "datetime")) {
-                    // line 206
+                // line 192
+                if ((twig_get_attribute($this->env, $this->source, $context["option"], "type", [], "any", false, false, false, 192) == "datetime")) {
+                    // line 193
                     echo "                    <div class=\"mb-3";
-                    if (twig_get_attribute($this->env, $this->source, $context["option"], "required", [], "any", false, false, false, 206)) {
+                    if (twig_get_attribute($this->env, $this->source, $context["option"], "required", [], "any", false, false, false, 193)) {
                         echo " required";
                     }
                     echo "\">
                       <label for=\"input-option-";
-                    // line 207
-                    echo twig_get_attribute($this->env, $this->source, $context["option"], "product_option_id", [], "any", false, false, false, 207);
+                    // line 194
+                    echo twig_get_attribute($this->env, $this->source, $context["option"], "product_option_id", [], "any", false, false, false, 194);
                     echo "\" class=\"form-label\">";
-                    echo twig_get_attribute($this->env, $this->source, $context["option"], "name", [], "any", false, false, false, 207);
+                    echo twig_get_attribute($this->env, $this->source, $context["option"], "name", [], "any", false, false, false, 194);
                     echo "</label>
                       <div class=\"input-group\">
                         <input type=\"text\" name=\"option[";
-                    // line 209
-                    echo twig_get_attribute($this->env, $this->source, $context["option"], "product_option_id", [], "any", false, false, false, 209);
+                    // line 196
+                    echo twig_get_attribute($this->env, $this->source, $context["option"], "product_option_id", [], "any", false, false, false, 196);
                     echo "]\" value=\"";
-                    echo twig_get_attribute($this->env, $this->source, $context["option"], "value", [], "any", false, false, false, 209);
+                    echo twig_get_attribute($this->env, $this->source, $context["option"], "value", [], "any", false, false, false, 196);
                     echo "\" id=\"input-option-";
-                    echo twig_get_attribute($this->env, $this->source, $context["option"], "product_option_id", [], "any", false, false, false, 209);
+                    echo twig_get_attribute($this->env, $this->source, $context["option"], "product_option_id", [], "any", false, false, false, 196);
                     echo "\" class=\"form-control datetime\"/>
                         <div class=\"input-group-text\"><i class=\"fa-regular fa-calendar\"></i></div>
                       </div>
                       <div id=\"error-option-";
-                    // line 212
-                    echo twig_get_attribute($this->env, $this->source, $context["option"], "product_option_id", [], "any", false, false, false, 212);
+                    // line 199
+                    echo twig_get_attribute($this->env, $this->source, $context["option"], "product_option_id", [], "any", false, false, false, 199);
                     echo "\" class=\"invalid-feedback\"></div>
                     </div>
                   ";
                 }
-                // line 215
+                // line 202
                 echo "
                   ";
-                // line 216
-                if ((twig_get_attribute($this->env, $this->source, $context["option"], "type", [], "any", false, false, false, 216) == "time")) {
-                    // line 217
+                // line 203
+                if ((twig_get_attribute($this->env, $this->source, $context["option"], "type", [], "any", false, false, false, 203) == "time")) {
+                    // line 204
                     echo "                    <div class=\"mb-3";
-                    if (twig_get_attribute($this->env, $this->source, $context["option"], "required", [], "any", false, false, false, 217)) {
+                    if (twig_get_attribute($this->env, $this->source, $context["option"], "required", [], "any", false, false, false, 204)) {
                         echo " required";
                     }
                     echo "\">
                       <label for=\"input-option-";
-                    // line 218
-                    echo twig_get_attribute($this->env, $this->source, $context["option"], "product_option_id", [], "any", false, false, false, 218);
+                    // line 205
+                    echo twig_get_attribute($this->env, $this->source, $context["option"], "product_option_id", [], "any", false, false, false, 205);
                     echo "\" class=\"form-label\">";
-                    echo twig_get_attribute($this->env, $this->source, $context["option"], "name", [], "any", false, false, false, 218);
+                    echo twig_get_attribute($this->env, $this->source, $context["option"], "name", [], "any", false, false, false, 205);
                     echo "</label>
                       <div class=\"input-group\">
                         <input type=\"text\" name=\"option[";
-                    // line 220
-                    echo twig_get_attribute($this->env, $this->source, $context["option"], "product_option_id", [], "any", false, false, false, 220);
+                    // line 207
+                    echo twig_get_attribute($this->env, $this->source, $context["option"], "product_option_id", [], "any", false, false, false, 207);
                     echo "]\" value=\"";
-                    echo twig_get_attribute($this->env, $this->source, $context["option"], "value", [], "any", false, false, false, 220);
+                    echo twig_get_attribute($this->env, $this->source, $context["option"], "value", [], "any", false, false, false, 207);
                     echo "\" id=\"input-option-";
-                    echo twig_get_attribute($this->env, $this->source, $context["option"], "product_option_id", [], "any", false, false, false, 220);
+                    echo twig_get_attribute($this->env, $this->source, $context["option"], "product_option_id", [], "any", false, false, false, 207);
                     echo "\" class=\"form-control time\"/>
                         <div class=\"input-group-text\"><i class=\"fa-regular fa-calendar\"></i></div>
                       </div>
                       <div id=\"error-option-";
-                    // line 223
-                    echo twig_get_attribute($this->env, $this->source, $context["option"], "product_option_id", [], "any", false, false, false, 223);
+                    // line 210
+                    echo twig_get_attribute($this->env, $this->source, $context["option"], "product_option_id", [], "any", false, false, false, 210);
                     echo "\" class=\"invalid-feedback\"></div>
                     </div>
                   ";
                 }
-                // line 226
+                // line 213
                 echo "
                 ";
             }
             $_parent = $context['_parent'];
             unset($context['_seq'], $context['_iterated'], $context['_key'], $context['option'], $context['_parent'], $context['loop']);
             $context = array_intersect_key($context, $_parent) + $_parent;
-            // line 228
+            // line 215
             echo "                ";
         }
-        // line 229
+        // line 216
         echo "
                 ";
-        // line 230
+        // line 217
         if (($context["subscription_plans"] ?? null)) {
-            // line 231
+            // line 218
             echo "                  <hr/>
                   <h3>";
-            // line 232
+            // line 219
             echo ($context["text_subscription"] ?? null);
             echo "</h3>
                   <div class=\"mb-3 required\">
 
                     <select name=\"subscription_plan_id\" id=\"input-subscription\" class=\"form-select\">
                       <option value=\"\">";
-            // line 236
+            // line 223
             echo ($context["text_select"] ?? null);
             echo "</option>
                       ";
-            // line 237
+            // line 224
             $context['_parent'] = $context;
             $context['_seq'] = twig_ensure_traversable(($context["subscription_plans"] ?? null));
             foreach ($context['_seq'] as $context["_key"] => $context["subscription_plan"]) {
-                // line 238
+                // line 225
                 echo "                        <option value=\"";
-                echo twig_get_attribute($this->env, $this->source, $context["subscription_plan"], "subscription_plan_id", [], "any", false, false, false, 238);
+                echo twig_get_attribute($this->env, $this->source, $context["subscription_plan"], "subscription_plan_id", [], "any", false, false, false, 225);
                 echo "\">";
-                echo twig_get_attribute($this->env, $this->source, $context["subscription_plan"], "name", [], "any", false, false, false, 238);
+                echo twig_get_attribute($this->env, $this->source, $context["subscription_plan"], "name", [], "any", false, false, false, 225);
                 echo "</option>
                       ";
             }
             $_parent = $context['_parent'];
             unset($context['_seq'], $context['_iterated'], $context['_key'], $context['subscription_plan'], $context['_parent'], $context['loop']);
             $context = array_intersect_key($context, $_parent) + $_parent;
-            // line 240
+            // line 227
             echo "                    </select>
 
                     ";
-            // line 242
+            // line 229
             $context['_parent'] = $context;
             $context['_seq'] = twig_ensure_traversable(($context["subscription_plans"] ?? null));
             foreach ($context['_seq'] as $context["_key"] => $context["subscription_plan"]) {
-                // line 243
+                // line 230
                 echo "                      <div id=\"subscription-description-";
-                echo twig_get_attribute($this->env, $this->source, $context["subscription_plan"], "subscription_plan_id", [], "any", false, false, false, 243);
+                echo twig_get_attribute($this->env, $this->source, $context["subscription_plan"], "subscription_plan_id", [], "any", false, false, false, 230);
                 echo "\" class=\"form-text subscription d-none\">";
-                echo twig_get_attribute($this->env, $this->source, $context["subscription_plan"], "description", [], "any", false, false, false, 243);
+                echo twig_get_attribute($this->env, $this->source, $context["subscription_plan"], "description", [], "any", false, false, false, 230);
                 echo "</div>
                     ";
             }
             $_parent = $context['_parent'];
             unset($context['_seq'], $context['_iterated'], $context['_key'], $context['subscription_plan'], $context['_parent'], $context['loop']);
             $context = array_intersect_key($context, $_parent) + $_parent;
-            // line 245
+            // line 232
             echo "                    <div id=\"error-subscription\" class=\"invalid-feedback\"></div>
 
                   </div>
                 ";
         }
-        // line 249
+        // line 236
         echo "
                 <div class=\"mb-3\">
                   <label for=\"input-quantity\" class=\"form-label\">";
-        // line 251
+        // line 238
         echo ($context["entry_qty"] ?? null);
         echo "</label>
                   <input type=\"text\" name=\"quantity\" value=\"";
-        // line 252
+        // line 239
         echo ($context["minimum"] ?? null);
         echo "\" size=\"2\" id=\"input-quantity\" class=\"form-control\"/>
                   <input type=\"hidden\" name=\"product_id\" value=\"";
-        // line 253
+        // line 240
         echo ($context["product_id"] ?? null);
         echo "\" id=\"input-product-id\"/>
                   <div id=\"error-quantity\" class=\"form-text\"></div>
                   <br/>
                   <button type=\"submit\" id=\"button-cart\" class=\"btn btn-primary btn-lg btn-block\">";
-        // line 256
+        // line 243
         echo ($context["button_cart"] ?? null);
         echo "</button>
                 </div>
 
                 ";
-        // line 259
+        // line 246
         if ((($context["minimum"] ?? null) > 1)) {
-            // line 260
+            // line 247
             echo "                  <div class=\"alert alert-info\"><i class=\"fa-solid fa-circle-info\"></i> ";
             echo ($context["text_minimum"] ?? null);
             echo "</div>
                 ";
         }
-        // line 262
+        // line 249
         echo "              </div>
               ";
-        // line 263
+        // line 250
         if (($context["review_status"] ?? null)) {
-            // line 264
+            // line 251
             echo "                <div class=\"rating\">
                   <p>";
-            // line 265
+            // line 252
             $context['_parent'] = $context;
             $context['_seq'] = twig_ensure_traversable(range(1, 5));
             foreach ($context['_seq'] as $context["_key"] => $context["i"]) {
-                // line 266
+                // line 253
                 echo "                      ";
                 if ((($context["rating"] ?? null) < $context["i"])) {
-                    // line 267
+                    // line 254
                     echo "                        <span class=\"fa-stack\"><i class=\"fa-regular fa-star fa-stack-1x\"></i></span>
                       ";
                 } else {
-                    // line 269
+                    // line 256
                     echo "                        <span class=\"fa-stack\"><i class=\"fa-solid fa-star fa-stack-1x\"></i><i class=\"fa-regular fa-star fa-stack-1x\"></i></span>
                       ";
                 }
-                // line 271
+                // line 258
                 echo "                    ";
             }
             $_parent = $context['_parent'];
             unset($context['_seq'], $context['_iterated'], $context['_key'], $context['i'], $context['_parent'], $context['loop']);
             $context = array_intersect_key($context, $_parent) + $_parent;
-            // line 272
+            // line 259
             echo "                    <a href=\"\" onclick=\"\$('a[href=\\'#tab-review\\']').tab('show'); return false;\">";
             echo ($context["text_reviews"] ?? null);
             echo "</a> / <a href=\"\" onclick=\"\$('a[href=\\'#tab-review\\']').tab('show'); return false;\">";
@@ -936,82 +897,88 @@ class __TwigTemplate_bc0d57e9cef4a3778cedcf726061ddd3 extends Template
                 </div>
               ";
         }
-        // line 275
+        // line 262
         echo "            </form>
           </div>
         </div>
         <ul class=\"nav nav-tabs\">
           <li class=\"nav-item\"><a href=\"#tab-description\" data-bs-toggle=\"tab\" class=\"nav-link active\">";
-        // line 279
+        // line 266
         echo ($context["tab_description"] ?? null);
         echo "</a></li>
 
           ";
-        // line 281
+        // line 268
         if (($context["attribute_groups"] ?? null)) {
-            // line 282
+            // line 269
             echo "            <li class=\"nav-item\"><a href=\"#tab-specification\" data-bs-toggle=\"tab\" class=\"nav-link\">";
             echo ($context["tab_attribute"] ?? null);
             echo "</a></li>
           ";
         }
-        // line 284
+        // line 271
         echo "
           ";
-        // line 285
+        // line 272
         if (($context["review_status"] ?? null)) {
-            // line 286
+            // line 273
             echo "            <li class=\"nav-item\"><a href=\"#tab-review\" data-bs-toggle=\"tab\" class=\"nav-link\">";
             echo ($context["tab_review"] ?? null);
             echo "</a></li>
           ";
         }
-        // line 288
-        echo "
-        </ul>
+        // line 275
+        echo " ";
+        if (($context["product_extra_feature_status"] ?? null)) {
+            // line 276
+            echo "        <li class=\"nav-item\"><a href=\"#tab-custom-data\" data-bs-toggle=\"tab\" class=\"nav-link\">Custom Data</a></li>
+    ";
+        }
+        // line 278
+        echo "        </ul>
         <div class=\"tab-content\">
 
           <div id=\"tab-description\" class=\"tab-pane fade show active mb-4\">";
-        // line 292
+        // line 281
         echo ($context["description"] ?? null);
         echo "</div>
 
           ";
-        // line 294
+        // line 283
         if (($context["attribute_groups"] ?? null)) {
-            // line 295
+            // line 284
             echo "            <div id=\"tab-specification\" class=\"tab-pane fade\">
               <div class=\"table-responsive\">
                 <table class=\"table table-bordered\">
                   ";
-            // line 298
+            // line 287
             $context['_parent'] = $context;
             $context['_seq'] = twig_ensure_traversable(($context["attribute_groups"] ?? null));
             foreach ($context['_seq'] as $context["_key"] => $context["attribute_group"]) {
-                // line 299
+                // line 288
                 echo "                    <thead>
                       <tr>
                         <td colspan=\"2\"><strong>";
-                // line 301
-                echo twig_get_attribute($this->env, $this->source, $context["attribute_group"], "name", [], "any", false, false, false, 301);
+                // line 290
+                echo twig_get_attribute($this->env, $this->source, $context["attribute_group"], "name", [], "any", false, false, false, 290);
                 echo "</strong></td>
                       </tr>
                     </thead>
                     <tbody>
                       ";
-                // line 305
+                // line 294
                 $context['_parent'] = $context;
-                $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, $context["attribute_group"], "attribute", [], "any", false, false, false, 305));
+                $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, $context["attribute_group"], "attribute", [], "any", false, false, false, 294));
                 foreach ($context['_seq'] as $context["_key"] => $context["attribute"]) {
-                    // line 306
+                    // line 295
                     echo "                        <tr>
                           <td>";
-                    // line 307
-                    echo twig_get_attribute($this->env, $this->source, $context["attribute"], "name", [], "any", false, false, false, 307);
+                    // line 296
+                    echo twig_get_attribute($this->env, $this->source, $context["attribute"], "name", [], "any", false, false, false, 296);
                     echo "</td>
                           <td>";
-                    // line 308
-                    echo twig_get_attribute($this->env, $this->source, $context["attribute"], "text", [], "any", false, false, false, 308);
+                    // line 297
+                    echo twig_get_attribute($this->env, $this->source, $context["attribute"], "text", [], "any", false, false, false, 297);
                     echo "</td>
                         </tr>
                       ";
@@ -1019,49 +986,95 @@ class __TwigTemplate_bc0d57e9cef4a3778cedcf726061ddd3 extends Template
                 $_parent = $context['_parent'];
                 unset($context['_seq'], $context['_iterated'], $context['_key'], $context['attribute'], $context['_parent'], $context['loop']);
                 $context = array_intersect_key($context, $_parent) + $_parent;
-                // line 311
+                // line 300
                 echo "                    </tbody>
                   ";
             }
             $_parent = $context['_parent'];
             unset($context['_seq'], $context['_iterated'], $context['_key'], $context['attribute_group'], $context['_parent'], $context['loop']);
             $context = array_intersect_key($context, $_parent) + $_parent;
-            // line 313
+            // line 302
             echo "                </table>
               </div>
             </div>
           ";
         }
-        // line 317
+        // line 306
         echo "
           ";
-        // line 318
+        // line 307
         if (($context["review_status"] ?? null)) {
-            // line 319
+            // line 308
             echo "            <div id=\"tab-review\" class=\"tab-pane fade mb-4\">";
             echo ($context["review"] ?? null);
             echo "</div>
           ";
         }
-        // line 321
-        echo "
-        </div>
+        // line 310
+        echo "<!-- New Content Section for Custom Data -->
+    ";
+        // line 311
+        if (((($context["custom_name"] ?? null) || ($context["custom_color"] ?? null)) || ($context["custom_image"] ?? null))) {
+            // line 312
+            echo "        <div id=\"tab-custom-data\" class=\"tab-pane fade mb-4\">
+            ";
+            // line 313
+            if (($context["custom_name"] ?? null)) {
+                // line 314
+                echo "                <p><strong>Custom Name:</strong> ";
+                echo ($context["custom_name"] ?? null);
+                echo "</p>
+            ";
+            }
+            // line 316
+            echo "            ";
+            if (($context["custom_color"] ?? null)) {
+                // line 317
+                echo "                <p><strong>Custom Color:</strong> ";
+                echo ($context["custom_color"] ?? null);
+                echo "</p>
+            ";
+            }
+            // line 319
+            echo "            ";
+            if (($context["custom_image"] ?? null)) {
+                // line 320
+                echo "                <a href=\"";
+                echo ($context["custom_popup"] ?? null);
+                echo "\" title=\"";
+                echo ($context["heading_title"] ?? null);
+                echo "\" class=\"image-popup\">
+        <p><strong>Custom Image:</strong> <img src=\"";
+                // line 321
+                echo ($context["custom_image"] ?? null);
+                echo "\" alt=\"";
+                echo ($context["custom_name"] ?? null);
+                echo "\" /></p>
+    </a>
+            ";
+            }
+            // line 324
+            echo "        </div>
+    ";
+        }
+        // line 326
+        echo "        </div>
       </div>
 
       ";
-        // line 325
+        // line 329
         if (($context["products"] ?? null)) {
-            // line 326
+            // line 330
             echo "        <h3>";
             echo ($context["text_related"] ?? null);
             echo "</h3>
         <div class=\"row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4\">
           ";
-            // line 328
+            // line 332
             $context['_parent'] = $context;
             $context['_seq'] = twig_ensure_traversable(($context["products"] ?? null));
             foreach ($context['_seq'] as $context["_key"] => $context["product"]) {
-                // line 329
+                // line 333
                 echo "            <div class=\"col mb-3\">";
                 echo $context["product"];
                 echo "</div>
@@ -1070,21 +1083,21 @@ class __TwigTemplate_bc0d57e9cef4a3778cedcf726061ddd3 extends Template
             $_parent = $context['_parent'];
             unset($context['_seq'], $context['_iterated'], $context['_key'], $context['product'], $context['_parent'], $context['loop']);
             $context = array_intersect_key($context, $_parent) + $_parent;
-            // line 331
+            // line 335
             echo "        </div>
       ";
         }
-        // line 333
+        // line 337
         echo "
       ";
-        // line 334
+        // line 338
         if (($context["tags"] ?? null)) {
-            // line 335
+            // line 339
             echo "        <p>";
             echo ($context["text_tags"] ?? null);
             echo "
           ";
-            // line 336
+            // line 340
             $context['_parent'] = $context;
             $context['_seq'] = twig_ensure_traversable(range(0, (twig_length_filter($this->env, ($context["tags"] ?? null)) - 1)));
             $context['loop'] = [
@@ -1101,16 +1114,16 @@ class __TwigTemplate_bc0d57e9cef4a3778cedcf726061ddd3 extends Template
                 $context['loop']['last'] = 1 === $length;
             }
             foreach ($context['_seq'] as $context["_key"] => $context["i"]) {
-                // line 337
+                // line 341
                 echo "            <a href=\"";
-                echo twig_get_attribute($this->env, $this->source, (($__internal_compile_0 = ($context["tags"] ?? null)) && is_array($__internal_compile_0) || $__internal_compile_0 instanceof ArrayAccess ? ($__internal_compile_0[$context["i"]] ?? null) : null), "href", [], "any", false, false, false, 337);
+                echo twig_get_attribute($this->env, $this->source, (($__internal_compile_0 = ($context["tags"] ?? null)) && is_array($__internal_compile_0) || $__internal_compile_0 instanceof ArrayAccess ? ($__internal_compile_0[$context["i"]] ?? null) : null), "href", [], "any", false, false, false, 341);
                 echo "\">";
-                echo twig_get_attribute($this->env, $this->source, (($__internal_compile_1 = ($context["tags"] ?? null)) && is_array($__internal_compile_1) || $__internal_compile_1 instanceof ArrayAccess ? ($__internal_compile_1[$context["i"]] ?? null) : null), "tag", [], "any", false, false, false, 337);
+                echo twig_get_attribute($this->env, $this->source, (($__internal_compile_1 = ($context["tags"] ?? null)) && is_array($__internal_compile_1) || $__internal_compile_1 instanceof ArrayAccess ? ($__internal_compile_1[$context["i"]] ?? null) : null), "tag", [], "any", false, false, false, 341);
                 echo "</a>";
-                if ( !twig_get_attribute($this->env, $this->source, $context["loop"], "end", [], "any", false, false, false, 337)) {
+                if ( !twig_get_attribute($this->env, $this->source, $context["loop"], "end", [], "any", false, false, false, 341)) {
                     echo ",";
                 }
-                // line 338
+                // line 342
                 echo "          ";
                 ++$context['loop']['index0'];
                 ++$context['loop']['index'];
@@ -1124,18 +1137,18 @@ class __TwigTemplate_bc0d57e9cef4a3778cedcf726061ddd3 extends Template
             $_parent = $context['_parent'];
             unset($context['_seq'], $context['_iterated'], $context['_key'], $context['i'], $context['_parent'], $context['loop']);
             $context = array_intersect_key($context, $_parent) + $_parent;
-            // line 339
+            // line 343
             echo "        </p>
       ";
         }
-        // line 341
+        // line 345
         echo "
       ";
-        // line 342
+        // line 346
         echo ($context["content_bottom"] ?? null);
         echo "</div>
     ";
-        // line 343
+        // line 347
         echo ($context["column_right"] ?? null);
         echo "</div>
 </div>
@@ -1153,7 +1166,7 @@ class __TwigTemplate_bc0d57e9cef4a3778cedcf726061ddd3 extends Template
 
     \$.ajax({
         url: 'index.php?route=checkout/cart.add&language=";
-        // line 358
+        // line 362
         echo ($context["language"] ?? null);
         echo "',
         type: 'post',
@@ -1218,7 +1231,7 @@ class __TwigTemplate_bc0d57e9cef4a3778cedcf726061ddd3 extends Template
 
 //--></script>
 ";
-        // line 420
+        // line 424
         echo ($context["footer"] ?? null);
         echo "
 ";
@@ -1236,7 +1249,7 @@ class __TwigTemplate_bc0d57e9cef4a3778cedcf726061ddd3 extends Template
 
     public function getDebugInfo()
     {
-        return array (  1222 => 420,  1157 => 358,  1139 => 343,  1135 => 342,  1132 => 341,  1128 => 339,  1114 => 338,  1105 => 337,  1088 => 336,  1083 => 335,  1081 => 334,  1078 => 333,  1074 => 331,  1065 => 329,  1061 => 328,  1055 => 326,  1053 => 325,  1047 => 321,  1041 => 319,  1039 => 318,  1036 => 317,  1030 => 313,  1023 => 311,  1014 => 308,  1010 => 307,  1007 => 306,  1003 => 305,  996 => 301,  992 => 299,  988 => 298,  983 => 295,  981 => 294,  976 => 292,  970 => 288,  964 => 286,  962 => 285,  959 => 284,  953 => 282,  951 => 281,  946 => 279,  940 => 275,  931 => 272,  925 => 271,  921 => 269,  917 => 267,  914 => 266,  910 => 265,  907 => 264,  905 => 263,  902 => 262,  896 => 260,  894 => 259,  888 => 256,  882 => 253,  878 => 252,  874 => 251,  870 => 249,  864 => 245,  853 => 243,  849 => 242,  845 => 240,  834 => 238,  830 => 237,  826 => 236,  819 => 232,  816 => 231,  814 => 230,  811 => 229,  808 => 228,  801 => 226,  795 => 223,  785 => 220,  778 => 218,  771 => 217,  769 => 216,  766 => 215,  760 => 212,  750 => 209,  743 => 207,  736 => 206,  734 => 205,  731 => 204,  725 => 201,  715 => 198,  708 => 196,  701 => 195,  699 => 194,  696 => 193,  690 => 190,  683 => 188,  669 => 187,  662 => 185,  655 => 184,  653 => 183,  650 => 182,  644 => 179,  634 => 178,  628 => 177,  621 => 176,  619 => 175,  616 => 174,  610 => 171,  600 => 170,  594 => 169,  587 => 168,  585 => 167,  582 => 166,  576 => 163,  573 => 162,  565 => 159,  558 => 158,  556 => 157,  551 => 156,  538 => 155,  536 => 154,  532 => 153,  524 => 152,  521 => 151,  517 => 150,  513 => 149,  509 => 148,  502 => 147,  500 => 146,  497 => 145,  491 => 142,  488 => 141,  480 => 138,  473 => 136,  471 => 135,  466 => 134,  450 => 133,  442 => 132,  439 => 131,  435 => 130,  431 => 129,  427 => 128,  420 => 127,  418 => 126,  415 => 125,  409 => 122,  406 => 121,  399 => 119,  392 => 118,  390 => 117,  383 => 116,  379 => 115,  375 => 114,  369 => 113,  363 => 112,  356 => 111,  354 => 110,  351 => 109,  347 => 108,  342 => 106,  339 => 105,  337 => 104,  329 => 99,  322 => 97,  316 => 96,  311 => 93,  307 => 91,  304 => 90,  293 => 88,  289 => 87,  284 => 84,  282 => 83,  279 => 82,  271 => 80,  269 => 79,  266 => 78,  258 => 76,  256 => 75,  253 => 74,  248 => 72,  243 => 71,  237 => 68,  234 => 67,  232 => 66,  229 => 65,  227 => 64,  222 => 61,  214 => 58,  207 => 57,  205 => 56,  199 => 54,  197 => 53,  194 => 52,  188 => 50,  186 => 49,  180 => 48,  177 => 47,  169 => 45,  167 => 44,  160 => 42,  157 => 41,  147 => 39,  145 => 38,  139 => 35,  135 => 33,  129 => 29,  125 => 27,  108 => 25,  104 => 24,  101 => 23,  99 => 22,  96 => 21,  82 => 19,  80 => 18,  75 => 15,  73 => 14,  66 => 10,  61 => 8,  58 => 7,  47 => 5,  43 => 4,  37 => 1,);
+        return array (  1235 => 424,  1170 => 362,  1152 => 347,  1148 => 346,  1145 => 345,  1141 => 343,  1127 => 342,  1118 => 341,  1101 => 340,  1096 => 339,  1094 => 338,  1091 => 337,  1087 => 335,  1078 => 333,  1074 => 332,  1068 => 330,  1066 => 329,  1061 => 326,  1057 => 324,  1049 => 321,  1042 => 320,  1039 => 319,  1033 => 317,  1030 => 316,  1024 => 314,  1022 => 313,  1019 => 312,  1017 => 311,  1014 => 310,  1008 => 308,  1006 => 307,  1003 => 306,  997 => 302,  990 => 300,  981 => 297,  977 => 296,  974 => 295,  970 => 294,  963 => 290,  959 => 288,  955 => 287,  950 => 284,  948 => 283,  943 => 281,  938 => 278,  934 => 276,  931 => 275,  925 => 273,  923 => 272,  920 => 271,  914 => 269,  912 => 268,  907 => 266,  901 => 262,  892 => 259,  886 => 258,  882 => 256,  878 => 254,  875 => 253,  871 => 252,  868 => 251,  866 => 250,  863 => 249,  857 => 247,  855 => 246,  849 => 243,  843 => 240,  839 => 239,  835 => 238,  831 => 236,  825 => 232,  814 => 230,  810 => 229,  806 => 227,  795 => 225,  791 => 224,  787 => 223,  780 => 219,  777 => 218,  775 => 217,  772 => 216,  769 => 215,  762 => 213,  756 => 210,  746 => 207,  739 => 205,  732 => 204,  730 => 203,  727 => 202,  721 => 199,  711 => 196,  704 => 194,  697 => 193,  695 => 192,  692 => 191,  686 => 188,  676 => 185,  669 => 183,  662 => 182,  660 => 181,  657 => 180,  651 => 177,  644 => 175,  630 => 174,  623 => 172,  616 => 171,  614 => 170,  611 => 169,  605 => 166,  595 => 165,  589 => 164,  582 => 163,  580 => 162,  577 => 161,  571 => 158,  561 => 157,  555 => 156,  548 => 155,  546 => 154,  543 => 153,  537 => 150,  534 => 149,  526 => 146,  519 => 145,  517 => 144,  512 => 143,  499 => 142,  497 => 141,  493 => 140,  485 => 139,  482 => 138,  478 => 137,  474 => 136,  470 => 135,  463 => 134,  461 => 133,  458 => 132,  452 => 129,  449 => 128,  441 => 125,  434 => 123,  432 => 122,  427 => 121,  411 => 120,  403 => 119,  400 => 118,  396 => 117,  392 => 116,  388 => 115,  381 => 114,  379 => 113,  376 => 112,  370 => 109,  367 => 108,  360 => 106,  353 => 105,  351 => 104,  344 => 103,  340 => 102,  336 => 101,  330 => 100,  324 => 99,  317 => 98,  315 => 97,  312 => 96,  308 => 95,  303 => 93,  300 => 92,  298 => 91,  290 => 86,  283 => 84,  277 => 83,  272 => 80,  268 => 78,  265 => 77,  254 => 75,  250 => 74,  245 => 71,  243 => 70,  240 => 69,  232 => 67,  230 => 66,  227 => 65,  219 => 63,  217 => 62,  214 => 61,  209 => 59,  204 => 58,  198 => 55,  195 => 54,  193 => 53,  190 => 52,  188 => 51,  180 => 48,  177 => 47,  169 => 45,  167 => 44,  160 => 42,  157 => 41,  147 => 39,  145 => 38,  139 => 35,  135 => 33,  129 => 29,  125 => 27,  108 => 25,  104 => 24,  101 => 23,  99 => 22,  96 => 21,  82 => 19,  80 => 18,  75 => 15,  73 => 14,  66 => 10,  61 => 8,  58 => 7,  47 => 5,  43 => 4,  37 => 1,);
     }
 
     public function getSourceContext()

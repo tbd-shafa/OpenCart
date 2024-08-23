@@ -505,6 +505,7 @@ class Product extends \Opencart\System\Engine\Controller {
 				$this->model_catalog_product->addReport($this->request->get['product_id'], $this->request->server['REMOTE_ADDR']);
 			}
 // Load custom fields from the product_extra_feature table
+$data['product_extra_feature_status'] = $this->config->get('product_extra_feature_status');
 $this->load->model('catalog/product_extra_feature');
 
 $product_extra_feature = $this->model_catalog_product_extra_feature->getProductExtraFeature($this->request->get['product_id']);
@@ -517,7 +518,7 @@ if ($product_extra_feature) {
 } else {
     $data['custom_name'] = '';
     $data['custom_color'] = '';
-    $data['custom_image'] = $this->model_tool_image->resize('no_image.png', 100, 100);
+    $data['custom_image'] = '';
 }
 
 			$data['language'] = $this->config->get('config_language');

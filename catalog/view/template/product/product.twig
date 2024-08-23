@@ -46,19 +46,6 @@
             {% endif %}
 
             <li>{{ text_stock }} {{ stock }}</li>
-            {% if custom_name %}
-    <p><strong>Custom Name:</strong> {{ custom_name }}</p>
-{% endif %}
-
-{% if custom_color %}
-    <p><strong>Custom Color:</strong> {{ custom_color }}</p>
-{% endif %}
-{% if custom_image %}
-    <a href="{{ custom_popup }}" title="{{ heading_title }}" class="image-popup">
-        <p><strong>Custom Image:</strong> <img src="{{ custom_image }}" alt="{{ custom_name }}" /></p>
-    </a>
-{% endif %}
-
           </ul>
 
           {% if price %}
@@ -285,7 +272,9 @@
           {% if review_status %}
             <li class="nav-item"><a href="#tab-review" data-bs-toggle="tab" class="nav-link">{{ tab_review }}</a></li>
           {% endif %}
-
+ {% if  product_extra_feature_status  %}
+        <li class="nav-item"><a href="#tab-custom-data" data-bs-toggle="tab" class="nav-link">Custom Data</a></li>
+    {% endif %}
         </ul>
         <div class="tab-content">
 
@@ -318,7 +307,22 @@
           {% if review_status %}
             <div id="tab-review" class="tab-pane fade mb-4">{{ review }}</div>
           {% endif %}
-
+<!-- New Content Section for Custom Data -->
+    {% if custom_name or custom_color or custom_image %}
+        <div id="tab-custom-data" class="tab-pane fade mb-4">
+            {% if custom_name %}
+                <p><strong>Custom Name:</strong> {{ custom_name }}</p>
+            {% endif %}
+            {% if custom_color %}
+                <p><strong>Custom Color:</strong> {{ custom_color }}</p>
+            {% endif %}
+            {% if custom_image %}
+                <a href="{{ custom_popup }}" title="{{ heading_title }}" class="image-popup">
+        <p><strong>Custom Image:</strong> <img src="{{ custom_image }}" alt="{{ custom_name }}" /></p>
+    </a>
+            {% endif %}
+        </div>
+    {% endif %}
         </div>
       </div>
 
