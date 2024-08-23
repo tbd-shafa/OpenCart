@@ -46,6 +46,18 @@
             {% endif %}
 
             <li>{{ text_stock }} {{ stock }}</li>
+            {% if custom_name %}
+    <p><strong>Custom Name:</strong> {{ custom_name }}</p>
+{% endif %}
+
+{% if custom_color %}
+    <p><strong>Custom Color:</strong> {{ custom_color }}</p>
+{% endif %}
+
+{% if custom_image %}
+    <p><strong>Custom Image:</strong> <img src="{{ custom_image }}" alt="{{ custom_name }}" /></p>
+{% endif %}
+
           </ul>
 
           {% if price %}
