@@ -3,10 +3,11 @@
 
 <div id="content">
     <div class="page-header">
+    
         <div class="container-fluid">
             <div class="float-end">
                 <a href="{{ add }}" data-bs-toggle="tooltip" title="{{ button_add }}" class="btn btn-primary"><i class="fa-solid fa-plus"></i></a>
-                <button type="submit" form="form-test" formaction="{{ delete }}" data-bs-toggle="tooltip" title="{{ button_delete }}" onclick="return confirm('{{ text_confirm }}');" class="btn btn-danger"><i class="fa-regular fa-trash-can"></i></button>
+                <button type="submit" form="form-color" formaction="{{ delete }}" data-bs-toggle="tooltip" title="{{ button_delete }}" onclick="return confirm('{{ text_confirm }}');" class="btn btn-danger"><i class="fa-regular fa-trash-can"></i></button>
             </div>
             <h1>{{ heading_title }}</h1>
             <ol class="breadcrumb">
@@ -16,14 +17,37 @@
 			</ol>
         </div>
     </div>
-     
+   {% if success %}
+<div class="alert alert-success alert-dismissible">
+    <i class="fa fa-check-circle"></i> {{ success }}
+    <button type="button" class="close" data-dismiss="alert">&times;</button>
+</div>
+{% endif %}
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    // Find all close buttons for alerts
+    var alertCloseButtons = document.querySelectorAll('.alert-dismissible .close');
+
+    alertCloseButtons.forEach(function (button) {
+        button.addEventListener('click', function (event) {
+            // Find the parent alert div
+            var alert = this.closest('.alert');
+            if (alert) {
+                // Remove the alert instantly
+                alert.style.display = 'none';
+            }
+        });
+    });
+});
+
+</script>
     <div class="container-fluid">
         <div class="panel panel-default">
             <div class="panel-heading">
                 <h3 class="panel-title"><i class="fa fa-list"></i> {{ text_list }}</h3>
             </div>
             <div class="panel-body">
-                <form action="{{ delete }}" method="post" enctype="multipart/form-data" id="form-test">
+                <form action="{{ delete }}" method="post" enctype="multipart/form-data" id="form-color">
                     <div class="table-responsive">
                         <table class="table table-bordered table-hover">
                             <thead>
@@ -37,7 +61,7 @@
                                 {% if entries %}
                                 {% for entry in entries %}
                                 <tr>
-                                    <td class="text-center"><input type="checkbox" name="selected[]" value="{{ entry.test_id }}" class="form-check-input"/></td>
+                                    <td class="text-center"><input type="checkbox" name="selected[]" value="{{ entry.color_id }}" class="form-check-input"/></td>
                                     <td class="text-center">{{ entry.name }}</td>
                                     <td class="text-center"><a href="{{ entry.edit }}" class="btn btn-primary">{{ button_edit }}</a></td>
                                 </tr>
