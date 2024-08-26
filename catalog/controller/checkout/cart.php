@@ -171,13 +171,18 @@ class Cart extends \Opencart\System\Engine\Controller {
 					$description .= sprintf($this->language->get('text_subscription_cancel'), $price_status ? $price : '', $cycle, $frequency);
 				}
 			}
-
+			// Fetch option data from oc_cart
+			$custom_color = $this->db->query("SELECT `option` FROM `" . DB_PREFIX . "cart` WHERE `cart_id` = '" . (int)$product['cart_id'] . "'");
+			$custom_color = $custom_color->row['option'];
+			$custom_color = json_decode($custom_color, true);
+			
 			$data['products'][] = [
 				'cart_id'      => $product['cart_id'],
 				'thumb'        => $product['image'],
 				'name'         => $product['name'],
 				'model'        => $product['model'],
 				'option'       => $product['option'],
+				'custom_color'  => $custom_color,
 				'subscription' => $description,
 				'quantity'     => $product['quantity'],
 				'stock'        => $product['stock'] ? true : !(!$this->config->get('config_stock_checkout') || $this->config->get('config_stock_warning')),
@@ -187,8 +192,10 @@ class Cart extends \Opencart\System\Engine\Controller {
 				'total'        => $price_status ? $this->currency->format($this->tax->calculate($product['total'], $product['tax_class_id'], $this->config->get('config_tax')), $this->session->data['currency']) : '',
 				'href'         => $this->url->link('product/product', 'language=' . $this->config->get('config_language') . '&product_id=' . $product['product_id'])
 			];
+			
 		}
-        
+		// print_r($data['products']);
+		// die;
 		// Gift Voucher
 		$data['vouchers'] = [];
 
