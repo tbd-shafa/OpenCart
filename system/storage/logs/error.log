@@ -3386,3 +3386,34 @@ Line: 1100
 2024-08-23 12:43:53 - explode(): Argument #2 ($string) must be of type string, array given in /opt/lampp/htdocs/opencart3/system/storage/vendor/twig/twig/src/Extension/CoreExtension.php on line 766
 2024-08-23 12:43:56 - explode(): Argument #2 ($string) must be of type string, array given in /opt/lampp/htdocs/opencart3/system/storage/vendor/twig/twig/src/Extension/CoreExtension.php on line 766
 2024-08-23 12:44:28 - explode(): Argument #2 ($string) must be of type string, array given in /opt/lampp/htdocs/opencart3/system/storage/vendor/twig/twig/src/Extension/CoreExtension.php on line 766
+2024-08-26 06:37:10 - PHP Unknown:  Optional parameter $quantity declared before required parameter $custom_color is implicitly treated as a required parameter in /opt/lampp/htdocs/opencart3/system/library/cart/cart.php on line 369
+2024-08-26 06:37:10 - PHP Unknown:  Optional parameter $option declared before required parameter $custom_color is implicitly treated as a required parameter in /opt/lampp/htdocs/opencart3/system/library/cart/cart.php on line 369
+2024-08-26 06:37:10 - PHP Unknown:  Optional parameter $subscription_plan_id declared before required parameter $custom_color is implicitly treated as a required parameter in /opt/lampp/htdocs/opencart3/system/library/cart/cart.php on line 369
+2024-08-26 06:37:10 - PHP Unknown:  Optional parameter $override declared before required parameter $custom_color is implicitly treated as a required parameter in /opt/lampp/htdocs/opencart3/system/library/cart/cart.php on line 369
+2024-08-26 06:37:10 - PHP Unknown:  Optional parameter $price declared before required parameter $custom_color is implicitly treated as a required parameter in /opt/lampp/htdocs/opencart3/system/library/cart/cart.php on line 369
+2024-08-26 06:37:10 - PHP Unknown:  Optional parameter $quantity declared before required parameter $custom_color is implicitly treated as a required parameter in /opt/lampp/htdocs/opencart3/system/library/cart/cart.php on line 369
+2024-08-26 06:37:10 - PHP Unknown:  Optional parameter $option declared before required parameter $custom_color is implicitly treated as a required parameter in /opt/lampp/htdocs/opencart3/system/library/cart/cart.php on line 369
+2024-08-26 06:37:10 - PHP Unknown:  Optional parameter $subscription_plan_id declared before required parameter $custom_color is implicitly treated as a required parameter in /opt/lampp/htdocs/opencart3/system/library/cart/cart.php on line 369
+2024-08-26 06:37:10 - PHP Unknown:  Optional parameter $override declared before required parameter $custom_color is implicitly treated as a required parameter in /opt/lampp/htdocs/opencart3/system/library/cart/cart.php on line 369
+2024-08-26 06:37:10 - PHP Unknown:  Optional parameter $price declared before required parameter $custom_color is implicitly treated as a required parameter in /opt/lampp/htdocs/opencart3/system/library/cart/cart.php on line 369
+2024-08-26 06:37:16 - PHP Unknown:  Optional parameter $quantity declared before required parameter $custom_color is implicitly treated as a required parameter in /opt/lampp/htdocs/opencart3/system/library/cart/cart.php on line 369
+2024-08-26 06:37:16 - PHP Unknown:  Optional parameter $option declared before required parameter $custom_color is implicitly treated as a required parameter in /opt/lampp/htdocs/opencart3/system/library/cart/cart.php on line 369
+2024-08-26 06:37:16 - PHP Unknown:  Optional parameter $subscription_plan_id declared before required parameter $custom_color is implicitly treated as a required parameter in /opt/lampp/htdocs/opencart3/system/library/cart/cart.php on line 369
+2024-08-26 06:37:16 - PHP Unknown:  Optional parameter $override declared before required parameter $custom_color is implicitly treated as a required parameter in /opt/lampp/htdocs/opencart3/system/library/cart/cart.php on line 369
+2024-08-26 06:37:16 - PHP Unknown:  Optional parameter $price declared before required parameter $custom_color is implicitly treated as a required parameter in /opt/lampp/htdocs/opencart3/system/library/cart/cart.php on line 369
+2024-08-26 06:37:16 - Too few arguments to function Opencart\System\Library\Cart\Cart::add(), 5 passed in /opt/lampp/htdocs/opencart3/catalog/controller/checkout/cart.php on line 421 and exactly 7 expected in /opt/lampp/htdocs/opencart3/system/library/cart/cart.php on line 369
+2024-08-26 06:54:07 - Unknown "json_decode" filter. Did you mean "json_encode"? in /opt/lampp/htdocs/opencart3/catalog/view/template/checkout/cart_list.twig on line 19
+2024-08-26 06:54:26 - Unknown "json_decode" filter. Did you mean "json_encode"? in /opt/lampp/htdocs/opencart3/catalog/view/template/checkout/cart_list.twig on line 23
+2024-08-26 06:54:27 - Unknown "json_decode" filter. Did you mean "json_encode"? in /opt/lampp/htdocs/opencart3/catalog/view/template/checkout/cart_list.twig on line 23
+2024-08-26 06:54:28 - Unknown "json_decode" filter. Did you mean "json_encode"? in /opt/lampp/htdocs/opencart3/catalog/view/template/checkout/cart_list.twig on line 23
+2024-08-26 06:55:03 - Unknown "json_decode" filter. Did you mean "json_encode"? in /opt/lampp/htdocs/opencart3/catalog/view/template/checkout/cart_list.twig on line 20
+2024-08-26 06:57:35 - PHP Warning:  Array to string conversion in /opt/lampp/htdocs/opencart3/system/storage/cache/template/d9/d9b0918f410d7f8daa546f54df8d732c.php on line 94
+2024-08-26 06:57:35 - PHP Warning:  Array to string conversion in /opt/lampp/htdocs/opencart3/system/storage/cache/template/d9/d9b0918f410d7f8daa546f54df8d732c.php on line 94
+2024-08-26 06:58:25 - Unknown "json_decode" filter. Did you mean "json_encode"? in /opt/lampp/htdocs/opencart3/catalog/view/template/checkout/cart_list.twig on line 20
+2024-08-26 06:58:44 - PHP Warning:  Array to string conversion in /opt/lampp/htdocs/opencart3/system/storage/cache/template/d9/d9b0918f410d7f8daa546f54df8d732c.php on line 94
+2024-08-26 06:58:44 - PHP Warning:  Array to string conversion in /opt/lampp/htdocs/opencart3/system/storage/cache/template/d9/d9b0918f410d7f8daa546f54df8d732c.php on line 94
+2024-08-26 07:07:25 - json_decode(): Argument #1 ($json) must be of type string, array given in /opt/lampp/htdocs/opencart3/catalog/controller/checkout/cart.php on line 174
+2024-08-26 07:35:50 - PHP Warning:  Undefined array key "cart_id" in /opt/lampp/htdocs/opencart3/catalog/controller/checkout/cart.php on line 192
+2024-08-26 07:36:01 - Cannot use [] for reading in /opt/lampp/htdocs/opencart3/catalog/controller/checkout/cart.php on line 192
+2024-08-26 07:39:35 - PHP Warning:  Undefined array key "custom_color" in /opt/lampp/htdocs/opencart3/catalog/model/checkout/cart.php on line 77
+2024-08-26 07:39:35 - PHP Warning:  Undefined array key "custom_color" in /opt/lampp/htdocs/opencart3/catalog/model/checkout/cart.php on line 77

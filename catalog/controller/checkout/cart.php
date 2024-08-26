@@ -188,7 +188,7 @@ class Cart extends \Opencart\System\Engine\Controller {
 				'href'         => $this->url->link('product/product', 'language=' . $this->config->get('config_language') . '&product_id=' . $product['product_id'])
 			];
 		}
-
+        
 		// Gift Voucher
 		$data['vouchers'] = [];
 
@@ -254,25 +254,17 @@ class Cart extends \Opencart\System\Engine\Controller {
 		} else {
 			$subscription_plan_id = 0;
 		}
-
+		if (isset($this->request->post['selected_color'])) {
+			$custom_color = $this->request->post['selected_color'];
+			$option['custom_color'] = $custom_color; // Add custom color to the option array
+		} else {
+			$custom_color = '';
+		}
 		$this->load->model('catalog/product');
 
 		$product_info = $this->model_catalog_product->getProduct($product_id);
 
 		if ($product_info) {
-			print_r(1);
-			
-			if (isset($this->request->post['custom_color'])) {
-				print_r(2);
-			
-				$custom_color = $this->request->post['custom_color'];
-			} else {
-				print_r(3);
-				$custom_color = '';
-			}
-			print_r(4);
-			exit;
-			die;
 			// If variant get master product
 			if ($product_info['master_id']) {
 				$product_id = $product_info['master_id'];
@@ -320,7 +312,7 @@ class Cart extends \Opencart\System\Engine\Controller {
 		}
 
 		if (!$json) {
-			$this->cart->add($product_id, $quantity, $option, $subscription_plan_id,$custom_color);
+			$this->cart->add($product_id, $quantity, $option, $subscription_plan_id);
 
 			$json['success'] = sprintf($this->language->get('text_success'), $this->url->link('product/product', 'language=' . $this->config->get('config_language') . '&product_id=' . $product_id), $product_info['name'], $this->url->link('checkout/cart', 'language=' . $this->config->get('config_language')));
 
@@ -336,7 +328,8 @@ class Cart extends \Opencart\System\Engine\Controller {
 		$this->response->addHeader('Content-Type: application/json');
 		$this->response->setOutput(json_encode($json));
 	}
-
+	
+	
 	/**
 	 * @return void
 	 */
