@@ -260,6 +260,19 @@ class Cart extends \Opencart\System\Engine\Controller {
 		$product_info = $this->model_catalog_product->getProduct($product_id);
 
 		if ($product_info) {
+			print_r(1);
+			
+			if (isset($this->request->post['custom_color'])) {
+				print_r(2);
+			
+				$custom_color = $this->request->post['custom_color'];
+			} else {
+				print_r(3);
+				$custom_color = '';
+			}
+			print_r(4);
+			exit;
+			die;
 			// If variant get master product
 			if ($product_info['master_id']) {
 				$product_id = $product_info['master_id'];
@@ -307,7 +320,7 @@ class Cart extends \Opencart\System\Engine\Controller {
 		}
 
 		if (!$json) {
-			$this->cart->add($product_id, $quantity, $option, $subscription_plan_id);
+			$this->cart->add($product_id, $quantity, $option, $subscription_plan_id,$custom_color);
 
 			$json['success'] = sprintf($this->language->get('text_success'), $this->url->link('product/product', 'language=' . $this->config->get('config_language') . '&product_id=' . $product_id), $product_info['name'], $this->url->link('checkout/cart', 'language=' . $this->config->get('config_language')));
 
