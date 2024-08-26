@@ -90,127 +90,184 @@ class __TwigTemplate_46ed25fe34a936faf72d80fd5b63a14b extends Template
             echo "</td>
                     
 
- <td class=\"text-left\">
-                ";
-            // line 22
-            if (twig_get_attribute($this->env, $this->source, $context["product"], "custom_color", [], "any", false, false, false, 22)) {
-                // line 23
-                echo "                    <ul>
-                        ";
-                // line 24
+ 
+
+<td class=\"text-left\">
+    ";
+            // line 24
+            if (twig_get_attribute($this->env, $this->source, $context["product"], "custom_color", [], "any", false, false, false, 24)) {
+                // line 25
+                echo "        <ul>
+            ";
+                // line 26
                 $context['_parent'] = $context;
-                $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, $context["product"], "custom_color", [], "any", false, false, false, 24));
+                $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, $context["product"], "custom_color", [], "any", false, false, false, 26));
                 foreach ($context['_seq'] as $context["color_id"] => $context["color_name"]) {
-                    // line 25
-                    echo "                            <li>
-                                <input type=\"radio\" name=\"custom_color_";
-                    // line 26
-                    echo twig_get_attribute($this->env, $this->source, $context["product"], "cart_id", [], "any", false, false, false, 26);
+                    // line 27
+                    echo "                <li>
+                    <input type=\"radio\" name=\"custom_color_";
+                    // line 28
+                    echo twig_get_attribute($this->env, $this->source, $context["product"], "cart_id", [], "any", false, false, false, 28);
                     echo "\" value=\"";
                     echo $context["color_id"];
                     echo "\" ";
-                    if (twig_in_filter($context["color_name"], twig_get_attribute($this->env, $this->source, $context["product"], "selected_color", [], "any", false, false, false, 26))) {
+                    if (twig_in_filter($context["color_name"], twig_get_attribute($this->env, $this->source, $context["product"], "selected_color", [], "any", false, false, false, 28))) {
                         echo " checked ";
                     }
-                    echo ">
-                                ";
-                    // line 27
+                    echo " onchange=\"document.getElementById('selected_color_";
+                    echo twig_get_attribute($this->env, $this->source, $context["product"], "cart_id", [], "any", false, false, false, 28);
+                    echo "').value=this.value;\">
+                    ";
+                    // line 29
                     echo $context["color_name"];
                     echo "
-                            </li>
-                        ";
+                
+                </li>
+            ";
                 }
                 $_parent = $context['_parent'];
                 unset($context['_seq'], $context['_iterated'], $context['color_id'], $context['color_name'], $context['_parent'], $context['loop']);
                 $context = array_intersect_key($context, $_parent) + $_parent;
-                // line 30
-                echo "                    </ul>
-                ";
-            } else {
-                // line 32
-                echo "                    No custom_color
-                ";
-            }
-            // line 34
-            echo "            </td>
+                // line 33
+                echo "        </ul>
+ <form method=\"post\" data-oc-target=\"#shopping-cart\">
+    <div class=\"input-group\">
+        <!-- Hidden input to store the selected color ID -->
+        <input type=\"hidden\" id=\"selected_color_";
+                // line 37
+                echo twig_get_attribute($this->env, $this->source, $context["product"], "cart_id", [], "any", false, false, false, 37);
+                echo "\" name=\"selected_color\" value=\"";
+                echo twig_first($this->env, twig_get_attribute($this->env, $this->source, $context["product"], "selected_color", [], "any", false, false, false, 37));
+                echo "\"> <!-- Assuming selected_color is an array, you may use | first or | join to access the correct value -->
+        
+        <!-- Hidden input to store the product quantity -->
+        <input type=\"hidden\" name=\"quantity\" value=\"";
+                // line 40
+                echo twig_get_attribute($this->env, $this->source, $context["product"], "quantity", [], "any", false, false, false, 40);
+                echo "\" class=\"form-control\">
+        
+        <!-- Hidden input to store the product key -->
+        <input type=\"hidden\" name=\"key\" value=\"";
+                // line 43
+                echo twig_get_attribute($this->env, $this->source, $context["product"], "cart_id", [], "any", false, false, false, 43);
+                echo "\">
+        <!-- Buttons for updating/removing the product -->
+        <button type=\"submit\" formaction=\"";
+                // line 45
+                echo ($context["product_edit"] ?? null);
+                echo "\" data-bs-toggle=\"tooltip\" title=\"";
+                echo ($context["button_update"] ?? null);
+                echo "\" class=\"btn btn-primary\">
+            <i class=\"fa-solid fa-rotate\"></i>
+        </button>
+        <button type=\"submit\" formaction=\"";
+                // line 48
+                echo ($context["product_remove"] ?? null);
+                echo "\" data-bs-toggle=\"tooltip\" title=\"";
+                echo ($context["button_remove"] ?? null);
+                echo "\" class=\"btn btn-danger\">
+            <i class=\"fa-solid fa-circle-xmark\"></i>
+        </button>
+    </div>
+</form>
 
+   
+    ";
+            } else {
+                // line 56
+                echo "        No custom_color
+    ";
+            }
+            // line 58
+            echo "</td>
 
           <td class=\"text-start text-wrap\"><a href=\"";
-            // line 37
-            echo twig_get_attribute($this->env, $this->source, $context["product"], "href", [], "any", false, false, false, 37);
+            // line 60
+            echo twig_get_attribute($this->env, $this->source, $context["product"], "href", [], "any", false, false, false, 60);
             echo "\">";
-            echo twig_get_attribute($this->env, $this->source, $context["product"], "name", [], "any", false, false, false, 37);
+            echo twig_get_attribute($this->env, $this->source, $context["product"], "name", [], "any", false, false, false, 60);
             echo "</a>";
-            if ( !twig_get_attribute($this->env, $this->source, $context["product"], "stock", [], "any", false, false, false, 37)) {
+            if ( !twig_get_attribute($this->env, $this->source, $context["product"], "stock", [], "any", false, false, false, 60)) {
                 echo " <span class=\"text-danger\">***</span>";
             }
-            // line 38
+            // line 61
             echo "            ";
             $context['_parent'] = $context;
-            $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, $context["product"], "option", [], "any", false, false, false, 38));
+            $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, $context["product"], "option", [], "any", false, false, false, 61));
             foreach ($context['_seq'] as $context["_key"] => $context["option"]) {
-                // line 39
+                // line 62
                 echo "              <br/>
               <small> - ";
-                // line 40
-                echo twig_get_attribute($this->env, $this->source, $context["option"], "name", [], "any", false, false, false, 40);
+                // line 63
+                echo twig_get_attribute($this->env, $this->source, $context["option"], "name", [], "any", false, false, false, 63);
                 echo ": ";
-                echo twig_get_attribute($this->env, $this->source, $context["option"], "value", [], "any", false, false, false, 40);
+                echo twig_get_attribute($this->env, $this->source, $context["option"], "value", [], "any", false, false, false, 63);
                 echo "</small>
             ";
             }
             $_parent = $context['_parent'];
             unset($context['_seq'], $context['_iterated'], $context['_key'], $context['option'], $context['_parent'], $context['loop']);
             $context = array_intersect_key($context, $_parent) + $_parent;
-            // line 42
+            // line 65
             echo "            ";
-            if (twig_get_attribute($this->env, $this->source, $context["product"], "reward", [], "any", false, false, false, 42)) {
-                // line 43
+            if (twig_get_attribute($this->env, $this->source, $context["product"], "reward", [], "any", false, false, false, 65)) {
+                // line 66
                 echo "              <br/>
               <small> - ";
-                // line 44
+                // line 67
                 echo ($context["text_points"] ?? null);
                 echo ": ";
-                echo twig_get_attribute($this->env, $this->source, $context["product"], "reward", [], "any", false, false, false, 44);
+                echo twig_get_attribute($this->env, $this->source, $context["product"], "reward", [], "any", false, false, false, 67);
                 echo "</small>
             ";
             }
-            // line 46
+            // line 69
             echo "            ";
-            if (twig_get_attribute($this->env, $this->source, $context["product"], "subscription", [], "any", false, false, false, 46)) {
-                // line 47
+            if (twig_get_attribute($this->env, $this->source, $context["product"], "subscription", [], "any", false, false, false, 69)) {
+                // line 70
                 echo "              <br/>
               <small> - ";
-                // line 48
+                // line 71
                 echo ($context["text_subscription"] ?? null);
                 echo ": ";
-                echo twig_get_attribute($this->env, $this->source, $context["product"], "subscription", [], "any", false, false, false, 48);
+                echo twig_get_attribute($this->env, $this->source, $context["product"], "subscription", [], "any", false, false, false, 71);
                 echo "</small>
             ";
             }
-            // line 50
+            // line 73
             echo "          </td>
           <td class=\"text-start\">";
-            // line 51
-            echo twig_get_attribute($this->env, $this->source, $context["product"], "model", [], "any", false, false, false, 51);
+            // line 74
+            echo twig_get_attribute($this->env, $this->source, $context["product"], "model", [], "any", false, false, false, 74);
             echo "</td>
           <td class=\"text-start\">
             <form method=\"post\" data-oc-target=\"#shopping-cart\">
               <div class=\"input-group\">
-                <input type=\"text\" name=\"quantity\" value=\"";
-            // line 55
-            echo twig_get_attribute($this->env, $this->source, $context["product"], "quantity", [], "any", false, false, false, 55);
+               ";
+            // line 78
+            if (twig_get_attribute($this->env, $this->source, $context["product"], "selected_color", [], "any", false, false, false, 78)) {
+                // line 79
+                echo "             <input type=\"hidden\" id=\"selected_color_";
+                echo twig_get_attribute($this->env, $this->source, $context["product"], "selected_color", [], "any", false, false, false, 79);
+                echo "\" name=\"selected_color\" value=\"";
+                echo twig_get_attribute($this->env, $this->source, $context["product"], "selected_color", [], "any", false, false, false, 79);
+                echo "\">
+               ";
+            }
+            // line 81
+            echo "                <input type=\"text\" name=\"quantity\" value=\"";
+            echo twig_get_attribute($this->env, $this->source, $context["product"], "quantity", [], "any", false, false, false, 81);
             echo "\" size=\"1\" class=\"form-control\"> <input type=\"hidden\" name=\"key\" value=\"";
-            echo twig_get_attribute($this->env, $this->source, $context["product"], "cart_id", [], "any", false, false, false, 55);
+            echo twig_get_attribute($this->env, $this->source, $context["product"], "cart_id", [], "any", false, false, false, 81);
             echo "\">
                 <button type=\"submit\" formaction=\"";
-            // line 56
+            // line 82
             echo ($context["product_edit"] ?? null);
             echo "\" data-bs-toggle=\"tooltip\" title=\"";
             echo ($context["button_update"] ?? null);
             echo "\" class=\"btn btn-primary\"><i class=\"fa-solid fa-rotate\"></i></button>
                 <button type=\"submit\" formaction=\"";
-            // line 57
+            // line 83
             echo ($context["product_remove"] ?? null);
             echo "\" data-bs-toggle=\"tooltip\" title=\"";
             echo ($context["button_remove"] ?? null);
@@ -219,12 +276,12 @@ class __TwigTemplate_46ed25fe34a936faf72d80fd5b63a14b extends Template
             </form>
           </td>
           <td class=\"text-end\">";
-            // line 61
-            echo twig_get_attribute($this->env, $this->source, $context["product"], "price", [], "any", false, false, false, 61);
+            // line 87
+            echo twig_get_attribute($this->env, $this->source, $context["product"], "price", [], "any", false, false, false, 87);
             echo "</td>
           <td class=\"text-end\">";
-            // line 62
-            echo twig_get_attribute($this->env, $this->source, $context["product"], "total", [], "any", false, false, false, 62);
+            // line 88
+            echo twig_get_attribute($this->env, $this->source, $context["product"], "total", [], "any", false, false, false, 88);
             echo "</td>
         </tr>
       ";
@@ -232,17 +289,17 @@ class __TwigTemplate_46ed25fe34a936faf72d80fd5b63a14b extends Template
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['product'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 65
+        // line 91
         echo "      ";
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable(($context["vouchers"] ?? null));
         foreach ($context['_seq'] as $context["_key"] => $context["voucher"]) {
-            // line 66
+            // line 92
             echo "        <tr>
           <td></td>
           <td class=\"text-start text-wrap\">";
-            // line 68
-            echo twig_get_attribute($this->env, $this->source, $context["voucher"], "description", [], "any", false, false, false, 68);
+            // line 94
+            echo twig_get_attribute($this->env, $this->source, $context["voucher"], "description", [], "any", false, false, false, 94);
             echo "</td>
           <td class=\"text-start\"></td>
           <td class=\"text-start\">
@@ -250,25 +307,25 @@ class __TwigTemplate_46ed25fe34a936faf72d80fd5b63a14b extends Template
               <div class=\"input-group\">
                 <input type=\"text\" name=\"quantity\" value=\"1\" size=\"1\" class=\"form-control\" disabled/>
                 <button type=\"submit\" formaction=\"";
-            // line 74
+            // line 100
             echo ($context["voucher_remove"] ?? null);
             echo "\" data-bs-toggle=\"tooltip\" title=\"";
             echo ($context["button_remove"] ?? null);
             echo "\" class=\"btn btn-danger\"><i class=\"fa-solid fa-circle-xmark\"></i></button>
               </div>
               <input type=\"hidden\" name=\"key\" value=\"";
-            // line 76
-            echo twig_get_attribute($this->env, $this->source, $context["voucher"], "key", [], "any", false, false, false, 76);
+            // line 102
+            echo twig_get_attribute($this->env, $this->source, $context["voucher"], "key", [], "any", false, false, false, 102);
             echo "\"/>
             </form>
           </td>
           <td class=\"text-end\">";
-            // line 79
-            echo twig_get_attribute($this->env, $this->source, $context["voucher"], "amount", [], "any", false, false, false, 79);
+            // line 105
+            echo twig_get_attribute($this->env, $this->source, $context["voucher"], "amount", [], "any", false, false, false, 105);
             echo "</td>
           <td class=\"text-end\">";
-            // line 80
-            echo twig_get_attribute($this->env, $this->source, $context["voucher"], "amount", [], "any", false, false, false, 80);
+            // line 106
+            echo twig_get_attribute($this->env, $this->source, $context["voucher"], "amount", [], "any", false, false, false, 106);
             echo "</td>
         </tr>
       ";
@@ -276,23 +333,23 @@ class __TwigTemplate_46ed25fe34a936faf72d80fd5b63a14b extends Template
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['voucher'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 83
+        // line 109
         echo "    </tbody>
     <tfoot id=\"checkout-total\">
       ";
-        // line 85
+        // line 111
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable(($context["totals"] ?? null));
         foreach ($context['_seq'] as $context["_key"] => $context["total"]) {
-            // line 86
+            // line 112
             echo "        <tr>
           <td colspan=\"6\" class=\"text-end\"><strong>";
-            // line 87
-            echo twig_get_attribute($this->env, $this->source, $context["total"], "title", [], "any", false, false, false, 87);
+            // line 113
+            echo twig_get_attribute($this->env, $this->source, $context["total"], "title", [], "any", false, false, false, 113);
             echo "</strong></td>
           <td class=\"text-end\">";
-            // line 88
-            echo twig_get_attribute($this->env, $this->source, $context["total"], "text", [], "any", false, false, false, 88);
+            // line 114
+            echo twig_get_attribute($this->env, $this->source, $context["total"], "text", [], "any", false, false, false, 114);
             echo "</td>
         </tr>
       ";
@@ -300,7 +357,7 @@ class __TwigTemplate_46ed25fe34a936faf72d80fd5b63a14b extends Template
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['total'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 91
+        // line 117
         echo "    </tfoot>
   </table>
 </div>
@@ -319,7 +376,7 @@ class __TwigTemplate_46ed25fe34a936faf72d80fd5b63a14b extends Template
 
     public function getDebugInfo()
     {
-        return array (  304 => 91,  295 => 88,  291 => 87,  288 => 86,  284 => 85,  280 => 83,  271 => 80,  267 => 79,  261 => 76,  254 => 74,  245 => 68,  241 => 66,  236 => 65,  227 => 62,  223 => 61,  214 => 57,  208 => 56,  202 => 55,  195 => 51,  192 => 50,  185 => 48,  182 => 47,  179 => 46,  172 => 44,  169 => 43,  166 => 42,  156 => 40,  153 => 39,  148 => 38,  140 => 37,  135 => 34,  131 => 32,  127 => 30,  118 => 27,  108 => 26,  105 => 25,  101 => 24,  98 => 23,  96 => 22,  79 => 18,  76 => 17,  72 => 16,  64 => 11,  60 => 10,  56 => 9,  52 => 8,  48 => 7,  43 => 5,  37 => 1,);
+        return array (  361 => 117,  352 => 114,  348 => 113,  345 => 112,  341 => 111,  337 => 109,  328 => 106,  324 => 105,  318 => 102,  311 => 100,  302 => 94,  298 => 92,  293 => 91,  284 => 88,  280 => 87,  271 => 83,  265 => 82,  258 => 81,  250 => 79,  248 => 78,  241 => 74,  238 => 73,  231 => 71,  228 => 70,  225 => 69,  218 => 67,  215 => 66,  212 => 65,  202 => 63,  199 => 62,  194 => 61,  186 => 60,  182 => 58,  178 => 56,  165 => 48,  157 => 45,  152 => 43,  146 => 40,  138 => 37,  132 => 33,  122 => 29,  110 => 28,  107 => 27,  103 => 26,  100 => 25,  98 => 24,  79 => 18,  76 => 17,  72 => 16,  64 => 11,  60 => 10,  56 => 9,  52 => 8,  48 => 7,  43 => 5,  37 => 1,);
     }
 
     public function getSourceContext()

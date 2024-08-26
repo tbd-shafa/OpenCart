@@ -172,9 +172,9 @@ class Cart extends \Opencart\System\Engine\Controller {
 				}
 			}
 			// Fetch option data from oc_cart
-			$custom_color = $this->db->query("SELECT `option` FROM `" . DB_PREFIX . "cart` WHERE `cart_id` = '" . (int)$product['cart_id'] . "'");
-			$custom_color = $custom_color->row['option'];
-			$custom_color = json_decode($custom_color, true);
+			$custom_color = $this->db->query("SELECT `custom_color` FROM `" . DB_PREFIX . "cart` WHERE `cart_id` = '" . (int)$product['cart_id'] . "'");
+			$custom_color = $custom_color->row['custom_color'];
+			//print_r(custom_color)
 			
 			$product_id = $this->db->query("SELECT `product_id` FROM `" . DB_PREFIX . "cart` WHERE `cart_id` = '" . (int)$product['cart_id'] . "'");
 			$product_id = $product_id->row['product_id'];
@@ -336,7 +336,8 @@ class Cart extends \Opencart\System\Engine\Controller {
 		}
 
 		if (!$json) {
-			$this->cart->add($product_id, $quantity, $option, $subscription_plan_id);
+			
+			$this->cart->add($product_id, $quantity, $option, $subscription_plan_id, false, 0,$custom_color);
 
 			$json['success'] = sprintf($this->language->get('text_success'), $this->url->link('product/product', 'language=' . $this->config->get('config_language') . '&product_id=' . $product_id), $product_info['name'], $this->url->link('checkout/cart', 'language=' . $this->config->get('config_language')));
 
@@ -373,14 +374,32 @@ class Cart extends \Opencart\System\Engine\Controller {
 		} else {
 			$quantity = 1;
 		}
+// Retrieve the selected color from the form submission
+$selected_color_id = $this->request->post['selected_color'] ?? null;
+$color_name = '';
+
+if ($selected_color_id) {
+    $query = $this->db->query("SELECT name FROM " . DB_PREFIX . "color WHERE color_id = '" . (int)$selected_color_id . "'");
+    
+    if ($query->num_rows) {
+        $color_name = $query->row['name'];
+        print_r("Selected Color Name: " . $color_name);
+    }
+}
 
 		if (!$this->cart->has($key)) {
 			$json['error'] = $this->language->get('error_product');
 		}
 
 		if (!$json) {
+			if (!empty($color_name)) {
+				$this->cart->updatecolor($key, $quantity, $color_name);
+			} else {
+				$this->cart->update($key, $quantity);
+			}
 			// Handles single item update
-			$this->cart->update($key, $quantity);
+		//	$this->cart->update($key, $quantity);
+			
 
 			if ($this->cart->hasProducts() || !empty($this->session->data['vouchers'])) {
 				$json['success'] = $this->language->get('text_edit');

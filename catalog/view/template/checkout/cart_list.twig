@@ -18,21 +18,44 @@
           <td class="text-center">{% if product.thumb %} <a href="{{ product.href }}"><img src="{{ product.thumb }}" alt="{{ product.name }}" title="{{ product.name }}" class="img-thumbnail"/></a> {% endif %}</td>
                     
 
- <td class="text-left">
-                {% if product.custom_color %}
-                    <ul>
-                        {% for color_id, color_name in product.custom_color %}
-                            <li>
-                                <input type="radio" name="custom_color_{{ product.cart_id }}" value="{{ color_id }}" {% if color_name in product.selected_color %} checked {% endif %}>
-                                {{ color_name }}
-                            </li>
-                        {% endfor %}
-                    </ul>
-                {% else %}
-                    No custom_color
-                {% endif %}
-            </td>
+ 
 
+<td class="text-left">
+    {% if product.custom_color %}
+        <ul>
+            {% for color_id, color_name in product.custom_color %}
+                <li>
+                    <input type="radio" name="custom_color_{{ product.cart_id }}" value="{{ color_id }}" {% if color_name in product.selected_color %} checked {% endif %} onchange="document.getElementById('selected_color_{{ product.cart_id }}').value=this.value;">
+                    {{ color_name }}
+                
+                </li>
+            {% endfor %}
+        </ul>
+ <form method="post" data-oc-target="#shopping-cart">
+    <div class="input-group">
+        <!-- Hidden input to store the selected color ID -->
+        <input type="hidden" id="selected_color_{{ product.cart_id }}" name="selected_color" value="{{ product.selected_color | first }}"> <!-- Assuming selected_color is an array, you may use | first or | join to access the correct value -->
+        
+        <!-- Hidden input to store the product quantity -->
+        <input type="hidden" name="quantity" value="{{ product.quantity }}" class="form-control">
+        
+        <!-- Hidden input to store the product key -->
+        <input type="hidden" name="key" value="{{ product.cart_id }}">
+        <!-- Buttons for updating/removing the product -->
+        <button type="submit" formaction="{{ product_edit }}" data-bs-toggle="tooltip" title="{{ button_update }}" class="btn btn-primary">
+            <i class="fa-solid fa-rotate"></i>
+        </button>
+        <button type="submit" formaction="{{ product_remove }}" data-bs-toggle="tooltip" title="{{ button_remove }}" class="btn btn-danger">
+            <i class="fa-solid fa-circle-xmark"></i>
+        </button>
+    </div>
+</form>
+
+   
+    {% else %}
+        No custom_color
+    {% endif %}
+</td>
 
           <td class="text-start text-wrap"><a href="{{ product.href }}">{{ product.name }}</a>{% if not product.stock %} <span class="text-danger">***</span>{% endif %}
             {% for option in product.option %}
@@ -52,6 +75,9 @@
           <td class="text-start">
             <form method="post" data-oc-target="#shopping-cart">
               <div class="input-group">
+               {% if product.selected_color %}
+             <input type="hidden" id="selected_color_{{ product.selected_color }}" name="selected_color" value="{{ product.selected_color }}">
+               {% endif %}
                 <input type="text" name="quantity" value="{{ product.quantity }}" size="1" class="form-control"> <input type="hidden" name="key" value="{{ product.cart_id }}">
                 <button type="submit" formaction="{{ product_edit }}" data-bs-toggle="tooltip" title="{{ button_update }}" class="btn btn-primary"><i class="fa-solid fa-rotate"></i></button>
                 <button type="submit" formaction="{{ product_remove }}" data-bs-toggle="tooltip" title="{{ button_remove }}" class="btn btn-danger"><i class="fa-solid fa-circle-xmark"></i></button>
