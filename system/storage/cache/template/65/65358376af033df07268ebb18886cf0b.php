@@ -126,59 +126,68 @@ class __TwigTemplate_e4a78285e21ee1095db39d028fc11b47 extends Template
         // line 32
         echo ($context["confirm"] ?? null);
         echo "</div>
+
  <div id=\"checkout-products\" class=\"mb-4\">
  
     ";
-        // line 35
+        // line 36
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable(($context["products"] ?? null));
         foreach ($context['_seq'] as $context["_key"] => $context["product"]) {
-            // line 36
+            // line 37
             echo "        <div class=\"product-item\">
          
             <div class=\"product-color\">
+              <div class=\"product-name\">";
+            // line 40
+            echo twig_get_attribute($this->env, $this->source, $context["product"], "name", [], "any", false, false, false, 40);
+            echo "</div>
+            <div class=\"product-quantity\">Quantity: ";
+            // line 41
+            echo twig_get_attribute($this->env, $this->source, $context["product"], "quantity", [], "any", false, false, false, 41);
+            echo "</div>
                 <label>Custom Color:";
-            // line 39
+            // line 42
             echo ($context["selected_color"] ?? null);
             echo "</label>
                 <div>
                      ";
-            // line 41
+            // line 44
             $context['_parent'] = $context;
-            $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, $context["product"], "colors", [], "any", false, false, false, 41));
+            $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, $context["product"], "colors", [], "any", false, false, false, 44));
             foreach ($context['_seq'] as $context["_key"] => $context["color"]) {
-                // line 42
+                // line 45
                 echo "                        <input type=\"radio\" id=\"color_";
-                echo twig_get_attribute($this->env, $this->source, $context["color"], "color_id", [], "any", false, false, false, 42);
+                echo twig_get_attribute($this->env, $this->source, $context["color"], "color_id", [], "any", false, false, false, 45);
                 echo "\" name=\"custom_color_";
-                echo twig_get_attribute($this->env, $this->source, $context["product"], "cart_id", [], "any", false, false, false, 42);
+                echo twig_get_attribute($this->env, $this->source, $context["product"], "cart_id", [], "any", false, false, false, 45);
                 echo "\" value=\"";
-                echo twig_get_attribute($this->env, $this->source, $context["color"], "color_id", [], "any", false, false, false, 42);
+                echo twig_get_attribute($this->env, $this->source, $context["color"], "color_id", [], "any", false, false, false, 45);
                 echo "\" 
                                ";
-                // line 43
-                if ((twig_get_attribute($this->env, $this->source, $context["color"], "name", [], "any", false, false, false, 43) == ($context["selected_color"] ?? null))) {
+                // line 46
+                if ((twig_get_attribute($this->env, $this->source, $context["color"], "name", [], "any", false, false, false, 46) == ($context["selected_color"] ?? null))) {
                     echo "checked";
                 }
                 echo " 
                                ";
-                // line 44
-                if (( !twig_test_empty(($context["selected_color"] ?? null)) && (twig_get_attribute($this->env, $this->source, $context["color"], "name", [], "any", false, false, false, 44) != ($context["selected_color"] ?? null)))) {
+                // line 47
+                if (( !twig_test_empty(($context["selected_color"] ?? null)) && (twig_get_attribute($this->env, $this->source, $context["color"], "name", [], "any", false, false, false, 47) != ($context["selected_color"] ?? null)))) {
                     echo "disabled";
                 }
                 echo ">
                         <label for=\"color_";
-                // line 45
-                echo twig_get_attribute($this->env, $this->source, $context["color"], "color_id", [], "any", false, false, false, 45);
+                // line 48
+                echo twig_get_attribute($this->env, $this->source, $context["color"], "color_id", [], "any", false, false, false, 48);
                 echo "\">";
-                echo twig_get_attribute($this->env, $this->source, $context["color"], "name", [], "any", false, false, false, 45);
+                echo twig_get_attribute($this->env, $this->source, $context["color"], "name", [], "any", false, false, false, 48);
                 echo "</label><br>
                     ";
             }
             $_parent = $context['_parent'];
             unset($context['_seq'], $context['_iterated'], $context['_key'], $context['color'], $context['_parent'], $context['loop']);
             $context = array_intersect_key($context, $_parent) + $_parent;
-            // line 47
+            // line 50
             echo "                </div>
             </div>
         </div>
@@ -187,25 +196,24 @@ class __TwigTemplate_e4a78285e21ee1095db39d028fc11b47 extends Template
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['product'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 51
+        // line 54
         echo "</div>
-
 
         </div>
       </div>
     </div>
     ";
-        // line 57
+        // line 59
         echo ($context["content_bottom"] ?? null);
         echo "
   </div>
   ";
-        // line 59
+        // line 61
         echo ($context["column_right"] ?? null);
         echo "
 </div>
 ";
-        // line 61
+        // line 63
         echo ($context["footer"] ?? null);
         echo "
 ";
@@ -223,7 +231,7 @@ class __TwigTemplate_e4a78285e21ee1095db39d028fc11b47 extends Template
 
     public function getDebugInfo()
     {
-        return array (  209 => 61,  204 => 59,  199 => 57,  191 => 51,  182 => 47,  172 => 45,  166 => 44,  160 => 43,  151 => 42,  147 => 41,  142 => 39,  137 => 36,  133 => 35,  127 => 32,  122 => 31,  116 => 29,  114 => 28,  109 => 25,  105 => 23,  99 => 21,  96 => 20,  90 => 18,  87 => 17,  81 => 15,  79 => 14,  76 => 13,  74 => 12,  69 => 10,  65 => 9,  61 => 8,  58 => 7,  47 => 5,  43 => 4,  37 => 1,);
+        return array (  217 => 63,  212 => 61,  207 => 59,  200 => 54,  191 => 50,  181 => 48,  175 => 47,  169 => 46,  160 => 45,  156 => 44,  151 => 42,  147 => 41,  143 => 40,  138 => 37,  134 => 36,  127 => 32,  122 => 31,  116 => 29,  114 => 28,  109 => 25,  105 => 23,  99 => 21,  96 => 20,  90 => 18,  87 => 17,  81 => 15,  79 => 14,  76 => 13,  74 => 12,  69 => 10,  65 => 9,  61 => 8,  58 => 7,  47 => 5,  43 => 4,  37 => 1,);
     }
 
     public function getSourceContext()
