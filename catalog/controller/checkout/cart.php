@@ -176,13 +176,30 @@ class Cart extends \Opencart\System\Engine\Controller {
 			$custom_color = $custom_color->row['option'];
 			$custom_color = json_decode($custom_color, true);
 			
+			$product_id = $this->db->query("SELECT `product_id` FROM `" . DB_PREFIX . "cart` WHERE `cart_id` = '" . (int)$product['cart_id'] . "'");
+			$product_id = $product_id->row['product_id'];
+			$product_id_query = $this->db->query("SELECT `custom_color` FROM `" . DB_PREFIX . "product_extra_feature` WHERE `product_id` = '" . (int)$product_id . "'");
+			$custom_color_ids = $product_id_query->row['custom_color'];
+			$custom_color_ids = explode(',', $custom_color_ids); // Convert to array
+			
+			// Fetch color names from oc_color
+			$color_ids = implode(',', array_map('intval', $custom_color_ids)); // Sanitize and prepare color IDs for query
+			$colors_query = $this->db->query("SELECT `color_id`, `name` FROM `" . DB_PREFIX . "color` WHERE `color_id` IN (" . $color_ids . ")");
+			
+			$colors = [];
+			foreach ($colors_query->rows as $color) {
+				
+				$colors[$color['color_id']] = $color['name'];
+			}
+			
 			$data['products'][] = [
 				'cart_id'      => $product['cart_id'],
 				'thumb'        => $product['image'],
 				'name'         => $product['name'],
 				'model'        => $product['model'],
 				'option'       => $product['option'],
-				'custom_color'  => $custom_color,
+				'selected_color' => $custom_color, 
+				'custom_color' => $colors, // This will be an associative array of color_id => color_name
 				'subscription' => $description,
 				'quantity'     => $product['quantity'],
 				'stock'        => $product['stock'] ? true : !(!$this->config->get('config_stock_checkout') || $this->config->get('config_stock_warning')),

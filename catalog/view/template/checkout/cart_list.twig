@@ -17,17 +17,31 @@
         <tr>
           <td class="text-center">{% if product.thumb %} <a href="{{ product.href }}"><img src="{{ product.thumb }}" alt="{{ product.name }}" title="{{ product.name }}" class="img-thumbnail"/></a> {% endif %}</td>
                     <td class="text-left">
+                {% if product.selected_color %}
+                    <ul>
+                        {% for key, value in product.selected_color %}
+                            {{ value }}</li>
+                        {% endfor %}
+                    </ul>
+                {% else %}
+                    No selected_color
+                {% endif %}
+            </td>
+
+ <td class="text-left">
                 {% if product.custom_color %}
                     <ul>
-                        {% for key, value in product.custom_color %}
-                            {{ value }}
+                        {% for color_id, color_name in product.custom_color %}
+                            <li>
+                                <input type="radio" name="custom_color_{{ product.cart_id }}" value="{{ color_id }}" {% if color_id in product.option.custom_color %} checked {% endif %}>
+                                {{ color_name }}
+                            </li>
                         {% endfor %}
                     </ul>
                 {% else %}
                     No custom_color
                 {% endif %}
             </td>
-
 
 
           <td class="text-start text-wrap"><a href="{{ product.href }}">{{ product.name }}</a>{% if not product.stock %} <span class="text-danger">***</span>{% endif %}
