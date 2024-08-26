@@ -1,5 +1,7 @@
 {{ header }}
 <div id="checkout-cart" class="container">
+
+
   <ul class="breadcrumb">
     {% for breadcrumb in breadcrumbs %}
       <li class="breadcrumb-item"><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>
@@ -29,6 +31,7 @@
       {% endif %}
       <br/>
       <div class="row">
+      
         <div class="col"><a href="{{ continue }}" class="btn btn-light">{{ button_shopping }}</a></div>
         <div class="col text-end"><a href="{{ checkout }}" class="btn btn-primary">{{ button_checkout }}</a></div>
       </div>
