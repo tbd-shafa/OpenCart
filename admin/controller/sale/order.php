@@ -1,15 +1,19 @@
 <?php
+
 namespace Opencart\Admin\Controller\Sale;
+
 /**
  * Class Order
  *
  * @package Opencart\Admin\Controller\Sale
  */
-class Order extends \Opencart\System\Engine\Controller {
+class Order extends \Opencart\System\Engine\Controller
+{
 	/**
 	 * @return void
 	 */
-	public function index(): void {
+	public function index(): void
+	{
 		$this->load->language('sale/order');
 
 		$this->document->setTitle($this->language->get('heading_title'));
@@ -181,7 +185,8 @@ class Order extends \Opencart\System\Engine\Controller {
 	/**
 	 * @return void
 	 */
-	public function list(): void {
+	public function list(): void
+	{
 		$this->load->language('sale/order');
 
 		$this->response->setOutput($this->getList());
@@ -190,7 +195,8 @@ class Order extends \Opencart\System\Engine\Controller {
 	/**
 	 * @return string
 	 */
-	protected function getList(): string {
+	protected function getList(): string
+	{
 		if (isset($this->request->get['filter_order_id'])) {
 			$filter_order_id = (int)$this->request->get['filter_order_id'];
 		} else {
@@ -336,11 +342,11 @@ class Order extends \Opencart\System\Engine\Controller {
 		$this->load->model('sale/order');
 
 		$order_total = $this->model_sale_order->getTotalOrders($filter_data);
-		
-       $product_extra_feature_status =$this->config->get('product_extra_feature_status');
-		if($product_extra_feature_status > 0){
-			
-			$results = $this->model_sale_order->getOrders($filter_data ,$product_extra_feature_status);
+
+		$product_extra_feature_status = $this->config->get('product_extra_feature_status');
+		if ($product_extra_feature_status > 0) {
+
+			$results = $this->model_sale_order->getOrders($filter_data, $product_extra_feature_status);
 
 			foreach ($results as $result) {
 				$data['orders'][] = [
@@ -352,12 +358,12 @@ class Order extends \Opencart\System\Engine\Controller {
 					'date_added'      => date($this->language->get('date_format_short'), strtotime($result['date_added'])),
 					'date_modified'   => date($this->language->get('date_format_short'), strtotime($result['date_modified'])),
 					'shipping_method' => $result['shipping_method'],
-					'custom_color'    => $result['custom_color'], 
+					'custom_color'    => $result['custom_color'],
 					'view'            => $this->url->link('sale/order.info', 'user_token=' . $this->session->data['user_token'] . '&order_id=' . $result['order_id'] . $url)
 				];
 			}
-		}else{
-			$results = $this->model_sale_order->getOrders($filter_data , 0);
+		} else {
+			$results = $this->model_sale_order->getOrders($filter_data, 0);
 
 			foreach ($results as $result) {
 				$data['orders'][] = [
@@ -374,7 +380,7 @@ class Order extends \Opencart\System\Engine\Controller {
 				];
 			}
 		}
-		
+
 
 		$url = '';
 
@@ -493,7 +499,8 @@ class Order extends \Opencart\System\Engine\Controller {
 	 * @return void
 	 * @throws \Exception
 	 */
-	public function info(): void {
+	public function info(): void
+	{
 		$this->load->language('sale/order');
 
 		if (isset($this->request->get['order_id'])) {
@@ -1265,7 +1272,8 @@ class Order extends \Opencart\System\Engine\Controller {
 	/**
 	 * @return void
 	 */
-	public function call(): void {
+	public function call(): void
+	{
 		$this->load->language('sale/order');
 
 		$json = [];
@@ -1329,7 +1337,8 @@ class Order extends \Opencart\System\Engine\Controller {
 	/**
 	 * @return void
 	 */
-	public function invoice(): void {
+	public function invoice(): void
+	{
 		$this->load->language('sale/order');
 
 		$data['title'] = $this->language->get('text_invoice');
@@ -1573,7 +1582,8 @@ class Order extends \Opencart\System\Engine\Controller {
 	/**
 	 * @return void
 	 */
-	public function shipping(): void {
+	public function shipping(): void
+	{
 		$this->load->language('sale/order');
 
 		$data['title'] = $this->language->get('text_shipping');
@@ -1752,7 +1762,8 @@ class Order extends \Opencart\System\Engine\Controller {
 	/**
 	 * @return void
 	 */
-	public function history(): void {
+	public function history(): void
+	{
 		$this->load->language('sale/order');
 
 		$this->response->setOutput($this->getHistory());
@@ -1761,7 +1772,8 @@ class Order extends \Opencart\System\Engine\Controller {
 	/**
 	 * @return string
 	 */
-	public function getHistory(): string {
+	public function getHistory(): string
+	{
 		if (isset($this->request->get['order_id'])) {
 			$order_id = (int)$this->request->get['order_id'];
 		} else {
@@ -1808,7 +1820,8 @@ class Order extends \Opencart\System\Engine\Controller {
 	/**
 	 * @return void
 	 */
-	public function createInvoiceNo(): void {
+	public function createInvoiceNo(): void
+	{
 		$this->load->language('sale/order');
 
 		$json = [];
@@ -1850,7 +1863,8 @@ class Order extends \Opencart\System\Engine\Controller {
 	/**
 	 * @return void
 	 */
-	public function addReward(): void {
+	public function addReward(): void
+	{
 		$this->load->language('sale/order');
 
 		$json = [];
@@ -1898,7 +1912,8 @@ class Order extends \Opencart\System\Engine\Controller {
 	/**
 	 * @return void
 	 */
-	public function removeReward(): void {
+	public function removeReward(): void
+	{
 		$this->load->language('sale/order');
 
 		$json = [];
@@ -1936,7 +1951,8 @@ class Order extends \Opencart\System\Engine\Controller {
 	/**
 	 * @return void
 	 */
-	public function addCommission(): void {
+	public function addCommission(): void
+	{
 		$this->load->language('sale/order');
 
 		$json = [];
@@ -1986,7 +2002,8 @@ class Order extends \Opencart\System\Engine\Controller {
 	/**
 	 * @return void
 	 */
-	public function removeCommission(): void {
+	public function removeCommission(): void
+	{
 		$this->load->language('sale/order');
 
 		$json = [];
