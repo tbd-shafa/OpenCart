@@ -124,8 +124,8 @@ class __TwigTemplate_e4a78285e21ee1095db39d028fc11b47 extends Template
         echo "</div>
         
 
- <div id=\"checkout-products\" class=\"mb-4\">
  
+<div id=\"checkout-products\" class=\"mb-4\">
     ";
         // line 36
         $context['_parent'] = $context;
@@ -133,56 +133,56 @@ class __TwigTemplate_e4a78285e21ee1095db39d028fc11b47 extends Template
         foreach ($context['_seq'] as $context["_key"] => $context["product"]) {
             // line 37
             echo "        <div class=\"product-item\">
-         
             <div class=\"product-color\">
-              <div class=\"product-name\">";
+                <div class=\"product-name\">";
+            // line 39
+            echo twig_get_attribute($this->env, $this->source, $context["product"], "name", [], "any", false, false, false, 39);
+            echo "</div>
+                <div class=\"product-quantity\">Quantity: ";
             // line 40
-            echo twig_get_attribute($this->env, $this->source, $context["product"], "name", [], "any", false, false, false, 40);
+            echo twig_get_attribute($this->env, $this->source, $context["product"], "quantity", [], "any", false, false, false, 40);
             echo "</div>
-            <div class=\"product-quantity\">Quantity: ";
+                <label>Custom Color: ";
             // line 41
-            echo twig_get_attribute($this->env, $this->source, $context["product"], "quantity", [], "any", false, false, false, 41);
-            echo "</div>
-                <label>Custom Color:";
-            // line 42
-            echo ($context["selected_color"] ?? null);
+            echo twig_get_attribute($this->env, $this->source, $context["product"], "selected_color", [], "any", false, false, false, 41);
             echo "</label>
                 <div>
-                     ";
-            // line 44
+                    ";
+            // line 43
             $context['_parent'] = $context;
-            $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, $context["product"], "colors", [], "any", false, false, false, 44));
+            $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, $context["product"], "colors", [], "any", false, false, false, 43));
             foreach ($context['_seq'] as $context["_key"] => $context["color"]) {
-                // line 45
+                // line 44
                 echo "                        <input type=\"radio\" id=\"color_";
-                echo twig_get_attribute($this->env, $this->source, $context["color"], "color_id", [], "any", false, false, false, 45);
-                echo "\" name=\"custom_color\" value=\"";
-                echo twig_get_attribute($this->env, $this->source, $context["color"], "color_id", [], "any", false, false, false, 45);
-                echo "\" 
+                echo twig_get_attribute($this->env, $this->source, $context["color"], "color_id", [], "any", false, false, false, 44);
+                echo "\" name=\"custom_color_";
+                echo twig_get_attribute($this->env, $this->source, $context["product"], "cart_id", [], "any", false, false, false, 44);
+                echo "\" value=\"";
+                echo twig_get_attribute($this->env, $this->source, $context["color"], "color_id", [], "any", false, false, false, 44);
+                echo "\"
                                ";
-                // line 46
-                if ((twig_get_attribute($this->env, $this->source, $context["color"], "name", [], "any", false, false, false, 46) == ($context["selected_color"] ?? null))) {
+                // line 45
+                if ((twig_get_attribute($this->env, $this->source, $context["color"], "name", [], "any", false, false, false, 45) == twig_get_attribute($this->env, $this->source, $context["product"], "selected_color", [], "any", false, false, false, 45))) {
                     echo "checked";
                 }
-                echo " 
-                               ";
-                // line 47
-                if (( !twig_test_empty(($context["selected_color"] ?? null)) && (twig_get_attribute($this->env, $this->source, $context["color"], "name", [], "any", false, false, false, 47) != ($context["selected_color"] ?? null)))) {
+                // line 46
+                echo "                               ";
+                if (( !twig_test_empty(twig_get_attribute($this->env, $this->source, $context["product"], "selected_color", [], "any", false, false, false, 46)) && (twig_get_attribute($this->env, $this->source, $context["color"], "name", [], "any", false, false, false, 46) != twig_get_attribute($this->env, $this->source, $context["product"], "selected_color", [], "any", false, false, false, 46)))) {
                     echo "disabled";
                 }
                 echo ">
                         <label for=\"color_";
-                // line 48
-                echo twig_get_attribute($this->env, $this->source, $context["color"], "color_id", [], "any", false, false, false, 48);
+                // line 47
+                echo twig_get_attribute($this->env, $this->source, $context["color"], "color_id", [], "any", false, false, false, 47);
                 echo "\">";
-                echo twig_get_attribute($this->env, $this->source, $context["color"], "name", [], "any", false, false, false, 48);
+                echo twig_get_attribute($this->env, $this->source, $context["color"], "name", [], "any", false, false, false, 47);
                 echo "</label><br>
                     ";
             }
             $_parent = $context['_parent'];
             unset($context['_seq'], $context['_iterated'], $context['_key'], $context['color'], $context['_parent'], $context['loop']);
             $context = array_intersect_key($context, $_parent) + $_parent;
-            // line 50
+            // line 49
             echo "                </div>
             </div>
         </div>
@@ -191,8 +191,9 @@ class __TwigTemplate_e4a78285e21ee1095db39d028fc11b47 extends Template
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['product'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 54
+        // line 53
         echo "</div>
+
   <div id=\"checkout-confirm\">";
         // line 55
         echo ($context["confirm"] ?? null);
@@ -229,7 +230,7 @@ class __TwigTemplate_e4a78285e21ee1095db39d028fc11b47 extends Template
 
     public function getDebugInfo()
     {
-        return array (  215 => 63,  210 => 61,  205 => 59,  198 => 55,  195 => 54,  186 => 50,  176 => 48,  170 => 47,  164 => 46,  157 => 45,  153 => 44,  148 => 42,  144 => 41,  140 => 40,  135 => 37,  131 => 36,  122 => 31,  116 => 29,  114 => 28,  109 => 25,  105 => 23,  99 => 21,  96 => 20,  90 => 18,  87 => 17,  81 => 15,  79 => 14,  76 => 13,  74 => 12,  69 => 10,  65 => 9,  61 => 8,  58 => 7,  47 => 5,  43 => 4,  37 => 1,);
+        return array (  216 => 63,  211 => 61,  206 => 59,  199 => 55,  195 => 53,  186 => 49,  176 => 47,  169 => 46,  165 => 45,  156 => 44,  152 => 43,  147 => 41,  143 => 40,  139 => 39,  135 => 37,  131 => 36,  122 => 31,  116 => 29,  114 => 28,  109 => 25,  105 => 23,  99 => 21,  96 => 20,  90 => 18,  87 => 17,  81 => 15,  79 => 14,  76 => 13,  74 => 12,  69 => 10,  65 => 9,  61 => 8,  58 => 7,  47 => 5,  43 => 4,  37 => 1,);
     }
 
     public function getSourceContext()

@@ -75,7 +75,7 @@ class Checkout extends \Opencart\System\Engine\Controller
 			$data['shipping_method'] = '';
 		}
 		$products = $this->cart->getProducts();
-
+       
 		foreach ($products as &$product) {
 			$cart_id = $product['cart_id'];
 			$product_id = $product['product_id'];
@@ -108,7 +108,9 @@ class Checkout extends \Opencart\System\Engine\Controller
 		}
 
 		$data['products'] = $products;
-
+		// echo "<pre>";
+		// print_r($data['products']);
+		// die;
 		$data['payment_method'] = $this->load->controller('checkout/payment_method');
 		$data['confirm'] = $this->load->controller('checkout/confirm');
 

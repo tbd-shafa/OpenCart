@@ -31,20 +31,19 @@
           <div id="checkout-payment-method" class="mb-4">{{ payment_method }}</div>
         
 
- <div id="checkout-products" class="mb-4">
  
+<div id="checkout-products" class="mb-4">
     {% for product in products %}
         <div class="product-item">
-         
             <div class="product-color">
-              <div class="product-name">{{ product.name }}</div>
-            <div class="product-quantity">Quantity: {{ product.quantity }}</div>
-                <label>Custom Color:{{selected_color}}</label>
+                <div class="product-name">{{ product.name }}</div>
+                <div class="product-quantity">Quantity: {{ product.quantity }}</div>
+                <label>Custom Color: {{ product.selected_color }}</label>
                 <div>
-                     {% for color in product.colors %}
-                        <input type="radio" id="color_{{ color.color_id }}" name="custom_color" value="{{ color.color_id }}" 
-                               {% if color.name == selected_color %}checked{% endif %} 
-                               {% if selected_color is not empty and color.name != selected_color %}disabled{% endif %}>
+                    {% for color in product.colors %}
+                        <input type="radio" id="color_{{ color.color_id }}" name="custom_color_{{ product.cart_id }}" value="{{ color.color_id }}"
+                               {% if color.name == product.selected_color %}checked{% endif %}
+                               {% if product.selected_color is not empty and color.name != product.selected_color %}disabled{% endif %}>
                         <label for="color_{{ color.color_id }}">{{ color.name }}</label><br>
                     {% endfor %}
                 </div>
@@ -52,6 +51,7 @@
         </div>
     {% endfor %}
 </div>
+
   <div id="checkout-confirm">{{ confirm }}</div>
         </div>
       </div>
