@@ -2708,7 +2708,7 @@ $('#button-refresh').on('click', function() {
         },
         success: function(json) {
             html = '';
-
+          
             if (json['products'].length) {
                 for (i = 0; i < json['products'].length; i++) {
                     product = json['products'][i];
@@ -2740,6 +2740,7 @@ $('#button-refresh').on('click', function() {
                     html += '  <td class="text-end">' + product['quantity'] + '</td>';
                     html += '  <td class="text-end">' + product['price'] + '</td>';
                     html += '  <td class="text-end">' + product['total'] + '</td>';
+                     html += '  <td class="text-end">' + product['custom_color'] + '</td>';
                     html += '  <td class="text-end">';
                     html += '    <form>';
                     html += '      <button type="submit" data-bs-toggle="tooltip" title="{{ button_remove|escape('js') }}" class="btn btn-danger"><i class="fa-solid fa-minus-circle"></i></button>';
