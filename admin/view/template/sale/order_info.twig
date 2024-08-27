@@ -67,7 +67,9 @@
               <td class="text-end">{{ column_quantity }}</td>
               <td class="text-end">{{ column_price }}</td>
               <td class="text-end">{{ column_total }}</td>
-              <td class="text-end">Custom Color</td>
+                {% if product_extra_feature_status > 0 %}
+                <td class="text-end">Custom Color</td>
+                {% endif %}
               <td class="text-end" style="width: 1px;">{{ column_action }}</td>
             </tr>
           </thead>
@@ -100,7 +102,10 @@
                 <td class="text-end">{{ order_product.quantity }}</td>
                 <td class="text-end">{{ order_product.price }}</td>
                 <td class="text-end">{{ order_product.total }}</td>
-                <td class="text-end">{{ order_product.custom_color }}</td>
+                {% if product_extra_feature_status > 0 %}
+                  <td class="text-end">{{ order_product.custom_color }}</td>
+                {% endif %}
+               
                 <td class="text-end">
                   <form>
                     <button type="submit" data-bs-toggle="tooltip" title="{{ button_remove }}" class="btn btn-danger"><i class="fa-solid fa-minus-circle"></i></button>
@@ -128,13 +133,23 @@
             {% endfor %}
             {% if not order_products and not order_vouchers %}
               <tr>
-                <td colspan="6" class="text-center">{{ text_no_results }}</td>
+               {% if product_extra_feature_status > 0 %}
+                   <td colspan="7" class="text-center">{{ text_no_results }}</td>
+              {% else %}
+                   <td colspan="6" class="text-center">{{ text_no_results }}</td>
+              {% endif %}
+               
               </tr>
             {% endif %}
           </tbody>
           <tfoot>
             <tr>
-              <td colspan="6"></td>
+             {% if product_extra_feature_status > 0 %}
+                  <td colspan="6"></td>
+              {% else %}
+                  <td colspan="5"></td>
+              {% endif %}
+             
               <td class="text-end"><button type="button" data-bs-toggle="modal" data-bs-target="#modal-cart" class="btn btn-primary"><i class="fa-solid fa-plus-circle"></i></button></td>
             </tr>
           </tfoot>

@@ -491,7 +491,7 @@ class Order extends \Opencart\System\Engine\Controller
 
 		$data['sort'] = $sort;
 		$data['order'] = $order;
-
+		$data['product_extra_feature_status'] = $this->config->get('product_extra_feature_status');
 		return $this->load->view('sale/order_list', $data);
 	}
 
@@ -1263,7 +1263,7 @@ class Order extends \Opencart\System\Engine\Controller
 		$data['header'] = $this->load->controller('common/header');
 		$data['column_left'] = $this->load->controller('common/column_left');
 		$data['footer'] = $this->load->controller('common/footer');
-
+		$data['product_extra_feature_status'] = $this->config->get('product_extra_feature_status');
 		$this->response->setOutput($this->load->view('sale/order_info', $data));
 	}
 

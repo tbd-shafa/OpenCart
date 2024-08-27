@@ -127,9 +127,17 @@ class __TwigTemplate_fc4b816cbfc86934264020e6d5f7bf17 extends Template
         echo ">";
         echo ($context["column_date_modified"] ?? null);
         echo "</a></td>
-           <td class=\"text-start\">Custom Color</td> 
+           ";
+        // line 15
+        if ((($context["product_extra_feature_status"] ?? null) > 0)) {
+            // line 16
+            echo "              <td class=\"text-start\">Custom Color</td> 
+          ";
+        }
+        // line 18
+        echo "
           <td class=\"text-end\">";
-        // line 16
+        // line 19
         echo ($context["column_action"] ?? null);
         echo "</td>
             
@@ -137,22 +145,22 @@ class __TwigTemplate_fc4b816cbfc86934264020e6d5f7bf17 extends Template
       </thead>
       <tbody>
         ";
-        // line 21
+        // line 24
         if (($context["orders"] ?? null)) {
-            // line 22
+            // line 25
             echo "          ";
             $context['_parent'] = $context;
             $context['_seq'] = twig_ensure_traversable(($context["orders"] ?? null));
             foreach ($context['_seq'] as $context["_key"] => $context["order"]) {
-                // line 23
+                // line 26
                 echo "            <tr>
               <td class=\"text-center\"><input type=\"checkbox\" name=\"selected[]\" value=\"";
-                // line 24
-                echo twig_get_attribute($this->env, $this->source, $context["order"], "order_id", [], "any", false, false, false, 24);
+                // line 27
+                echo twig_get_attribute($this->env, $this->source, $context["order"], "order_id", [], "any", false, false, false, 27);
                 echo "\" class=\"form-check-input\"/>
                 <input type=\"hidden\" name=\"shipping_method[]\" value=\"";
-                // line 25
-                if (twig_get_attribute($this->env, $this->source, $context["order"], "shipping_method", [], "any", false, false, false, 25)) {
+                // line 28
+                if (twig_get_attribute($this->env, $this->source, $context["order"], "shipping_method", [], "any", false, false, false, 28)) {
                     echo "1";
                     echo ($context["else"] ?? null);
                     echo "0";
@@ -160,40 +168,48 @@ class __TwigTemplate_fc4b816cbfc86934264020e6d5f7bf17 extends Template
                 echo "\"/></td>
                 
               <td class=\"text-end\">";
-                // line 27
-                echo twig_get_attribute($this->env, $this->source, $context["order"], "order_id", [], "any", false, false, false, 27);
+                // line 30
+                echo twig_get_attribute($this->env, $this->source, $context["order"], "order_id", [], "any", false, false, false, 30);
                 echo "</td>
               <td class=\"text-start\">";
-                // line 28
-                echo twig_get_attribute($this->env, $this->source, $context["order"], "store_name", [], "any", false, false, false, 28);
+                // line 31
+                echo twig_get_attribute($this->env, $this->source, $context["order"], "store_name", [], "any", false, false, false, 31);
                 echo "</td>
               <td class=\"text-start\">";
-                // line 29
-                echo twig_get_attribute($this->env, $this->source, $context["order"], "customer", [], "any", false, false, false, 29);
+                // line 32
+                echo twig_get_attribute($this->env, $this->source, $context["order"], "customer", [], "any", false, false, false, 32);
                 echo "</td>
               <td class=\"text-start\"><label>";
-                // line 30
-                echo twig_get_attribute($this->env, $this->source, $context["order"], "order_status", [], "any", false, false, false, 30);
+                // line 33
+                echo twig_get_attribute($this->env, $this->source, $context["order"], "order_status", [], "any", false, false, false, 33);
                 echo "</label></td>
               <td class=\"text-end d-none d-lg-table-cell\">";
-                // line 31
-                echo twig_get_attribute($this->env, $this->source, $context["order"], "total", [], "any", false, false, false, 31);
+                // line 34
+                echo twig_get_attribute($this->env, $this->source, $context["order"], "total", [], "any", false, false, false, 34);
                 echo "</td>
               <td class=\"text-start d-none d-lg-table-cell\">";
-                // line 32
-                echo twig_get_attribute($this->env, $this->source, $context["order"], "date_added", [], "any", false, false, false, 32);
+                // line 35
+                echo twig_get_attribute($this->env, $this->source, $context["order"], "date_added", [], "any", false, false, false, 35);
                 echo "</td>
               <td class=\"text-start d-none d-xl-table-cell\">";
-                // line 33
-                echo twig_get_attribute($this->env, $this->source, $context["order"], "date_modified", [], "any", false, false, false, 33);
+                // line 36
+                echo twig_get_attribute($this->env, $this->source, $context["order"], "date_modified", [], "any", false, false, false, 36);
                 echo "</td>
-               <td class=\"text-start\">";
-                // line 34
-                echo twig_get_attribute($this->env, $this->source, $context["order"], "custom_color", [], "any", false, false, false, 34);
-                echo "</td>
+              ";
+                // line 37
+                if ((($context["product_extra_feature_status"] ?? null) > 0)) {
+                    // line 38
+                    echo "                  <td class=\"text-start\">";
+                    echo twig_get_attribute($this->env, $this->source, $context["order"], "custom_color", [], "any", false, false, false, 38);
+                    echo "</td>
+              ";
+                }
+                // line 40
+                echo "
+              
               <td class=\"text-end\"><a href=\"";
-                // line 35
-                echo twig_get_attribute($this->env, $this->source, $context["order"], "view", [], "any", false, false, false, 35);
+                // line 42
+                echo twig_get_attribute($this->env, $this->source, $context["order"], "view", [], "any", false, false, false, 42);
                 echo "\" data-bs-toggle=\"tooltip\" title=\"";
                 echo ($context["button_view"] ?? null);
                 echo "\" class=\"btn btn-primary\"><i class=\"fa-solid fa-eye\"></i></a></td>
@@ -205,29 +221,41 @@ class __TwigTemplate_fc4b816cbfc86934264020e6d5f7bf17 extends Template
             $_parent = $context['_parent'];
             unset($context['_seq'], $context['_iterated'], $context['_key'], $context['order'], $context['_parent'], $context['loop']);
             $context = array_intersect_key($context, $_parent) + $_parent;
-            // line 40
+            // line 47
             echo "        ";
         } else {
-            // line 41
+            // line 48
             echo "          <tr>
-            <td class=\"text-center\" colspan=\"9\">";
-            // line 42
-            echo ($context["text_no_results"] ?? null);
-            echo "</td>
-          </tr>
+         ";
+            // line 49
+            if ((($context["product_extra_feature_status"] ?? null) > 0)) {
+                // line 50
+                echo "            <td class=\"text-center\" colspan=\"10\">";
+                echo ($context["text_no_results"] ?? null);
+                echo "</td>
+        ";
+            } else {
+                // line 52
+                echo "            <td class=\"text-center\" colspan=\"9\">";
+                echo ($context["text_no_results"] ?? null);
+                echo "</td>
+        ";
+            }
+            // line 54
+            echo "          </tr>
         ";
         }
-        // line 45
+        // line 56
         echo "      </tbody>
     </table>
   </div>
   <div class=\"row\">
     <div class=\"col-sm-6 text-start\">";
-        // line 49
+        // line 60
         echo ($context["pagination"] ?? null);
         echo "</div>
     <div class=\"col-sm-6 text-end\">";
-        // line 50
+        // line 61
         echo ($context["results"] ?? null);
         echo "</div>
   </div>
@@ -246,7 +274,7 @@ class __TwigTemplate_fc4b816cbfc86934264020e6d5f7bf17 extends Template
 
     public function getDebugInfo()
     {
-        return array (  231 => 50,  227 => 49,  221 => 45,  215 => 42,  212 => 41,  209 => 40,  196 => 35,  192 => 34,  188 => 33,  184 => 32,  180 => 31,  176 => 30,  172 => 29,  168 => 28,  164 => 27,  155 => 25,  151 => 24,  148 => 23,  143 => 22,  141 => 21,  133 => 16,  120 => 14,  108 => 13,  96 => 12,  84 => 11,  72 => 10,  60 => 9,  48 => 8,  37 => 1,);
+        return array (  259 => 61,  255 => 60,  249 => 56,  245 => 54,  239 => 52,  233 => 50,  231 => 49,  228 => 48,  225 => 47,  212 => 42,  208 => 40,  202 => 38,  200 => 37,  196 => 36,  192 => 35,  188 => 34,  184 => 33,  180 => 32,  176 => 31,  172 => 30,  163 => 28,  159 => 27,  156 => 26,  151 => 25,  149 => 24,  141 => 19,  138 => 18,  134 => 16,  132 => 15,  120 => 14,  108 => 13,  96 => 12,  84 => 11,  72 => 10,  60 => 9,  48 => 8,  37 => 1,);
     }
 
     public function getSourceContext()
