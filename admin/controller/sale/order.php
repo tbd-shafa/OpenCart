@@ -336,22 +336,45 @@ class Order extends \Opencart\System\Engine\Controller {
 		$this->load->model('sale/order');
 
 		$order_total = $this->model_sale_order->getTotalOrders($filter_data);
+		
+       $product_extra_feature_status =$this->config->get('product_extra_feature_status');
+		if($product_extra_feature_status > 0){
+			
+			$results = $this->model_sale_order->getOrders($filter_data ,$product_extra_feature_status);
 
-		$results = $this->model_sale_order->getOrders($filter_data);
+			foreach ($results as $result) {
+				$data['orders'][] = [
+					'order_id'        => $result['order_id'],
+					'store_name'      => $result['store_name'],
+					'customer'        => $result['customer'],
+					'order_status'    => $result['order_status'] ? $result['order_status'] : $this->language->get('text_missing'),
+					'total'           => $this->currency->format($result['total'], $result['currency_code'], $result['currency_value']),
+					'date_added'      => date($this->language->get('date_format_short'), strtotime($result['date_added'])),
+					'date_modified'   => date($this->language->get('date_format_short'), strtotime($result['date_modified'])),
+					'shipping_method' => $result['shipping_method'],
+					'custom_color'    => $result['custom_color'], 
+					'view'            => $this->url->link('sale/order.info', 'user_token=' . $this->session->data['user_token'] . '&order_id=' . $result['order_id'] . $url)
+				];
+			}
+		}else{
+			$results = $this->model_sale_order->getOrders($filter_data , 0);
 
-		foreach ($results as $result) {
-			$data['orders'][] = [
-				'order_id'        => $result['order_id'],
-				'store_name'      => $result['store_name'],
-				'customer'        => $result['customer'],
-				'order_status'    => $result['order_status'] ? $result['order_status'] : $this->language->get('text_missing'),
-				'total'           => $this->currency->format($result['total'], $result['currency_code'], $result['currency_value']),
-				'date_added'      => date($this->language->get('date_format_short'), strtotime($result['date_added'])),
-				'date_modified'   => date($this->language->get('date_format_short'), strtotime($result['date_modified'])),
-				'shipping_method' => $result['shipping_method'],
-				'view'            => $this->url->link('sale/order.info', 'user_token=' . $this->session->data['user_token'] . '&order_id=' . $result['order_id'] . $url)
-			];
+			foreach ($results as $result) {
+				$data['orders'][] = [
+					'order_id'        => $result['order_id'],
+					'store_name'      => $result['store_name'],
+					'customer'        => $result['customer'],
+					'order_status'    => $result['order_status'] ? $result['order_status'] : $this->language->get('text_missing'),
+					'total'           => $this->currency->format($result['total'], $result['currency_code'], $result['currency_value']),
+					'date_added'      => date($this->language->get('date_format_short'), strtotime($result['date_added'])),
+					'date_modified'   => date($this->language->get('date_format_short'), strtotime($result['date_modified'])),
+					'shipping_method' => $result['shipping_method'],
+					//'custom_color'    => $result['custom_color'], 
+					'view'            => $this->url->link('sale/order.info', 'user_token=' . $this->session->data['user_token'] . '&order_id=' . $result['order_id'] . $url)
+				];
+			}
 		}
+		
 
 		$url = '';
 
