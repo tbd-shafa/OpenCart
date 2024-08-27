@@ -3625,3 +3625,6 @@ Line: 1100
 2024-08-27 05:49:27 - PHP Warning:  Undefined array key "order_id" in /opt/lampp/htdocs/opencart3/catalog/controller/checkout/success.php on line 17
 2024-08-27 05:53:20 - PHP Warning:  Undefined array key "order_id" in /opt/lampp/htdocs/opencart3/catalog/controller/checkout/success.php on line 15
 2024-08-27 05:54:33 - PHP Warning:  Undefined array key "order_id" in /opt/lampp/htdocs/opencart3/catalog/controller/checkout/success.php on line 15
+2024-08-27 07:21:29 - Opencart\System\Library\DB::escape(): Argument #1 ($value) must be of type string, array given, called in /opt/lampp/htdocs/opencart3/catalog/model/checkout/order.php on line 37 in /opt/lampp/htdocs/opencart3/system/library/db.php on line 58
+2024-08-27 08:26:49 - PHP Warning:  Undefined array key "cart_id" in /opt/lampp/htdocs/opencart3/catalog/model/checkout/order.php on line 37
+2024-08-27 08:26:49 - PHP Warning:  Undefined array key "cart_id" in /opt/lampp/htdocs/opencart3/catalog/model/checkout/order.php on line 37
