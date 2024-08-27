@@ -12,6 +12,8 @@ class Subscription extends \Opencart\System\Engine\Model {
 	 * @return int
 	 */
 	public function addSubscription(array $data): int {
+		print_r(23);
+		die;
 		if ($data['trial_status'] && $data['trial_duration']) {
 			$trial_remaining = $data['trial_duration'] - 1;
 			$remaining = $data['duration'];

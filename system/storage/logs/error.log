@@ -3616,3 +3616,12 @@ Line: 1100
 2024-08-26 11:02:01 - PHP Warning:  Undefined array key "option" in /opt/lampp/htdocs/opencart3/catalog/controller/checkout/cart.php on line 176
 2024-08-26 11:09:07 - Call to undefined method Opencart\System\Library\Cart\Cart::updateCartItem() in /opt/lampp/htdocs/opencart3/catalog/controller/checkout/cart.php on line 400
 2024-08-26 11:09:22 - Call to undefined method Opencart\System\Library\Cart\Cart::updateCartItem() in /opt/lampp/htdocs/opencart3/catalog/controller/checkout/cart.php on line 400
+2024-08-26 13:01:05 - PHP Warning:  Undefined array key "product_id" in /opt/lampp/htdocs/opencart3/catalog/model/checkout/order.php on line 24
+2024-08-26 13:01:05 - PHP Warning:  Undefined array key "master_id" in /opt/lampp/htdocs/opencart3/catalog/model/checkout/order.php on line 24
+2024-08-26 13:01:05 - PHP Warning:  Undefined array key "name" in /opt/lampp/htdocs/opencart3/catalog/model/checkout/order.php on line 24
+2024-08-26 13:01:05 - Opencart\System\Library\DB::escape(): Argument #1 ($value) must be of type string, null given, called in /opt/lampp/htdocs/opencart3/catalog/model/checkout/order.php on line 24 in /opt/lampp/htdocs/opencart3/system/library/db.php on line 58
+2024-08-26 13:24:21 - PHP Warning:  Undefined array key "cart_id" in /opt/lampp/htdocs/opencart3/catalog/controller/checkout/success.php on line 15
+2024-08-27 05:28:32 - Unclosed '{' on line 8 in /opt/lampp/htdocs/opencart3/catalog/controller/checkout/confirm.php on line 444
+2024-08-27 05:49:27 - PHP Warning:  Undefined array key "order_id" in /opt/lampp/htdocs/opencart3/catalog/controller/checkout/success.php on line 17
+2024-08-27 05:53:20 - PHP Warning:  Undefined array key "order_id" in /opt/lampp/htdocs/opencart3/catalog/controller/checkout/success.php on line 15
+2024-08-27 05:54:33 - PHP Warning:  Undefined array key "order_id" in /opt/lampp/htdocs/opencart3/catalog/controller/checkout/success.php on line 15

@@ -29,7 +29,7 @@
             <div id="checkout-shipping-method" class="mb-3">{{ shipping_method }}</div>
           {% endif %}
           <div id="checkout-payment-method" class="mb-4">{{ payment_method }}</div>
-          <div id="checkout-confirm">{{ confirm }}</div>
+        
 
  <div id="checkout-products" class="mb-4">
  
@@ -42,7 +42,7 @@
                 <label>Custom Color:{{selected_color}}</label>
                 <div>
                      {% for color in product.colors %}
-                        <input type="radio" id="color_{{ color.color_id }}" name="custom_color_{{ product.cart_id }}" value="{{ color.color_id }}" 
+                        <input type="radio" id="color_{{ color.color_id }}" name="custom_color" value="{{ color.color_id }}" 
                                {% if color.name == selected_color %}checked{% endif %} 
                                {% if selected_color is not empty and color.name != selected_color %}disabled{% endif %}>
                         <label for="color_{{ color.color_id }}">{{ color.name }}</label><br>
@@ -52,7 +52,7 @@
         </div>
     {% endfor %}
 </div>
-
+  <div id="checkout-confirm">{{ confirm }}</div>
         </div>
       </div>
     </div>

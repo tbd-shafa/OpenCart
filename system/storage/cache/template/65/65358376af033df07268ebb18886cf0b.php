@@ -122,10 +122,7 @@ class __TwigTemplate_e4a78285e21ee1095db39d028fc11b47 extends Template
         echo "          <div id=\"checkout-payment-method\" class=\"mb-4\">";
         echo ($context["payment_method"] ?? null);
         echo "</div>
-          <div id=\"checkout-confirm\">";
-        // line 32
-        echo ($context["confirm"] ?? null);
-        echo "</div>
+        
 
  <div id=\"checkout-products\" class=\"mb-4\">
  
@@ -159,9 +156,7 @@ class __TwigTemplate_e4a78285e21ee1095db39d028fc11b47 extends Template
                 // line 45
                 echo "                        <input type=\"radio\" id=\"color_";
                 echo twig_get_attribute($this->env, $this->source, $context["color"], "color_id", [], "any", false, false, false, 45);
-                echo "\" name=\"custom_color_";
-                echo twig_get_attribute($this->env, $this->source, $context["product"], "cart_id", [], "any", false, false, false, 45);
-                echo "\" value=\"";
+                echo "\" name=\"custom_color\" value=\"";
                 echo twig_get_attribute($this->env, $this->source, $context["color"], "color_id", [], "any", false, false, false, 45);
                 echo "\" 
                                ";
@@ -198,7 +193,10 @@ class __TwigTemplate_e4a78285e21ee1095db39d028fc11b47 extends Template
         $context = array_intersect_key($context, $_parent) + $_parent;
         // line 54
         echo "</div>
-
+  <div id=\"checkout-confirm\">";
+        // line 55
+        echo ($context["confirm"] ?? null);
+        echo "</div>
         </div>
       </div>
     </div>
@@ -231,7 +229,7 @@ class __TwigTemplate_e4a78285e21ee1095db39d028fc11b47 extends Template
 
     public function getDebugInfo()
     {
-        return array (  217 => 63,  212 => 61,  207 => 59,  200 => 54,  191 => 50,  181 => 48,  175 => 47,  169 => 46,  160 => 45,  156 => 44,  151 => 42,  147 => 41,  143 => 40,  138 => 37,  134 => 36,  127 => 32,  122 => 31,  116 => 29,  114 => 28,  109 => 25,  105 => 23,  99 => 21,  96 => 20,  90 => 18,  87 => 17,  81 => 15,  79 => 14,  76 => 13,  74 => 12,  69 => 10,  65 => 9,  61 => 8,  58 => 7,  47 => 5,  43 => 4,  37 => 1,);
+        return array (  215 => 63,  210 => 61,  205 => 59,  198 => 55,  195 => 54,  186 => 50,  176 => 48,  170 => 47,  164 => 46,  157 => 45,  153 => 44,  148 => 42,  144 => 41,  140 => 40,  135 => 37,  131 => 36,  122 => 31,  116 => 29,  114 => 28,  109 => 25,  105 => 23,  99 => 21,  96 => 20,  90 => 18,  87 => 17,  81 => 15,  79 => 14,  76 => 13,  74 => 12,  69 => 10,  65 => 9,  61 => 8,  58 => 7,  47 => 5,  43 => 4,  37 => 1,);
     }
 
     public function getSourceContext()

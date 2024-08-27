@@ -10,6 +10,7 @@ class Confirm extends \Opencart\System\Engine\Controller {
 	 * @return string
 	 */
 	public function index(): string {
+		
 		$this->load->language('checkout/confirm');
 
 		// Order Totals
@@ -78,6 +79,7 @@ class Confirm extends \Opencart\System\Engine\Controller {
 
 		// Generate order if payment method is set
 		if ($status) {
+			
 			$order_data = [];
 
 			$order_data['invoice_prefix'] = $this->config->get('config_invoice_prefix');
@@ -308,7 +310,39 @@ class Confirm extends \Opencart\System\Engine\Controller {
 			$this->load->model('checkout/order');
 
 			if (!isset($this->session->data['order_id'])) {
-				$this->session->data['order_id'] = $this->model_checkout_order->addOrder($order_data);
+				foreach ($products as &$product) {
+					$cart_id = $product['cart_id'];
+					$product_id = $product['product_id'];
+		
+					// Get custom colors from oc_product_extra_feature
+					$query = $this->db->query("SELECT custom_color FROM `" . DB_PREFIX . "product_extra_feature` WHERE product_id = '" . (int)$product_id . "'");
+		
+					$product['colors'] = [];
+					if ($query->num_rows) {
+						$custom_color_ids = explode(',', $query->row['custom_color']);
+		
+						// Get color names from oc_color based on custom_color_ids
+						if (!empty($custom_color_ids)) {
+							$color_query = $this->db->query("SELECT color_id, name FROM `" . DB_PREFIX . "color` WHERE color_id IN (" . implode(',', array_map('intval', $custom_color_ids)) . ")");
+		
+							$product['colors'] = $color_query->rows;
+						}
+					}
+		
+					// Get selected color from the cart table
+					$selected_color_query = $this->db->query("SELECT custom_color FROM `" . DB_PREFIX . "cart` WHERE cart_id = '" . (int)$cart_id . "'");
+		
+					if ($selected_color_query->num_rows) {
+						$product['selected_color'] = $selected_color_query->row['custom_color'];
+						$data['selected_color'] =  $product['selected_color'];
+					} else {
+						$product['selected_color'] = '';
+						$data['selected_color'] =  $product['selected_color'];
+					}
+				}
+				// print_r($data['selected_color']);
+				// die;
+				$this->session->data['order_id'] = $this->model_checkout_order->addOrder($order_data ,$data['selected_color']);
 			} else {
 				$order_info = $this->model_checkout_order->getOrder($this->session->data['order_id']);
 
@@ -337,6 +371,7 @@ class Confirm extends \Opencart\System\Engine\Controller {
 			}
 
 			$description = '';
+			
 
 			if ($product['subscription']) {
 				if ($product['subscription']['trial_status']) {
@@ -359,7 +394,7 @@ class Confirm extends \Opencart\System\Engine\Controller {
 					$description .= sprintf($this->language->get('text_subscription_cancel'), $price_status ? $price : '', $cycle, $frequency);
 				}
 			}
-
+			
 			$data['products'][] = [
 				'cart_id'      => $product['cart_id'],
 				'product_id'   => $product['product_id'],
@@ -419,6 +454,7 @@ class Confirm extends \Opencart\System\Engine\Controller {
 	 * @return void
 	 */
 	public function confirm(): void {
+		
 		$this->response->setOutput($this->index());
 	}
 }

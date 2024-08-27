@@ -1,15 +1,19 @@
 <?php
+
 namespace Opencart\Catalog\Controller\Checkout;
+
 /**
  * Class Checkout
  *
  * @package Opencart\Catalog\Controller\Checkout
  */
-class Checkout extends \Opencart\System\Engine\Controller {
+class Checkout extends \Opencart\System\Engine\Controller
+{
 	/**
 	 * @return void
 	 */
-	public function index(): void {
+	public function index(): void
+	{
 		// Validate cart has products and has stock.
 		if ((!$this->cart->hasProducts() && empty($this->session->data['vouchers'])) || (!$this->cart->hasStock() && !$this->config->get('config_stock_checkout'))) {
 			$this->response->redirect($this->url->link('checkout/cart', 'language=' . $this->config->get('config_language')));
@@ -61,50 +65,50 @@ class Checkout extends \Opencart\System\Engine\Controller {
 
 		if ($this->customer->isLogged() && $this->cart->hasShipping()) {
 			$data['shipping_address'] = $this->load->controller('checkout/shipping_address');
-		}  else {
+		} else {
 			$data['shipping_address'] = '';
 		}
 
 		if ($this->cart->hasShipping()) {
 			$data['shipping_method'] = $this->load->controller('checkout/shipping_method');
-		}  else {
+		} else {
 			$data['shipping_method'] = '';
 		}
 		$products = $this->cart->getProducts();
 
-    foreach ($products as &$product) {
-        $cart_id = $product['cart_id'];
-        $product_id = $product['product_id'];
+		foreach ($products as &$product) {
+			$cart_id = $product['cart_id'];
+			$product_id = $product['product_id'];
 
-        // Get custom colors from oc_product_extra_feature
-        $query = $this->db->query("SELECT custom_color FROM `" . DB_PREFIX . "product_extra_feature` WHERE product_id = '" . (int)$product_id . "'");
-        
-        $product['colors'] = [];
-        if ($query->num_rows) {
-            $custom_color_ids = explode(',', $query->row['custom_color']);
+			// Get custom colors from oc_product_extra_feature
+			$query = $this->db->query("SELECT custom_color FROM `" . DB_PREFIX . "product_extra_feature` WHERE product_id = '" . (int)$product_id . "'");
 
-            // Get color names from oc_color based on custom_color_ids
-            if (!empty($custom_color_ids)) {
-                $color_query = $this->db->query("SELECT color_id, name FROM `" . DB_PREFIX . "color` WHERE color_id IN (" . implode(',', array_map('intval', $custom_color_ids)) . ")");
+			$product['colors'] = [];
+			if ($query->num_rows) {
+				$custom_color_ids = explode(',', $query->row['custom_color']);
 
-                $product['colors'] = $color_query->rows;
-            }
-        }
+				// Get color names from oc_color based on custom_color_ids
+				if (!empty($custom_color_ids)) {
+					$color_query = $this->db->query("SELECT color_id, name FROM `" . DB_PREFIX . "color` WHERE color_id IN (" . implode(',', array_map('intval', $custom_color_ids)) . ")");
 
-        // Get selected color from the cart table
-        $selected_color_query = $this->db->query("SELECT custom_color FROM `" . DB_PREFIX . "cart` WHERE cart_id = '" . (int)$cart_id . "'");
-      
-        if ($selected_color_query->num_rows) {
-            $product['selected_color'] = $selected_color_query->row['custom_color'];
-			$data['selected_color'] =  $product['selected_color'] ;
-        } else {
-            $product['selected_color'] = '';
-			$data['selected_color'] =  $product['selected_color'];
-        }
-    }
-	
-    $data['products'] = $products;
-	
+					$product['colors'] = $color_query->rows;
+				}
+			}
+
+			// Get selected color from the cart table
+			$selected_color_query = $this->db->query("SELECT custom_color FROM `" . DB_PREFIX . "cart` WHERE cart_id = '" . (int)$cart_id . "'");
+
+			if ($selected_color_query->num_rows) {
+				$product['selected_color'] = $selected_color_query->row['custom_color'];
+				$data['selected_color'] =  $product['selected_color'];
+			} else {
+				$product['selected_color'] = '';
+				$data['selected_color'] =  $product['selected_color'];
+			}
+		}
+
+		$data['products'] = $products;
+
 		$data['payment_method'] = $this->load->controller('checkout/payment_method');
 		$data['confirm'] = $this->load->controller('checkout/confirm');
 
