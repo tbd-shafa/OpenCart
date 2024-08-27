@@ -758,6 +758,7 @@ class Order extends \Opencart\System\Engine\Controller {
 				'product_id'               => $product['product_id'],
 				'name'                     => $product['name'],
 				'model'                    => $product['model'],
+				'custom_color'             => $product['custom_color'],
 				'option'                   => $option_data,
 				'subscription'             => $subscription,
 				'subscription_description' => $description,
