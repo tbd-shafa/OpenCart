@@ -4976,7 +4976,7 @@ var shipping_zone_id = '";
         },
         success: function(json) {
             html = '';
-            console.log(json['products']); 
+          
             if (json['products'].length) {
                 for (i = 0; i < json['products'].length; i++) {
                     product = json['products'][i];
