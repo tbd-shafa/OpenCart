@@ -240,8 +240,75 @@ class __TwigTemplate_1b7a4fd5c8fd633cb6bb69b9a01a231b extends Template
               </div>
             </div>
           </div>
+          <div class=\"row mb-3\">
+  <label class=\"col-sm-2 col-form-label\"> Category </label>
+  <div class=\"col-sm-10\">
+    <div id=\"user-group-category\" class=\"form-control\" style=\"height: 250px; overflow: auto;\">
+      <table class=\"table table-borderless table-striped\">
+        <thead>
+          <tr>
+            <td class=\"w-50\"></td>
+            <td class=\"text-center\">";
+        // line 96
+        echo ($context["text_access"] ?? null);
+        echo "</td>
+            <td class=\"text-center\">";
+        // line 97
+        echo ($context["text_modify"] ?? null);
+        echo "</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>";
+        // line 102
+        echo ($context["text_all"] ?? null);
+        echo "</strong></td>
+            <td class=\"text-center\"><input type=\"checkbox\" id=\"input-category-access\" class=\"form-check-input\" onchange=\"\$('#user-group-category input[name^=\\'permission_category[access]\\']').prop('checked', \$(this).prop('checked'));\"/></td>
+            <td class=\"text-center\"><input type=\"checkbox\" id=\"input-category-modify\" class=\"form-check-input\" onchange=\"\$('#user-group-category input[name^=\\'permission_category[modify]\\']').prop('checked', \$(this).prop('checked'));\"/></td>
+          </tr>
+          ";
+        // line 106
+        $context['_parent'] = $context;
+        $context['_seq'] = twig_ensure_traversable(($context["categories"] ?? null));
+        foreach ($context['_seq'] as $context["_key"] => $context["category"]) {
+            // line 107
+            echo "            <tr>
+              <td><label>";
+            // line 108
+            echo twig_get_attribute($this->env, $this->source, $context["category"], "name", [], "any", false, false, false, 108);
+            echo "</label></td>
+              <td class=\"text-center\"><input type=\"checkbox\" name=\"permission_category[access][]\" value=\"";
+            // line 109
+            echo twig_get_attribute($this->env, $this->source, $context["category"], "category_id", [], "any", false, false, false, 109);
+            echo "\" class=\"form-check-input\"";
+            if (twig_in_filter(twig_get_attribute($this->env, $this->source, $context["category"], "category_id", [], "any", false, false, false, 109), ($context["category_access"] ?? null))) {
+                echo " checked";
+            }
+            echo "/></td>
+              <td class=\"text-center\"><input type=\"checkbox\" name=\"permission_category[modify][]\" value=\"";
+            // line 110
+            echo twig_get_attribute($this->env, $this->source, $context["category"], "category_id", [], "any", false, false, false, 110);
+            echo "\" class=\"form-check-input\"";
+            if (twig_in_filter(twig_get_attribute($this->env, $this->source, $context["category"], "category_id", [], "any", false, false, false, 110), ($context["category_modify"] ?? null))) {
+                echo " checked";
+            }
+            echo "/></td>
+            </tr>
+          ";
+        }
+        $_parent = $context['_parent'];
+        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['category'], $context['_parent'], $context['loop']);
+        $context = array_intersect_key($context, $_parent) + $_parent;
+        // line 113
+        echo "        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
           <input type=\"hidden\" name=\"user_group_id\" value=\"";
-        // line 88
+        // line 119
         echo ($context["user_group_id"] ?? null);
         echo "\" id=\"input-user-group-id\"/>
         </form>
@@ -258,7 +325,7 @@ class __TwigTemplate_1b7a4fd5c8fd633cb6bb69b9a01a231b extends Template
 });
 //--></script>
 ";
-        // line 102
+        // line 133
         echo ($context["footer"] ?? null);
     }
 
@@ -274,7 +341,7 @@ class __TwigTemplate_1b7a4fd5c8fd633cb6bb69b9a01a231b extends Template
 
     public function getDebugInfo()
     {
-        return array (  262 => 102,  245 => 88,  238 => 83,  225 => 80,  217 => 79,  213 => 78,  210 => 77,  206 => 76,  199 => 72,  191 => 67,  187 => 66,  177 => 59,  169 => 53,  156 => 50,  148 => 49,  144 => 48,  141 => 47,  137 => 46,  130 => 42,  122 => 37,  118 => 36,  108 => 29,  98 => 24,  93 => 22,  88 => 20,  83 => 18,  76 => 13,  65 => 11,  61 => 10,  56 => 8,  50 => 7,  46 => 6,  37 => 1,);
+        return array (  329 => 133,  312 => 119,  304 => 113,  291 => 110,  283 => 109,  279 => 108,  276 => 107,  272 => 106,  265 => 102,  257 => 97,  253 => 96,  238 => 83,  225 => 80,  217 => 79,  213 => 78,  210 => 77,  206 => 76,  199 => 72,  191 => 67,  187 => 66,  177 => 59,  169 => 53,  156 => 50,  148 => 49,  144 => 48,  141 => 47,  137 => 46,  130 => 42,  122 => 37,  118 => 36,  108 => 29,  98 => 24,  93 => 22,  88 => 20,  83 => 18,  76 => 13,  65 => 11,  61 => 10,  56 => 8,  50 => 7,  46 => 6,  37 => 1,);
     }
 
     public function getSourceContext()

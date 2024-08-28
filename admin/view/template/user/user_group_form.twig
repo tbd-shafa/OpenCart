@@ -85,6 +85,37 @@
               </div>
             </div>
           </div>
+          <div class="row mb-3">
+  <label class="col-sm-2 col-form-label"> Category </label>
+  <div class="col-sm-10">
+    <div id="user-group-category" class="form-control" style="height: 250px; overflow: auto;">
+      <table class="table table-borderless table-striped">
+        <thead>
+          <tr>
+            <td class="w-50"></td>
+            <td class="text-center">{{ text_access }}</td>
+            <td class="text-center">{{ text_modify }}</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>{{ text_all }}</strong></td>
+            <td class="text-center"><input type="checkbox" id="input-category-access" class="form-check-input" onchange="$('#user-group-category input[name^=\'permission_category[access]\']').prop('checked', $(this).prop('checked'));"/></td>
+            <td class="text-center"><input type="checkbox" id="input-category-modify" class="form-check-input" onchange="$('#user-group-category input[name^=\'permission_category[modify]\']').prop('checked', $(this).prop('checked'));"/></td>
+          </tr>
+          {% for category in categories %}
+            <tr>
+              <td><label>{{ category.name }}</label></td>
+              <td class="text-center"><input type="checkbox" name="permission_category[access][]" value="{{ category.category_id }}" class="form-check-input"{% if category.category_id in category_access %} checked{% endif %}/></td>
+              <td class="text-center"><input type="checkbox" name="permission_category[modify][]" value="{{ category.category_id }}" class="form-check-input"{% if category.category_id in category_modify %} checked{% endif %}/></td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
           <input type="hidden" name="user_group_id" value="{{ user_group_id }}" id="input-user-group-id"/>
         </form>
       </div>

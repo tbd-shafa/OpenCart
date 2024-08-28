@@ -309,7 +309,11 @@ class UserPermission extends \Opencart\System\Engine\Controller {
 		} else {
 			$data['modify'] = [];
 		}
-
+		$this->load->model('catalog/category');
+        $data['categories'] = $this->model_catalog_category->getCategories();
+		// echo "<pre>";
+		// print_r($data['categories'] );
+		// die;
 		$data['user_token'] = $this->session->data['user_token'];
 
 		$data['header'] = $this->load->controller('common/header');
