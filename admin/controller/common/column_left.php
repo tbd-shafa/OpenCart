@@ -24,14 +24,18 @@ class ColumnLeft extends \Opencart\System\Engine\Controller {
 				'href'     => $this->url->link('common/dashboard', 'user_token=' . $this->session->data['user_token']),
 				'children' => []
 			];
-			$data['menus'][] = array(
-				'id'       => 'menu-test',
-				'icon'	   => 'fas fa-chart-bar',
-				'name'     => $this->language->get('text_test'),
-				'href'     => $this->url->link('color/color', 'user_token=' . $this->session->data['user_token']),
-				'children' => array()
-			);
 			
+			// Example of adding a menu item
+			if ($this->user->hasPermission('access', 'color/color')) {
+				$data['menus'][] = array(
+					'id'       => 'menu-test',
+					'icon'	   => 'fas fa-chart-bar',
+					'name'     => $this->language->get('text_test'),
+					'href'     => $this->url->link('color/color', 'user_token=' . $this->session->data['user_token']),
+					'children' => array()
+				);
+			}
+
 
 			// Catalog
 			$catalog = [];
