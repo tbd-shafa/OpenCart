@@ -58,6 +58,7 @@ class UserPermission extends \Opencart\System\Engine\Controller {
 	 * @return void
 	 */
 	public function list(): void {
+		
 		$this->load->language('user/user_group');
 
 		$this->response->setOutput($this->getList());
@@ -67,6 +68,7 @@ class UserPermission extends \Opencart\System\Engine\Controller {
 	 * @return string
 	 */
 	protected function getList(): string {
+		
 		if (isset($this->request->get['sort'])) {
 			$sort = (string)$this->request->get['sort'];
 		} else {
@@ -309,8 +311,21 @@ class UserPermission extends \Opencart\System\Engine\Controller {
 		} else {
 			$data['modify'] = [];
 		}
-		$this->load->model('catalog/category');
-        $data['categories'] = $this->model_catalog_category->getCategories();
+		//$this->load->model('catalog/category');
+       // $data['categories'] = $this->model_catalog_category->getCategories();
+	   // Retrieving categories
+	   $this->load->model('catalog/category');
+	   $categories = $this->model_catalog_category->getCategories();
+   
+	   // Retrieving permissions
+	   $access_permissions = isset($user_group_info['permission']['access']) ? $user_group_info['permission']['access'] : [];
+	   $modify_permissions = isset($user_group_info['permission']['modify']) ? $user_group_info['permission']['modify'] : [];
+   
+	   // Adding 'checked' status to categories
+	   foreach ($categories as &$category) {
+		   $category['checked'] = in_array('catalog/category/' . $category['category_id'], $access_permissions) || in_array('catalog/category/' . $category['category_id'], $modify_permissions);
+	   }
+	   $data['categories'] = $categories;
 		// echo "<pre>";
 		// print_r($data['categories'] );
 		// die;
@@ -327,6 +342,7 @@ class UserPermission extends \Opencart\System\Engine\Controller {
 	 * @return void
 	 */
 	public function save(): void {
+		
 		$this->load->language('user/user_group');
 
 		$json = [];
@@ -341,7 +357,12 @@ class UserPermission extends \Opencart\System\Engine\Controller {
 
 		if (!$json) {
 			$this->load->model('user/user_group');
-
+			$category_permissions = [
+				'access' => $this->request->post['permission_category']['access'] ?? [],
+				'modify' => $this->request->post['permission_category']['modify'] ?? []
+			];
+	
+			$this->request->post['category_permission'] = json_encode($category_permissions);
 			if (!$this->request->post['user_group_id']) {
 				$json['user_group_id'] = $this->model_user_user_group->addUserGroup($this->request->post);
 			} else {
