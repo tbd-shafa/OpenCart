@@ -259,26 +259,26 @@ class __TwigTemplate_1b7a4fd5c8fd633cb6bb69b9a01a231b extends Template
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td><strong>";
+        <tr>
+    <td><strong>";
         // line 102
         echo ($context["text_all"] ?? null);
         echo "</strong></td>
-            <td class=\"text-center\"><input type=\"checkbox\" id=\"input-category-access\" class=\"form-check-input\" onchange=\"\$('#user-group-category input[name^=\\'permission_category[access]\\']').prop('checked', \$(this).prop('checked'));\"/></td>
-            <td class=\"text-center\"><input type=\"checkbox\" id=\"input-category-modify\" class=\"form-check-input\" onchange=\"\$('#user-group-category input[name^=\\'permission_category[modify]\\']').prop('checked', \$(this).prop('checked'));\"/></td>
-          </tr>
-          ";
+    <td class=\"text-center\"><input type=\"checkbox\" id=\"input-category-access\" class=\"form-check-input\" onchange=\"\$('#user-group-category input[name^=\\'permission_category[access]\\']').prop('checked', \$(this).prop('checked'));\"/></td>
+    <td class=\"text-center\"><input type=\"checkbox\" id=\"input-category-modify\" class=\"form-check-input\" onchange=\"\$('#user-group-category input[name^=\\'permission_category[modify]\\']').prop('checked', \$(this).prop('checked'));\"/></td>
+  </tr>
+  ";
         // line 106
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable(($context["categories"] ?? null));
         foreach ($context['_seq'] as $context["_key"] => $context["category"]) {
             // line 107
-            echo "            <tr>
-              <td><label>";
+            echo "    <tr>
+      <td><label>";
             // line 108
             echo twig_get_attribute($this->env, $this->source, $context["category"], "name", [], "any", false, false, false, 108);
             echo "</label></td>
-              <td class=\"text-center\"><input type=\"checkbox\" name=\"permission_category[access][]\" value=\"";
+      <td class=\"text-center\"><input type=\"checkbox\" name=\"permission_category[access][]\" value=\"";
             // line 109
             echo twig_get_attribute($this->env, $this->source, $context["category"], "category_id", [], "any", false, false, false, 109);
             echo "\" class=\"form-check-input\"";
@@ -286,7 +286,7 @@ class __TwigTemplate_1b7a4fd5c8fd633cb6bb69b9a01a231b extends Template
                 echo " checked";
             }
             echo "/></td>
-              <td class=\"text-center\"><input type=\"checkbox\" name=\"permission_category[modify][]\" value=\"";
+      <td class=\"text-center\"><input type=\"checkbox\" name=\"permission_category[modify][]\" value=\"";
             // line 110
             echo twig_get_attribute($this->env, $this->source, $context["category"], "category_id", [], "any", false, false, false, 110);
             echo "\" class=\"form-check-input\"";
@@ -294,8 +294,8 @@ class __TwigTemplate_1b7a4fd5c8fd633cb6bb69b9a01a231b extends Template
                 echo " checked";
             }
             echo "/></td>
-            </tr>
-          ";
+    </tr>
+  ";
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['category'], $context['_parent'], $context['loop']);

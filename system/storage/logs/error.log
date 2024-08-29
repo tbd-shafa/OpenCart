@@ -4420,3 +4420,7 @@ Line: 162
 File: /opt/lampp/htdocs/opencart3/admin/model/sale/order.php
 Line: 162
 
+2024-08-29 04:20:37 - 0:  <b>Notice</b>:  Undefined property: Proxy::getUserGroup in <b>/opt/lampp/htdocs/opencart3/admin/controller/user/user_permission.php</b> on line <b>206</b>
+File: /opt/lampp/htdocs/opencart3/system/engine/proxy.php
+Line: 85
+

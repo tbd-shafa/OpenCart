@@ -98,18 +98,18 @@
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td><strong>{{ text_all }}</strong></td>
-            <td class="text-center"><input type="checkbox" id="input-category-access" class="form-check-input" onchange="$('#user-group-category input[name^=\'permission_category[access]\']').prop('checked', $(this).prop('checked'));"/></td>
-            <td class="text-center"><input type="checkbox" id="input-category-modify" class="form-check-input" onchange="$('#user-group-category input[name^=\'permission_category[modify]\']').prop('checked', $(this).prop('checked'));"/></td>
-          </tr>
-          {% for category in categories %}
-            <tr>
-              <td><label>{{ category.name }}</label></td>
-              <td class="text-center"><input type="checkbox" name="permission_category[access][]" value="{{ category.category_id }}" class="form-check-input"{% if category.category_id in category_access %} checked{% endif %}/></td>
-              <td class="text-center"><input type="checkbox" name="permission_category[modify][]" value="{{ category.category_id }}" class="form-check-input"{% if category.category_id in category_modify %} checked{% endif %}/></td>
-            </tr>
-          {% endfor %}
+        <tr>
+    <td><strong>{{ text_all }}</strong></td>
+    <td class="text-center"><input type="checkbox" id="input-category-access" class="form-check-input" onchange="$('#user-group-category input[name^=\'permission_category[access]\']').prop('checked', $(this).prop('checked'));"/></td>
+    <td class="text-center"><input type="checkbox" id="input-category-modify" class="form-check-input" onchange="$('#user-group-category input[name^=\'permission_category[modify]\']').prop('checked', $(this).prop('checked'));"/></td>
+  </tr>
+  {% for category in categories %}
+    <tr>
+      <td><label>{{ category.name }}</label></td>
+      <td class="text-center"><input type="checkbox" name="permission_category[access][]" value="{{ category.category_id }}" class="form-check-input"{% if category.category_id in category_access %} checked{% endif %}/></td>
+      <td class="text-center"><input type="checkbox" name="permission_category[modify][]" value="{{ category.category_id }}" class="form-check-input"{% if category.category_id in category_modify %} checked{% endif %}/></td>
+    </tr>
+  {% endfor %}
         </tbody>
       </table>
     </div>

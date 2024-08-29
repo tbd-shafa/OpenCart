@@ -315,19 +315,17 @@ class UserPermission extends \Opencart\System\Engine\Controller {
        // $data['categories'] = $this->model_catalog_category->getCategories();
 	   // Retrieving categories
 	   $this->load->model('catalog/category');
-	   $categories = $this->model_catalog_category->getCategories();
+	   $data['categories'] = $this->model_catalog_category->getCategories();
    
 	   // Retrieving permissions
-	   $access_permissions = isset($user_group_info['permission']['access']) ? $user_group_info['permission']['access'] : [];
-	   $modify_permissions = isset($user_group_info['permission']['modify']) ? $user_group_info['permission']['modify'] : [];
-   
-	   // Adding 'checked' status to categories
-	   foreach ($categories as &$category) {
-		   $category['checked'] = in_array('catalog/category/' . $category['category_id'], $access_permissions) || in_array('catalog/category/' . $category['category_id'], $modify_permissions);
-	   }
-	   $data['categories'] = $categories;
-		// echo "<pre>";
-		// print_r($data['categories'] );
+	   $category_access_permissions = isset($user_group_info['category_permission']['access']) ? $user_group_info['category_permission']['access'] : [];
+	   $category_modify_permissions = isset($user_group_info['category_permission']['modify']) ? $user_group_info['category_permission']['modify'] : [];
+	   $data['category_access'] = $category_access_permissions;
+	   $data['category_modify'] = $category_modify_permissions;
+		//  echo "<pre>";
+		// print_r($category_modify_permissions);
+		// print_r($category_modify_permissions);
+		// //print_r($data['categories'] );
 		// die;
 		$data['user_token'] = $this->session->data['user_token'];
 
