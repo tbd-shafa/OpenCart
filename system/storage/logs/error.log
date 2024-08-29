@@ -4436,3 +4436,67 @@ Line: 66
 File: /opt/lampp/htdocs/opencart3/admin/model/user/user_group.php
 Line: 66
 
+2024-08-29 06:09:29 - PHP Warning: Undefined variable $category_info
+File: /opt/lampp/htdocs/opencart3/admin/controller/catalog/product.php
+Line: 727
+
+2024-08-29 06:15:52 - 0:  Unexpected token "name" of value "product_categories" ("operator" expected with value "in").
+File: /opt/lampp/htdocs/opencart3/admin/view/template/catalog/product_form.twig
+Line: 614
+
+2024-08-29 06:17:56 - PHP Warning: Undefined array key "product_category"
+File: /opt/lampp/htdocs/opencart3/admin/controller/catalog/product.php
+Line: 1143
+
+2024-08-29 06:32:48 - PHP Warning: Undefined array key "category_info"
+File: /opt/lampp/htdocs/opencart3/admin/controller/catalog/product.php
+Line: 729
+
+2024-08-29 06:34:07 - 0:  Error: Could not call registry key model_catalog_category!
+File: /opt/lampp/htdocs/opencart3/system/engine/controller.php
+Line: 39
+
+2024-08-29 06:38:25 - 0:  in_array() expects at least 2 arguments, 1 given
+File: /opt/lampp/htdocs/opencart3/admin/controller/catalog/product.php
+Line: 721
+
+2024-08-29 06:38:35 - 0:  in_array() expects at least 2 arguments, 1 given
+File: /opt/lampp/htdocs/opencart3/admin/controller/catalog/product.php
+Line: 721
+
+2024-08-29 06:59:16 - 0:  <b>Notice</b>:  Undefined property: Proxy::getCategoriesByPermissions in <b>/opt/lampp/htdocs/opencart3/admin/controller/catalog/category.php</b> on line <b>536</b>
+File: /opt/lampp/htdocs/opencart3/system/engine/proxy.php
+Line: 85
+
+2024-08-29 06:59:19 - 0:  <b>Notice</b>:  Undefined property: Proxy::getCategoriesByPermissions in <b>/opt/lampp/htdocs/opencart3/admin/controller/catalog/category.php</b> on line <b>536</b>
+File: /opt/lampp/htdocs/opencart3/system/engine/proxy.php
+Line: 85
+
+2024-08-29 07:00:20 - 0:  <b>Notice</b>:  Undefined property: Proxy::getCategoriesByPermissions in <b>/opt/lampp/htdocs/opencart3/admin/controller/catalog/category.php</b> on line <b>536</b>
+File: /opt/lampp/htdocs/opencart3/system/engine/proxy.php
+Line: 85
+
+2024-08-29 07:00:24 - 0:  <b>Notice</b>:  Undefined property: Proxy::getCategoriesByPermissions in <b>/opt/lampp/htdocs/opencart3/admin/controller/catalog/category.php</b> on line <b>536</b>
+File: /opt/lampp/htdocs/opencart3/system/engine/proxy.php
+Line: 85
+
+2024-08-29 07:00:35 - 0:  <b>Notice</b>:  Undefined property: Proxy::getCategoriesByPermissions in <b>/opt/lampp/htdocs/opencart3/admin/controller/catalog/category.php</b> on line <b>536</b>
+File: /opt/lampp/htdocs/opencart3/system/engine/proxy.php
+Line: 85
+
+2024-08-29 07:01:09 - 0:  <b>Notice</b>:  Undefined property: Proxy::getCategoriesByPermissions in <b>/opt/lampp/htdocs/opencart3/admin/controller/catalog/category.php</b> on line <b>536</b>
+File: /opt/lampp/htdocs/opencart3/system/engine/proxy.php
+Line: 85
+
+2024-08-29 07:04:13 - 0:  <b>Notice</b>:  Undefined property: Proxy::getCategoriesByPermissions in <b>/opt/lampp/htdocs/opencart3/admin/controller/catalog/category.php</b> on line <b>536</b>
+File: /opt/lampp/htdocs/opencart3/system/engine/proxy.php
+Line: 85
+
+2024-08-29 07:04:20 - 0:  <b>Notice</b>:  Undefined property: Proxy::getCategoriesByPermissions in <b>/opt/lampp/htdocs/opencart3/admin/controller/catalog/category.php</b> on line <b>536</b>
+File: /opt/lampp/htdocs/opencart3/system/engine/proxy.php
+Line: 85
+
+2024-08-29 07:21:46 - 0:  <b>Notice</b>:  Undefined property: Proxy::getCategoriesByPermissions in <b>/opt/lampp/htdocs/opencart3/admin/controller/catalog/category.php</b> on line <b>536</b>
+File: /opt/lampp/htdocs/opencart3/system/engine/proxy.php
+Line: 85
+

@@ -677,26 +677,60 @@ class Product extends \Opencart\System\Engine\Controller
 		}
 
 		// Categories
-		$this->load->model('catalog/category');
+		// $this->load->model('catalog/category');
 
+		// if ($product_id) {
+		// 	$categories = $this->model_catalog_product->getCategories($product_id);
+		// } else {
+		// 	$categories = [];
+		// }
+
+		// $data['product_categories'] = [];
+
+		// foreach ($categories as $category_id) {
+		// 	$category_info = $this->model_catalog_category->getCategory($category_id);
+
+		// 	if ($category_info) {
+		// 		$data['product_categories'][] = [
+		// 			'category_id' => $category_info['category_id'],
+		// 			'name'        => ($category_info['path']) ? $category_info['path'] . ' &gt; ' . $category_info['name'] : $category_info['name']
+		// 		];
+		// 	}
+		// }
+		
+
+		// category filter
+		$this->load->model('user/user');
+		$user_id = $this->user->getId(); // Get current user ID
+		$category_permissions = $this->model_user_user->getUserCategoryPermissions($user_id);
+	
+		// Load product categories based on user permissions
+		$this->load->model('catalog/category');
+	
 		if ($product_id) {
 			$categories = $this->model_catalog_product->getCategories($product_id);
 		} else {
 			$categories = [];
 		}
-
+	
 		$data['product_categories'] = [];
-
+	
 		foreach ($categories as $category_id) {
 			$category_info = $this->model_catalog_category->getCategory($category_id);
+	
+			if ($category_info && in_array($category_id, $category_permissions['access'])) {
 
-			if ($category_info) {
 				$data['product_categories'][] = [
 					'category_id' => $category_info['category_id'],
 					'name'        => ($category_info['path']) ? $category_info['path'] . ' &gt; ' . $category_info['name'] : $category_info['name']
 				];
 			}
 		}
+		// echo "<pre>";
+		// print_r($category_info);
+		// print_r($category_permissions);
+		// print_r($data['product_categories']);
+		// die;
 
 		// Filters
 		$this->load->model('catalog/filter');

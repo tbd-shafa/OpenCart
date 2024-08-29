@@ -40,7 +40,15 @@ class User extends \Opencart\System\Engine\Model {
 	public function editPassword(int $user_id, $password): void {
 		$this->db->query("UPDATE `" . DB_PREFIX . "user` SET `password` = '" . $this->db->escape(password_hash(html_entity_decode($password, ENT_QUOTES, 'UTF-8'), PASSWORD_DEFAULT)) . "', `code` = '' WHERE `user_id` = '" . (int)$user_id . "'");
 	}
-
+	
+	public function getUserCategoryPermissions(int $user_id): array {
+		$query = $this->db->query("SELECT ug.category_permission FROM `" . DB_PREFIX . "user` u 
+									LEFT JOIN `" . DB_PREFIX . "user_group` ug ON u.user_group_id = ug.user_group_id 
+									WHERE u.user_id = '" . (int)$user_id . "'");
+		
+		return json_decode($query->row['category_permission'], true) ?? [];
+	}
+	
 	/**
 	 * @param string $email
 	 * @param string $code

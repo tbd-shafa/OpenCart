@@ -337,7 +337,23 @@ class Category extends \Opencart\System\Engine\Model {
 
 		return $query->rows;
 	}
-
+	public function getCategoriesByPermissions($user_id, $filter_data = []) {
+		$this->load->model('user/user');
+		$category_permissions = $this->model_user_user->getUserCategoryPermissions($user_id);
+	
+		$sql = "SELECT * FROM " . DB_PREFIX . "category c LEFT JOIN " . DB_PREFIX . "category_description cd ON (c.category_id = cd.category_id) WHERE cd.language_id = '" . (int)$this->config->get('config_language_id') . "' AND c.category_id IN (" . implode(',', $category_permissions['access']) . ")";
+	
+		if (!empty($filter_data['filter_name'])) {
+			$sql .= " AND cd.name LIKE '" . $this->db->escape($filter_data['filter_name']) . "'";
+		}
+	
+		$sql .= " ORDER BY " . $this->db->escape($filter_data['sort']) . " " . $this->db->escape($filter_data['order']);
+		$sql .= " LIMIT " . (int)$filter_data['start'] . "," . (int)$filter_data['limit'];
+	
+		$query = $this->db->query($sql);
+	
+		return $query->rows;
+	}
 	/**
 	 * @param int $category_id
 	 *
