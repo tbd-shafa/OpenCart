@@ -63,7 +63,8 @@ class UserGroup extends \Opencart\System\Engine\Model {
 		$user_group = [
 			'name'       => $query->row['name'],
 			'permission' => json_decode($query->row['permission'], true),
-			'category_permission' => json_decode($query->row['category_permission'], true)
+			//'category_permission' => json_decode($query->row['category_permission'], true)
+			'category_permission' => !empty($query->row['category_permission']) ? json_decode($query->row['category_permission'], true) : []
 		];
         // print_r(3);
 		// print_r($user_group);

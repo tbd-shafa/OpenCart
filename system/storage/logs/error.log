@@ -4424,3 +4424,15 @@ Line: 162
 File: /opt/lampp/htdocs/opencart3/system/engine/proxy.php
 Line: 85
 
+2024-08-29 04:49:04 - PHP Unknown: json_decode(): Passing null to parameter #1 ($json) of type string is deprecated
+File: /opt/lampp/htdocs/opencart3/admin/model/user/user_group.php
+Line: 66
+
+2024-08-29 04:49:25 - PHP Unknown: json_decode(): Passing null to parameter #1 ($json) of type string is deprecated
+File: /opt/lampp/htdocs/opencart3/admin/model/user/user_group.php
+Line: 66
+
+2024-08-29 04:50:00 - PHP Unknown: json_decode(): Passing null to parameter #1 ($json) of type string is deprecated
+File: /opt/lampp/htdocs/opencart3/admin/model/user/user_group.php
+Line: 66
+
