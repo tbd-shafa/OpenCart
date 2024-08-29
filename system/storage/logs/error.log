@@ -4500,3 +4500,23 @@ Line: 85
 File: /opt/lampp/htdocs/opencart3/system/engine/proxy.php
 Line: 85
 
+2024-08-29 09:18:17 - 0:  Opencart\Admin\Model\Catalog\Product::getSpecials(): Argument #1 ($product_id) must be of type int, null given
+File: /opt/lampp/htdocs/opencart3/admin/model/catalog/product.php
+Line: 1272
+
+2024-08-29 09:22:53 - 0:  Opencart\Admin\Model\Catalog\Product::getSpecials(): Argument #1 ($product_id) must be of type int, null given
+File: /opt/lampp/htdocs/opencart3/admin/model/catalog/product.php
+Line: 1272
+
+2024-08-29 09:23:19 - 0:  Opencart\Admin\Model\Catalog\Product::getSpecials(): Argument #1 ($product_id) must be of type int, null given
+File: /opt/lampp/htdocs/opencart3/admin/model/catalog/product.php
+Line: 1272
+
+2024-08-29 09:23:33 - 0:  Opencart\Admin\Model\Catalog\Product::getSpecials(): Argument #1 ($product_id) must be of type int, null given
+File: /opt/lampp/htdocs/opencart3/admin/model/catalog/product.php
+Line: 1272
+
+2024-08-29 09:46:55 - 0:  Opencart\Admin\Model\Catalog\Product::getSpecials(): Argument #1 ($product_id) must be of type int, null given
+File: /opt/lampp/htdocs/opencart3/admin/model/catalog/product.php
+Line: 1269
+

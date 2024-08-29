@@ -130,6 +130,7 @@ class Product extends \Opencart\System\Engine\Controller
 	 */
 	protected function getList(): string
 	{
+		
 		if (isset($this->request->get['filter_name'])) {
 			$filter_name = $this->request->get['filter_name'];
 		} else {
@@ -207,7 +208,14 @@ class Product extends \Opencart\System\Engine\Controller
 		$data['action'] = $this->url->link('catalog/product.list', 'user_token=' . $this->session->data['user_token'] . $url);
 
 		$data['products'] = [];
-
+        
+		$this->load->model('user/user');
+		$user_id = $this->user->getId(); // Get current user ID
+		$category_permissions = $this->model_user_user->getUserCategoryPermissions($user_id);
+		// echo "<pre>";
+        // print_r($category_permissions);
+		// die;
+		
 		$filter_data = [
 			'filter_name'     => $filter_name,
 			'filter_model'    => $filter_model,
@@ -217,7 +225,8 @@ class Product extends \Opencart\System\Engine\Controller
 			'sort'            => $sort,
 			'order'           => $order,
 			'start'           => ($page - 1) * $this->config->get('config_pagination_admin'),
-			'limit'           => $this->config->get('config_pagination_admin')
+			'limit'           => $this->config->get('config_pagination_admin'),
+			'category_permissions' => $category_permissions['access']
 		];
 
 		$this->load->model('catalog/product');
@@ -227,6 +236,8 @@ class Product extends \Opencart\System\Engine\Controller
 		$product_total = $this->model_catalog_product->getTotalProducts($filter_data);
 
 		$results = $this->model_catalog_product->getProducts($filter_data);
+
+	
 
 		foreach ($results as $result) {
 			if (is_file(DIR_IMAGE . html_entity_decode($result['image'], ENT_QUOTES, 'UTF-8'))) {
