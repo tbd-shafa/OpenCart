@@ -4530,3 +4530,4 @@ Line: 306
 
 2024-08-30 05:13:18 - Error: Could not call registry key user! in /opt/lampp/htdocs/opencart3/system/engine/controller.php on line 39
 2024-08-30 05:26:14 - Error: Could not call registry key user! in /opt/lampp/htdocs/opencart3/system/engine/controller.php on line 39
+2024-08-30 10:06:34 - Opencart\System\Engine\Loader::view(): Argument #2 ($data) must be of type array, int given, called in /opt/lampp/htdocs/opencart3/catalog/controller/checkout/cart.php on line 370 in /opt/lampp/htdocs/opencart3/system/engine/loader.php on line 193

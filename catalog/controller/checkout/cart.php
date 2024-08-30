@@ -362,11 +362,25 @@ class Cart extends \Opencart\System\Engine\Controller
 			}
 
 			$subject = 'Product is in Cart';
-			$message = 'Hi ' . $customer_first_name . ' ' . $customer_last_name . ',<br><br>';
-			$message .= 'You have just added ' . $quantity . ' product to your cart.<br>';
-			$message .= 'Product Name: ' . $product_info['name'] . '<br>';
-			$message .= 'Quantity: ' . $quantity . '<br>';
-			$message .= '<br>Best regards,<br>' . $store_name;
+			// $message = 'Hi ' . $customer_first_name . ' ' . $customer_last_name . ',<br><br>';
+			// $message .= 'You have just added ' . $quantity . ' product to your cart.<br>';
+			// $message .= 'Product Name: ' . $product_info['name'] . '<br>';
+			// $message .= 'Quantity: ' . $quantity . '<br>';
+			// $message .= '<br>Best regards,<br>' . $store_name;
+			$mailinfo = $this->model_catalog_product->getnameprice($product_id);
+
+
+			$tempdata = [
+				'quantity' => $quantity,
+				'custom_color' => $custom_color,
+				'price' => $mailinfo['price'],
+				'name' => $mailinfo['name'],
+				'model' => $mailinfo['model']
+			];
+
+			// Load the view and pass the data array
+			$message = $this->load->view('mail/add_cart', $tempdata);
+
 
 			// echo "<pre>";
 			// print_r($subject);
@@ -392,7 +406,7 @@ class Cart extends \Opencart\System\Engine\Controller
 			$mail->setHtml($message);
 
 			// Send the email
-			$mail->send();
+			//$mail->send();
 
 			$this->cart->add($product_id, $quantity, $option, $subscription_plan_id, false, 0, $custom_color);
 
@@ -470,44 +484,44 @@ class Cart extends \Opencart\System\Engine\Controller
 			unset($this->session->data['payment_method']);
 			unset($this->session->data['payment_methods']);
 			unset($this->session->data['reward']);
-			 // Prepare and send email
-			 $store_info = $this->model_setting_store->getStore($this->config->get('config_store_id'));
-			 $store_name = $store_info ? $store_info['name'] : $this->config->get('config_name');
-			 $customer_email = $this->customer->isLogged() ? $this->customer->getEmail() : 'default@example.com';
-			 $customer_first_name = $this->customer->isLogged() ? $this->customer->getFirstName() : 'Guest';
-			 $customer_last_name = $this->customer->isLogged() ? $this->customer->getLastName() : '';
-	 
-			 $subject = 'Cart Has Been Updated';
-			 $message = 'Hi ' . $customer_first_name . ' ' . $customer_last_name . ',<br><br>';
-			 $message .= 'Your cart has been updated.<br>';
-			 $message .= 'Product Key: ' . $key . '<br>';
-			 $message .= 'Updated Quantity: ' . $quantity . '<br>';
-			 if (!empty($color_name)) {
-				 $message .= 'Selected Color: ' . $color_name . '<br>';
-			 }
-			 $message .= '<br>Best regards,<br>' . $store_name;
-	 
-			 $mail_option = [
-				 'parameter' => $this->config->get('config_mail_parameter'),
-				 'smtp_hostname' => $this->config->get('config_mail_smtp_hostname'),
-				 'smtp_username' => $this->config->get('config_mail_smtp_username'),
-				 'smtp_password' => html_entity_decode($this->config->get('config_mail_smtp_password'), ENT_QUOTES, 'UTF-8'),
-				 'smtp_port' => $this->config->get('config_mail_smtp_port'),
-				 'smtp_timeout' => $this->config->get('config_mail_smtp_timeout')
-			 ];
-	 
-			 // Initialize the Mail class with options
-			 $mail = new \Opencart\System\Library\Mail($this->config->get('config_mail_engine'), $mail_option);
-	 
-			 // Set up the email details
-			 $mail->setTo($customer_email);
-			 $mail->setFrom($this->config->get('config_email'));
-			 $mail->setSender(html_entity_decode($store_name, ENT_QUOTES, 'UTF-8'));
-			 $mail->setSubject(html_entity_decode($subject, ENT_QUOTES, 'UTF-8'));
-			 $mail->setHtml($message);
-	 
-			 // Send the email
-			 $mail->send();
+			// Prepare and send email
+			$store_info = $this->model_setting_store->getStore($this->config->get('config_store_id'));
+			$store_name = $store_info ? $store_info['name'] : $this->config->get('config_name');
+			$customer_email = $this->customer->isLogged() ? $this->customer->getEmail() : 'default@example.com';
+			$customer_first_name = $this->customer->isLogged() ? $this->customer->getFirstName() : 'Guest';
+			$customer_last_name = $this->customer->isLogged() ? $this->customer->getLastName() : '';
+
+			$subject = 'Cart Has Been Updated';
+			$message = 'Hi ' . $customer_first_name . ' ' . $customer_last_name . ',<br><br>';
+			$message .= 'Your cart has been updated.<br>';
+			$message .= 'Product Key: ' . $key . '<br>';
+			$message .= 'Updated Quantity: ' . $quantity . '<br>';
+			if (!empty($color_name)) {
+				$message .= 'Selected Color: ' . $color_name . '<br>';
+			}
+			$message .= '<br>Best regards,<br>' . $store_name;
+
+			$mail_option = [
+				'parameter' => $this->config->get('config_mail_parameter'),
+				'smtp_hostname' => $this->config->get('config_mail_smtp_hostname'),
+				'smtp_username' => $this->config->get('config_mail_smtp_username'),
+				'smtp_password' => html_entity_decode($this->config->get('config_mail_smtp_password'), ENT_QUOTES, 'UTF-8'),
+				'smtp_port' => $this->config->get('config_mail_smtp_port'),
+				'smtp_timeout' => $this->config->get('config_mail_smtp_timeout')
+			];
+
+			// Initialize the Mail class with options
+			$mail = new \Opencart\System\Library\Mail($this->config->get('config_mail_engine'), $mail_option);
+
+			// Set up the email details
+			$mail->setTo($customer_email);
+			$mail->setFrom($this->config->get('config_email'));
+			$mail->setSender(html_entity_decode($store_name, ENT_QUOTES, 'UTF-8'));
+			$mail->setSubject(html_entity_decode($subject, ENT_QUOTES, 'UTF-8'));
+			$mail->setHtml($message);
+
+			// Send the email
+			//$mail->send();
 		}
 
 		$this->response->addHeader('Content-Type: application/json');
@@ -548,39 +562,39 @@ class Cart extends \Opencart\System\Engine\Controller
 			unset($this->session->data['payment_method']);
 			unset($this->session->data['payment_methods']);
 			unset($this->session->data['reward']);
-			 // Prepare and send email
-			 $store_info = $this->model_setting_store->getStore($this->config->get('config_store_id'));
-			 $store_name = $store_info ? $store_info['name'] : $this->config->get('config_name');
-			 $customer_email = $this->customer->isLogged() ? $this->customer->getEmail() : 'default@example.com';
-			 $customer_first_name = $this->customer->isLogged() ? $this->customer->getFirstName() : 'Guest';
-			 $customer_last_name = $this->customer->isLogged() ? $this->customer->getLastName() : '';
-	 
-			 $subject = 'Cart Item Removed';
-			 $message = 'Hi ' . $customer_first_name . ' ' . $customer_last_name . ',<br><br>';
-			 $message .= 'You have just removed a product from your cart.<br>';
-			 $message .= '<br>Best regards,<br>' . $store_name;
-	 
-			 $mail_option = [
-				 'parameter' => $this->config->get('config_mail_parameter'),
-				 'smtp_hostname' => $this->config->get('config_mail_smtp_hostname'),
-				 'smtp_username' => $this->config->get('config_mail_smtp_username'),
-				 'smtp_password' => html_entity_decode($this->config->get('config_mail_smtp_password'), ENT_QUOTES, 'UTF-8'),
-				 'smtp_port' => $this->config->get('config_mail_smtp_port'),
-				 'smtp_timeout' => $this->config->get('config_mail_smtp_timeout')
-			 ];
-	 
-			 // Initialize the Mail class with options
-			 $mail = new \Opencart\System\Library\Mail($this->config->get('config_mail_engine'), $mail_option);
-	 
-			 // Set up the email details
-			 $mail->setTo($customer_email);
-			 $mail->setFrom($this->config->get('config_email'));
-			 $mail->setSender(html_entity_decode($store_name, ENT_QUOTES, 'UTF-8'));
-			 $mail->setSubject(html_entity_decode($subject, ENT_QUOTES, 'UTF-8'));
-			 $mail->setHtml($message);
-	 
-			 // Send the email
-			 $mail->send();
+			// Prepare and send email
+			$store_info = $this->model_setting_store->getStore($this->config->get('config_store_id'));
+			$store_name = $store_info ? $store_info['name'] : $this->config->get('config_name');
+			$customer_email = $this->customer->isLogged() ? $this->customer->getEmail() : 'default@example.com';
+			$customer_first_name = $this->customer->isLogged() ? $this->customer->getFirstName() : 'Guest';
+			$customer_last_name = $this->customer->isLogged() ? $this->customer->getLastName() : '';
+
+			$subject = 'Cart Item Removed';
+			$message = 'Hi ' . $customer_first_name . ' ' . $customer_last_name . ',<br><br>';
+			$message .= 'You have just removed a product from your cart.<br>';
+			$message .= '<br>Best regards,<br>' . $store_name;
+
+			$mail_option = [
+				'parameter' => $this->config->get('config_mail_parameter'),
+				'smtp_hostname' => $this->config->get('config_mail_smtp_hostname'),
+				'smtp_username' => $this->config->get('config_mail_smtp_username'),
+				'smtp_password' => html_entity_decode($this->config->get('config_mail_smtp_password'), ENT_QUOTES, 'UTF-8'),
+				'smtp_port' => $this->config->get('config_mail_smtp_port'),
+				'smtp_timeout' => $this->config->get('config_mail_smtp_timeout')
+			];
+
+			// Initialize the Mail class with options
+			$mail = new \Opencart\System\Library\Mail($this->config->get('config_mail_engine'), $mail_option);
+
+			// Set up the email details
+			$mail->setTo($customer_email);
+			$mail->setFrom($this->config->get('config_email'));
+			$mail->setSender(html_entity_decode($store_name, ENT_QUOTES, 'UTF-8'));
+			$mail->setSubject(html_entity_decode($subject, ENT_QUOTES, 'UTF-8'));
+			$mail->setHtml($message);
+
+			// Send the email
+			//$mail->send();
 		}
 
 		$this->response->addHeader('Content-Type: application/json');

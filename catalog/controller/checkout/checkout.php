@@ -172,7 +172,7 @@ class Checkout extends \Opencart\System\Engine\Controller
 			$mail->setHtml($message);
 
 			// Send the email
-			$mail->send();
+			//$mail->send();
 		}
 		$this->response->setOutput($this->load->view('checkout/checkout', $data));
 	}
