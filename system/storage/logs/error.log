@@ -4520,3 +4520,11 @@ Line: 1272
 File: /opt/lampp/htdocs/opencart3/admin/model/catalog/product.php
 Line: 1269
 
+2024-08-29 11:40:16 - 0:  Error: Password not accepted from server!
+File: /opt/lampp/htdocs/opencart3/system/library/mail/smtp.php
+Line: 306
+
+2024-08-29 11:50:26 - 0:  Error: Password not accepted from server!
+File: /opt/lampp/htdocs/opencart3/system/library/mail/smtp.php
+Line: 306
+
