@@ -1,15 +1,19 @@
 <?php
+
 namespace Opencart\Catalog\Controller\Checkout;
+
 /**
  * Class Cart
  *
  * @package Opencart\Catalog\Controller\Checkout
  */
-class Cart extends \Opencart\System\Engine\Controller {
+class Cart extends \Opencart\System\Engine\Controller
+{
 	/**
 	 * @return void
 	 */
-	public function index(): void {
+	public function index(): void
+	{
 		$this->load->language('checkout/cart');
 
 		$this->document->setTitle($this->language->get('heading_title'));
@@ -66,7 +70,7 @@ class Cart extends \Opencart\System\Engine\Controller {
 			$extensions = $this->model_setting_extension->getExtensionsByType('total');
 
 			foreach ($extensions as $extension) {
-				 $result = $this->load->controller('extension/' . $extension['extension'] . '/total/' . $extension['code']);
+				$result = $this->load->controller('extension/' . $extension['extension'] . '/total/' . $extension['code']);
 
 				if (!$result instanceof \Exception) {
 					$data['modules'][] = $result;
@@ -105,7 +109,8 @@ class Cart extends \Opencart\System\Engine\Controller {
 	/**
 	 * @return void
 	 */
-	public function list(): void {
+	public function list(): void
+	{
 		$this->load->language('checkout/cart');
 
 		$this->response->setOutput($this->getList());
@@ -114,7 +119,8 @@ class Cart extends \Opencart\System\Engine\Controller {
 	/**
 	 * @return string
 	 */
-	public function getList(): string {
+	public function getList(): string
+	{
 		$data['list'] = $this->url->link(' ', 'language=' . $this->config->get('config_language'));
 		$data['product_edit'] = $this->url->link('checkout/cart.edit', 'language=' . $this->config->get('config_language'));
 		$data['product_remove'] = $this->url->link('checkout/cart.remove', 'language=' . $this->config->get('config_language'));
@@ -175,30 +181,30 @@ class Cart extends \Opencart\System\Engine\Controller {
 			$custom_color = $this->db->query("SELECT `custom_color` FROM `" . DB_PREFIX . "cart` WHERE `cart_id` = '" . (int)$product['cart_id'] . "'");
 			$custom_color = $custom_color->row['custom_color'];
 			//print_r(custom_color)
-			
+
 			$product_id = $this->db->query("SELECT `product_id` FROM `" . DB_PREFIX . "cart` WHERE `cart_id` = '" . (int)$product['cart_id'] . "'");
 			$product_id = $product_id->row['product_id'];
 			$product_id_query = $this->db->query("SELECT `custom_color` FROM `" . DB_PREFIX . "product_extra_feature` WHERE `product_id` = '" . (int)$product_id . "'");
 			$custom_color_ids = $product_id_query->row['custom_color'];
 			$custom_color_ids = explode(',', $custom_color_ids); // Convert to array
-			
+
 			// Fetch color names from oc_color
 			$color_ids = implode(',', array_map('intval', $custom_color_ids)); // Sanitize and prepare color IDs for query
 			$colors_query = $this->db->query("SELECT `color_id`, `name` FROM `" . DB_PREFIX . "color` WHERE `color_id` IN (" . $color_ids . ")");
-			
+
 			$colors = [];
 			foreach ($colors_query->rows as $color) {
-				
+
 				$colors[$color['color_id']] = $color['name'];
 			}
-			
+
 			$data['products'][] = [
 				'cart_id'      => $product['cart_id'],
 				'thumb'        => $product['image'],
 				'name'         => $product['name'],
 				'model'        => $product['model'],
 				'option'       => $product['option'],
-				'selected_color' => $custom_color, 
+				'selected_color' => $custom_color,
 				'custom_color' => $colors, // This will be an associative array of color_id => color_name
 				'subscription' => $description,
 				'quantity'     => $product['quantity'],
@@ -209,7 +215,6 @@ class Cart extends \Opencart\System\Engine\Controller {
 				'total'        => $price_status ? $this->currency->format($this->tax->calculate($product['total'], $product['tax_class_id'], $this->config->get('config_tax')), $this->session->data['currency']) : '',
 				'href'         => $this->url->link('product/product', 'language=' . $this->config->get('config_language') . '&product_id=' . $product['product_id'])
 			];
-			
 		}
 		// print_r($data['products']);
 		// die;
@@ -250,7 +255,8 @@ class Cart extends \Opencart\System\Engine\Controller {
 	/**
 	 * @return void
 	 */
-	public function add(): void {
+	public function add(): void
+	{
 		$this->load->language('checkout/cart');
 
 		$json = [];
@@ -336,8 +342,8 @@ class Cart extends \Opencart\System\Engine\Controller {
 		}
 
 		if (!$json) {
-			
-			$this->cart->add($product_id, $quantity, $option, $subscription_plan_id, false, 0,$custom_color);
+
+			$this->cart->add($product_id, $quantity, $option, $subscription_plan_id, false, 0, $custom_color);
 
 			$json['success'] = sprintf($this->language->get('text_success'), $this->url->link('product/product', 'language=' . $this->config->get('config_language') . '&product_id=' . $product_id), $product_info['name'], $this->url->link('checkout/cart', 'language=' . $this->config->get('config_language')));
 
@@ -353,12 +359,13 @@ class Cart extends \Opencart\System\Engine\Controller {
 		$this->response->addHeader('Content-Type: application/json');
 		$this->response->setOutput(json_encode($json));
 	}
-	
-	
+
+
 	/**
 	 * @return void
 	 */
-	public function edit(): void {
+	public function edit(): void
+	{
 		$this->load->language('checkout/cart');
 
 		$json = [];
@@ -374,18 +381,18 @@ class Cart extends \Opencart\System\Engine\Controller {
 		} else {
 			$quantity = 1;
 		}
-// Retrieve the selected color from the form submission
-$selected_color_id = $this->request->post['selected_color'] ?? null;
-$color_name = '';
+		// Retrieve the selected color from the form submission
+		$selected_color_id = $this->request->post['selected_color'] ?? null;
+		$color_name = '';
 
-if ($selected_color_id) {
-    $query = $this->db->query("SELECT name FROM " . DB_PREFIX . "color WHERE color_id = '" . (int)$selected_color_id . "'");
-    
-    if ($query->num_rows) {
-        $color_name = $query->row['name'];
-        print_r("Selected Color Name: " . $color_name);
-    }
-}
+		if ($selected_color_id) {
+			$query = $this->db->query("SELECT name FROM " . DB_PREFIX . "color WHERE color_id = '" . (int)$selected_color_id . "'");
+
+			if ($query->num_rows) {
+				$color_name = $query->row['name'];
+				print_r("Selected Color Name: " . $color_name);
+			}
+		}
 
 		if (!$this->cart->has($key)) {
 			$json['error'] = $this->language->get('error_product');
@@ -398,8 +405,8 @@ if ($selected_color_id) {
 				$this->cart->update($key, $quantity);
 			}
 			// Handles single item update
-		//	$this->cart->update($key, $quantity);
-			
+			//	$this->cart->update($key, $quantity);
+
 
 			if ($this->cart->hasProducts() || !empty($this->session->data['vouchers'])) {
 				$json['success'] = $this->language->get('text_edit');
@@ -421,7 +428,8 @@ if ($selected_color_id) {
 	/**
 	 * @return void
 	 */
-	public function remove(): void {
+	public function remove(): void
+	{
 		$this->load->language('checkout/cart');
 
 		$json = [];
