@@ -257,6 +257,7 @@ class Cart extends \Opencart\System\Engine\Controller
 	 */
 	public function add(): void
 	{
+
 		$this->load->language('checkout/cart');
 
 		$json = [];
@@ -295,6 +296,7 @@ class Cart extends \Opencart\System\Engine\Controller
 		$product_info = $this->model_catalog_product->getProduct($product_id);
 
 		if ($product_info) {
+
 			// If variant get master product
 			if ($product_info['master_id']) {
 				$product_id = $product_info['master_id'];
@@ -342,6 +344,55 @@ class Cart extends \Opencart\System\Engine\Controller
 		}
 
 		if (!$json) {
+			// Prepare the email
+			$this->load->model('setting/store');
+			$this->load->model('setting/setting');
+
+			$store_info = $this->model_setting_store->getStore($this->config->get('config_store_id'));
+			$store_name = $store_info ? $store_info['name'] : $this->config->get('config_name');
+
+			if ($this->customer->isLogged()) {
+				$customer_email = $this->customer->getEmail();
+				$customer_first_name = $this->customer->getFirstName();
+				$customer_last_name = $this->customer->getLastName();
+			} else {
+				$customer_email = 'shafa@technobd.com';
+				$customer_first_name = 'mr';
+				$customer_last_name = 'user';
+			}
+
+			$subject = 'Product is in Cart';
+			$message = 'Hi ' . $customer_first_name . ' ' . $customer_last_name . ',<br><br>';
+			$message .= 'You have just added ' . $quantity . ' product to your cart.<br>';
+			$message .= 'Product Name: ' . $product_info['name'] . '<br>';
+			$message .= 'Quantity: ' . $quantity . '<br>';
+			$message .= '<br>Best regards,<br>' . $store_name;
+
+			// echo "<pre>";
+			// print_r($subject);
+			// print_r($message);
+			//die;
+			$mail_option = [
+				'parameter' => $this->config->get('config_mail_parameter'),
+				'smtp_hostname' => $this->config->get('config_mail_smtp_hostname'),
+				'smtp_username' => $this->config->get('config_mail_smtp_username'),
+				'smtp_password' => html_entity_decode($this->config->get('config_mail_smtp_password'), ENT_QUOTES, 'UTF-8'),
+				'smtp_port' => $this->config->get('config_mail_smtp_port'),
+				'smtp_timeout' => $this->config->get('config_mail_smtp_timeout')
+			];
+
+			// Initialize the Mail class with options
+			$mail = new \Opencart\System\Library\Mail($this->config->get('config_mail_engine'), $mail_option);
+
+			// Set up the email details
+			$mail->setTo($customer_email);
+			$mail->setFrom($this->config->get('config_email'));
+			$mail->setSender(html_entity_decode($store_name, ENT_QUOTES, 'UTF-8'));
+			$mail->setSubject(html_entity_decode($subject, ENT_QUOTES, 'UTF-8'));
+			$mail->setHtml($message);
+
+			// Send the email
+			$mail->send();
 
 			$this->cart->add($product_id, $quantity, $option, $subscription_plan_id, false, 0, $custom_color);
 
